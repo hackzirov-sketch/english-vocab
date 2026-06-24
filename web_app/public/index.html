@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English Vocab Master</title>
+  <link rel="stylesheet" href="styles.css?v=20260624-21">
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+  <section id="lock" class="lock">
+    <form id="loginForm" class="login-panel">
+      <div class="brand-mark">EVM</div>
+      <h1>English Vocab Master</h1>
+      <p>Shaxsiy lug'at va grammar web app</p>
+      <label>
+        <span>Parol</span>
+        <input id="password" type="password" inputmode="numeric" autocomplete="current-password" placeholder="Parolni kiriting">
+      </label>
+      <button type="submit">Kirish</button>
+      <small id="loginError"></small>
+    </form>
+  </section>
+
+  <main id="app" class="shell hidden">
+    <aside class="sidebar">
+      <div class="side-brand">
+        <div class="brand-mark small">EVM</div>
+        <div>
+          <strong>English Master</strong>
+          <span>Personal web app</span>
+        </div>
+      </div>
+      <nav>
+        <button class="nav active" data-view="dashboard">Overview</button>
+        <button class="nav" data-view="vocab">Lug'at</button>
+        <button class="nav" data-view="learn">Yodlash</button>
+        <button class="nav" data-view="quiz">Quiz</button>
+        <button class="nav" data-view="grammar">Grammar</button>
+        <button class="nav" data-view="ai">AI Tutor</button>
+      </nav>
+      <div class="side-stat">
+        <span>Streak</span>
+        <strong id="streak">0 kun</strong>
+      </div>
+    </aside>
+
+    <section class="workspace">
+      <header class="topbar">
+        <div>
+          <h2 id="viewTitle">Overview</h2>
+          <p id="viewSub">Bugungi o'qish holati</p>
+        </div>
+        <div class="top-actions">
+          <select id="topicFilter"><option value="">Barcha mavzular</option></select>
+          <button id="syncBtn" class="ghost">Yangilash</button>
+        </div>
+      </header>
+      <div id="quickActions" class="quick-actions"></div>
+
+      <section id="dashboard" class="view active">
+        <div class="dashboard-overview">
+          <div class="metrics">
+            <article><span>So'zlar</span><strong id="wordCount">0</strong></article>
+            <article><span>Mavzular</span><strong id="topicCount">0</strong></article>
+            <article><span>Testlar</span><strong id="quizCount">0</strong></article>
+            <article><span>Grammar</span><strong id="grammarCount">0</strong></article>
+          </div>
+          <article class="panel daily-plan">
+            <div class="panel-head"><h3>Bugungi plan</h3><button id="startDailyPlan">Boshlash</button></div>
+            <div class="plan-grid">
+              <div><strong>20</strong><span>so'z ko'rish</span></div>
+              <div><strong>10</strong><span>typing check</span></div>
+              <div><strong>1</strong><span>grammar formula</span></div>
+            </div>
+            <p id="planHint">Har kuni kamida 20 ta so'z, 10 ta yozma tekshiruv va 1 ta formula mashqi qiling.</p>
+          </article>
+        </div>
+        <div class="dashboard-main">
+          <article class="panel today-card">
+            <div class="panel-head"><h3>Bugungi so'z</h3><button id="todayAi" class="ghost">AI card</button></div>
+            <div id="todayWord"></div>
+          </article>
+          <article class="panel">
+            <div class="panel-head"><h3>Kuchli mavzular</h3></div>
+            <div id="topicChips" class="chips"></div>
+          </article>
+          <article class="panel progress-panel">
+            <div class="panel-head"><h3>Learning progress</h3><button id="resetProgress" class="ghost">Reset</button></div>
+            <div class="progress-grid">
+              <div><span>Known words</span><strong id="knownCount">0</strong></div>
+              <div><span>Saved words</span><strong id="savedCount">0</strong></div>
+              <div><span>Coverage</span><strong id="coverageCount">0%</strong></div>
+            </div>
+            <div class="progress-bar"><span id="coverageBar"></span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="vocab" class="view">
+        <div class="toolbar">
+          <input id="searchInput" type="search" placeholder="So'z, tarjima yoki example qidirish">
+          <select id="levelFilter">
+            <option value="">Level</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option>
+          </select>
+          <button id="searchBtn">Qidirish</button>
+        </div>
+        <div id="vocabList" class="word-grid"></div>
+        <button id="loadMore" class="wide">Yana ko'rsatish</button>
+      </section>
+
+      <section id="learn" class="view">
+        <div class="study-layout">
+          <div class="study-main">
+            <article class="panel study-dashboard">
+              <div>
+                <span>Review queue</span>
+                <strong id="reviewDue">0</strong>
+              </div>
+              <div>
+                <span>Mastery</span>
+                <strong id="masteryScore">0%</strong>
+              </div>
+              <div>
+                <span>Typing streak</span>
+                <strong id="typingStreak">0</strong>
+              </div>
+            </article>
+            <article class="flashcard" id="flashcard">
+              <span id="flashTopic">Topic</span>
+              <h3 id="flashWord">Word</h3>
+              <p id="flashUz">Tarjima</p>
+              <blockquote id="flashExample"></blockquote>
+            </article>
+            <div class="study-actions">
+              <button id="prevCard" class="ghost">Oldingi</button>
+              <button id="hardCard" class="ghost">Qiyin</button>
+              <button id="knowCard">Bildim</button>
+              <button id="easyCard" class="ghost">Oson</button>
+              <button id="nextCard" class="ghost">Keyingi</button>
+            </div>
+            <div id="savedWords" class="saved-strip"></div>
+          </div>
+          <article class="panel typing-panel">
+            <div class="panel-head"><h3>Typing check</h3><button id="revealAnswer" class="ghost">Javobni ko'rish</button></div>
+            <div class="typing-grid">
+              <input id="typingAnswer" placeholder="Tarjimani yoki inglizcha so'zni yozing">
+              <button id="checkTyping">Tekshirish</button>
+            </div>
+            <div id="typingFeedback" class="typing-feedback"></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="quiz" class="view">
+        <div class="panel quiz-panel">
+          <div class="panel-head"><h3>Quiz</h3><button id="newQuiz">Yangi test</button></div>
+          <div id="quizBox"></div>
+        </div>
+      </section>
+
+      <section id="grammar" class="view">
+        <div class="grammar-command-grid">
+          <article class="panel grammar-roadmap-panel">
+            <div class="panel-head">
+              <h3>Grammar roadmap</h3>
+              <button id="startGrammarDrill" class="ghost">Formula mashq</button>
+            </div>
+            <div id="grammarRoadmap" class="roadmap-grid"></div>
+          </article>
+          <article class="panel grammar-mission-panel">
+            <div class="panel-head">
+              <h3>Grammar mission</h3>
+              <div class="panel-actions">
+                <button id="newGrammarMission" class="ghost">Yangi mission</button>
+                <button id="buildReviewDeck">Final review</button>
+              </div>
+            </div>
+            <div class="mission-stats">
+              <div><span>Started</span><strong id="grammarStartedCount">0</strong></div>
+              <div><span>Mastered</span><strong id="grammarMasteredCount">0</strong></div>
+              <div><span>Need review</span><strong id="grammarReviewCount">0</strong></div>
+            </div>
+            <div id="grammarRecommendations" class="grammar-recommendations"></div>
+            <div id="grammarMission" class="mission-card"></div>
+            <div id="grammarReviewDeck" class="review-deck"></div>
+          </article>
+        </div>
+        <div class="grid grammar-layout">
+          <article class="panel"><h3>Bo'limlar</h3><div id="grammarSections" class="list"></div></article>
+          <article class="panel"><h3>Patternlar</h3><div id="patternSummary" class="pattern-summary"></div><div id="grammarPatterns" class="list"></div></article>
+          <article class="panel detail"><h3>Detail</h3><div id="grammarDetail"></div></article>
+        </div>
+      </section>
+
+      <section id="ai" class="view">
+        <article class="panel lesson-panel">
+          <div class="panel-head"><h3>AI Lesson Generator</h3><button id="generateLesson">Dars yaratish</button></div>
+          <div class="lesson-controls">
+            <select id="lessonTopic"><option value="">Topic tanlang</option></select>
+            <select id="lessonLevel">
+              <option value="">Level</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option>
+            </select>
+          </div>
+          <div id="lessonResult" class="lesson-result"></div>
+        </article>
+        <div class="ai-workspace">
+          <article class="panel chat-panel">
+            <h3>AI bilan suhbat</h3>
+            <div id="chatLog" class="chat-log"></div>
+            <div class="composer">
+              <textarea id="chatInput" placeholder="Inglizcha mashq, savol yoki gap yozing"></textarea>
+              <button id="sendChat">Yuborish</button>
+            </div>
+          </article>
+          <article class="panel grammar-check-panel">
+            <h3>Grammar check</h3>
+            <textarea id="grammarText" class="tall" placeholder="I go to school yesterday"></textarea>
+            <button id="checkGrammar" class="wide">Tekshirish</button>
+            <div id="grammarResult" class="ai-result"></div>
+          </article>
+        </div>
+        <article class="panel mistake-panel">
+          <div class="panel-head"><h3>Mistake notebook</h3><button id="clearMistakes" class="ghost">Tozalash</button></div>
+          <div id="mistakeNotebook" class="mistake-list"></div>
+        </article>
+      </section>
+    </section>
+  </main>
+
+  <dialog id="wordDialog">
+    <article class="modal-card">
+      <button id="closeDialog" class="close">&times;</button>
+      <div id="wordDetail"></div>
+    </article>
+  </dialog>
+
+  <script src="app.js?v=20260624-21"></script>
+</body>
+</html>

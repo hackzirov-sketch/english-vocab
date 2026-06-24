@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: english-vocab-master-web
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: cd web_app && npm ci && npm run deploy:check
+    startCommand: cd web_app && npm start
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: APP_PASSWORD_HASH
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_MODEL
+        value: openai/gpt-4o-mini
+      - key: OPENROUTER_BASE_URL
+        value: https://openrouter.ai/api/v1

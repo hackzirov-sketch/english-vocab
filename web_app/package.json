@@ -1,0 +1,17 @@
+{
+  "name": "english-vocab-master-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node --check server.js && node --check public/app.js",
+    "deploy:check": "npm run build"
+  },
+  "engines": {
+    "node": "20.x"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1"
+  }
+}

@@ -23,7 +23,6 @@ The server reads API keys from environment variables or from existing `bot/.env`
 Useful variables:
 
 ```env
-APP_PASSWORD_HASH=sha256_password_hash
 DB_PATH=../database/master_maximal_v14_openrouter_ready.db
 OPENROUTER_API_KEY=...
 OPENROUTER_MODEL=openai/gpt-4o-mini

@@ -53,8 +53,7 @@ async function api(path, options = {}) {
     headers: { ...authHeaders(), ...(options.headers || {}) }
   });
   if (res.status === 401) {
-    logout();
-    throw new Error("Session expired");
+    throw new Error("Unauthorized");
   }
   const data = await res.json();
   if (!res.ok) throw new Error(data.error || "Request failed");
@@ -96,18 +95,6 @@ function saveProgress() {
   if ($("coverageCount")) $("coverageCount").textContent = `${coverage}%`;
   if ($("coverageBar")) $("coverageBar").style.width = `${coverage}%`;
   updateStudyStats();
-}
-
-function logout() {
-  localStorage.removeItem("evm_token");
-  fetch("/api/logout", { method: "POST", credentials: "same-origin" }).catch(() => {});
-  $("lock").classList.remove("hidden");
-  $("app").classList.add("hidden");
-}
-
-function showApp() {
-  $("lock").classList.add("hidden");
-  $("app").classList.remove("hidden");
 }
 
 function currentStudyWord() {
@@ -853,36 +840,8 @@ function addBubble(text, who) {
 async function init() {
   saveProgress();
   renderQuickActions(state.view);
-  localStorage.removeItem("evm_token");
-  try {
-    const res = await fetch("/api/session", { credentials: "same-origin" });
-    if (res.ok) {
-      showApp();
-      await Promise.all([loadDashboard(), loadTopics(), loadVocab(true)]);
-    }
-  } catch {
-    logout();
-  }
+  await Promise.all([loadDashboard(), loadTopics(), loadVocab(true)]);
 }
-
-$("loginForm").addEventListener("submit", async (event) => {
-  event.preventDefault();
-  $("loginError").textContent = "";
-  try {
-    const data = await fetch("/api/login", {
-      method: "POST",
-      credentials: "same-origin",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ password: $("password").value })
-    }).then(r => r.json().then(d => ({ ok: r.ok, data: d })));
-    if (!data.ok) throw new Error(data.data.error || "Parol xato");
-    localStorage.removeItem("evm_token");
-    showApp();
-    await Promise.all([loadDashboard(), loadTopics(), loadVocab(true)]);
-  } catch (err) {
-    $("loginError").textContent = err.message;
-  }
-});
 
 document.querySelectorAll(".nav").forEach(btn => btn.addEventListener("click", () => setView(btn.dataset.view)));
 $("quickActions").addEventListener("click", (event) => {

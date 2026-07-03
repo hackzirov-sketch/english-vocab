@@ -1,7 +1,6 @@
 const http = require("http");
 const fs = require("fs");
 const path = require("path");
-const crypto = require("crypto");
 const Database = require("better-sqlite3");
 
 const ROOT = path.resolve(__dirname, "..");
@@ -13,17 +12,6 @@ loadEnv(path.join(ROOT, "bot", ".env"));
 loadEnv(path.join(ROOT, "backend", ".env"));
 
 const DB_PATH = process.env.DB_PATH || path.join(ROOT, "database", "master_maximal_v14_openrouter_ready.db");
-const DEFAULT_PASSWORD_HASH = "70e8d52a9b4616e728112408ceca7abd9507e93f30e958ecb09f6ea607d99d06";
-const APP_PASSWORD_HASH = process.env.APP_PASSWORD_HASH || (
-  process.env.APP_PASSWORD
-    ? crypto.createHash("sha256").update(process.env.APP_PASSWORD).digest("hex")
-    : DEFAULT_PASSWORD_HASH
-);
-const SESSION_COOKIE = "evm_session";
-const SESSION_MAX_AGE = 60 * 60 * 12;
-const SESSION_SAMESITE = process.env.SESSION_SAMESITE || "Lax";
-const SESSION_SECURE = process.env.SESSION_COOKIE_SECURE === "true" || process.env.NODE_ENV === "production";
-
 if (!fs.existsSync(DB_PATH)) {
   console.error(`Database file not found: ${DB_PATH}`);
   console.error("Set DB_PATH or include database/master_maximal_v14_openrouter_ready.db in the deployment.");
@@ -31,7 +19,6 @@ if (!fs.existsSync(DB_PATH)) {
 }
 
 const db = new Database(DB_PATH, { readonly: true, fileMustExist: true });
-const sessions = new Map();
 const mime = {
   ".html": "text/html; charset=utf-8",
   ".css": "text/css; charset=utf-8",
@@ -96,51 +83,6 @@ function parseBody(req) {
       }
     });
   });
-}
-
-function parseCookies(req) {
-  const header = req.headers.cookie || "";
-  return Object.fromEntries(header.split(";").map(part => {
-    const index = part.indexOf("=");
-    if (index === -1) return ["", ""];
-    return [part.slice(0, index).trim(), decodeURIComponent(part.slice(index + 1).trim())];
-  }).filter(([key]) => key));
-}
-
-function sessionCookie(token, maxAge = SESSION_MAX_AGE) {
-  const attrs = [
-    `${SESSION_COOKIE}=${encodeURIComponent(token)}`,
-    "Path=/",
-    "HttpOnly",
-    `SameSite=${SESSION_SAMESITE}`,
-    `Max-Age=${maxAge}`
-  ];
-  if (SESSION_SECURE) attrs.push("Secure");
-  return attrs.join("; ");
-}
-
-function getToken(req) {
-  const header = req.headers.authorization || "";
-  if (header.startsWith("Bearer ")) return header.slice(7);
-  return parseCookies(req)[SESSION_COOKIE] || "";
-}
-
-function passwordMatches(input) {
-  const actual = Buffer.from(crypto.createHash("sha256").update(String(input || "")).digest("hex"), "hex");
-  const expected = Buffer.from(APP_PASSWORD_HASH, "hex");
-  return actual.length === expected.length && crypto.timingSafeEqual(actual, expected);
-}
-
-function requireAuth(req, res) {
-  const token = getToken(req);
-  const session = sessions.get(token);
-  if (!session || session.expires < Date.now()) {
-    sessions.delete(token);
-    send(res, 401, { error: "Unauthorized" });
-    return false;
-  }
-  session.expires = Date.now() + 1000 * 60 * 60 * 12;
-  return true;
 }
 
 function rows(sql, params = {}) {
@@ -388,29 +330,6 @@ async function callAi(messages, temperature = 0.45, maxTokens = 900) {
 async function handleApi(req, res, url) {
   if (url.pathname === "/api/health") {
     return send(res, 200, healthPayload());
-  }
-
-  if (url.pathname === "/api/login" && req.method === "POST") {
-    const body = await parseBody(req);
-    if (!passwordMatches(body.password)) return send(res, 403, { error: "Wrong password" });
-    const token = crypto.randomBytes(32).toString("hex");
-    sessions.set(token, { expires: Date.now() + 1000 * 60 * 60 * 12 });
-    return send(res, 200, { ok: true }, "application/json; charset=utf-8", {
-      "Set-Cookie": sessionCookie(token)
-    });
-  }
-
-  if (!requireAuth(req, res)) return;
-
-  if (url.pathname === "/api/session") {
-    return send(res, 200, { ok: true });
-  }
-
-  if (url.pathname === "/api/logout" && req.method === "POST") {
-    sessions.delete(getToken(req));
-    return send(res, 200, { ok: true }, "application/json; charset=utf-8", {
-      "Set-Cookie": sessionCookie("", 0)
-    });
   }
 
   if (url.pathname === "/api/dashboard") {

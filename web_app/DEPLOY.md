@@ -9,7 +9,6 @@ This app needs a Node server because vocabulary, quiz, grammar, and AI routes re
 3. Connect the repository.
 4. Render can read the root `render.yaml` automatically.
 5. Add environment variables:
-   - `APP_PASSWORD_HASH`
    - `OPENROUTER_API_KEY` if AI replies should work online
    - `OPENROUTER_MODEL` optional, default is `openai/gpt-4o-mini`
 6. Deploy.
@@ -38,7 +37,7 @@ Interval: 5 minutes
 Keyword: ok
 ```
 
-This endpoint does not require login and does not load the full web app.
+This endpoint does not load the full web app.
 
 ## Telegram Bot Web App
 

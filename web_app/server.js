@@ -590,7 +590,7 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
     const knowledge = retrieveTutorKnowledge(`${recentContext} ${message}`, { limit: 7, maxChars: 8500 });
     const ai = await callAi(buildChatMessages(message, body.history, knowledge.context), 0.45, 1400);
     if (ai.offline) return send(res, 200, { offline: true, reply: "AI kalitlari sozlanmagan. Savolingiz saqlandi, lekin javob uchun Groq yoki OpenRouter API key kerak." });
-    return send(res, 200, { reply: ai.content });
+    return send(res, 200, { reply: ai.content, provider: ai.provider });
   }
 
   if (url.pathname === "/api/ai/lesson" && req.method === "POST") {

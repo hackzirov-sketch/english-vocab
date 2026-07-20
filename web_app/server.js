@@ -306,7 +306,8 @@ function takeAiRateLimit(req) {
   return { allowed: false, retryAfter: Math.max(1, Math.ceil((current.resetAt - now) / 1000)) };
 }
 
-function normalizeLesson(parsed, words, pattern, topic) {
+function normalizeLesson(parsed, words, pattern, topic, lessonType = "speaking") {
+  const isWriting = lessonType === "writing";
   const vocabDrills = Array.isArray(parsed.vocab_drills) && parsed.vocab_drills.length
     ? parsed.vocab_drills
     : words.map(word => ({
@@ -319,8 +320,11 @@ function normalizeLesson(parsed, words, pattern, topic) {
   const grammarFocus = parsed.grammar_focus && typeof parsed.grammar_focus === "object" ? parsed.grammar_focus : {};
   return {
     ...parsed,
-    title_uz: parsed.title_uz || `${titleCase(topic || "Mixed")} uchun mini dars`,
-    goal_uz: parsed.goal_uz || "So'z, formula, speaking va writing orqali mavzuni mustahkamlash.",
+    lesson_type: lessonType,
+    title_uz: parsed.title_uz || `${titleCase(topic || "Mixed")} bo‘yicha ${isWriting ? "Writing" : "Speaking"} darsi`,
+    goal_uz: parsed.goal_uz || (isWriting
+      ? "So‘z va formulalarni reja asosida yozma matnda qo‘llash."
+      : "So‘z va formulalarni tabiiy og‘zaki javobda qo‘llash."),
     warmup_question_en: parsed.warmup_question_en || `What do you usually say about ${topic || "this topic"}?`,
     vocab_drills: vocabDrills,
     grammar_focus: {
@@ -330,9 +334,9 @@ function normalizeLesson(parsed, words, pattern, topic) {
       example_en: grammarFocus.example_en || "In my opinion, this topic is important because it affects daily life.",
       example_uz: grammarFocus.example_uz || "Menimcha, bu mavzu muhim, chunki u kundalik hayotga ta'sir qiladi."
     },
-    speaking_questions: Array.isArray(parsed.speaking_questions) && parsed.speaking_questions.length
+    speaking_questions: !isWriting && Array.isArray(parsed.speaking_questions) && parsed.speaking_questions.length
       ? parsed.speaking_questions
-      : [
+      : isWriting ? [] : [
         `Do you like talking about ${topic || "this topic"}? Why?`,
         `What is one advantage related to ${topic || "this topic"}?`,
         "Can you give a real example from your life?"
@@ -344,8 +348,19 @@ function normalizeLesson(parsed, words, pattern, topic) {
         answer: word.uzbek,
         explanation_uz: word.learning?.memory_tip_uz || ""
       })),
-    writing_task_uz: parsed.writing_task_uz || "Bugungi so'zlardan kamida 5 tasini ishlatib 6-8 gap yozing.",
-    homework_uz: parsed.homework_uz || "Darsni qayta ko'rib chiqing va bitta speaking javobni Grammar check orqali tekshiring."
+    writing_task_uz: isWriting ? (parsed.writing_task_uz || "Bugungi so‘zlardan kamida 5 tasini ishlatib 6–8 gap yozing.") : "",
+    practice_steps: Array.isArray(parsed.practice_steps) && parsed.practice_steps.length
+      ? parsed.practice_steps
+      : isWriting
+        ? ["3 ta asosiy fikr yozib, qisqa outline tuzing.", "Formula va yangi so‘zlar bilan gaplar yarating.", "Matnni yozing va grammar, linking hamda spelling bo‘yicha tekshiring."]
+        : ["Savolga bitta to‘g‘ridan-to‘g‘ri gap bilan javob bering.", "Reason va example qo‘shib javobni rivojlantiring.", "Javobni vaqt bilan ayting va o‘zingizni tekshiring."],
+    model_answer_en: parsed.model_answer_en || (isWriting
+      ? "In my opinion, this topic matters because it has a direct effect on our daily lives. For example, it can influence the choices we make and the way we communicate with other people."
+      : "I think this topic is quite important because it affects our everyday lives. For example, I often notice its influence when I make decisions or talk to other people."),
+    model_answer_uz: parsed.model_answer_uz || "Bu model javob yangi so‘z, sabab va aniq misolni bitta mantiqiy javobga bog‘laydi.",
+    homework_uz: parsed.homework_uz || (isWriting
+      ? "Model matnni qayta ko‘rib chiqing, keyin shu mavzuda yangi paragraph yozib Writing tahlilidan o‘tkazing."
+      : "Savollardan bittasiga vaqt bilan javob bering va Speaking tahlilidan o‘tkazing.")
   };
 }
 
@@ -603,6 +618,7 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
     const body = await parseBody(req);
     const topic = cleanText(body.topic, 120);
     const level = cleanText(body.level, 20);
+    const lessonType = body.lessonType === "writing" ? "writing" : "speaking";
     const where = [];
     const params = {};
     if (topic) {
@@ -621,17 +637,18 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
 
     const wordLines = words.map((word, index) => `${index + 1}. ${word.english} - ${word.uzbek}; formula: ${word.learning?.formula || ""}; example: ${word.example_en || ""}`).join("\n");
     const knowledge = retrieveTutorKnowledge(
-      `${topic} ${level} ${pattern?.title_en || ""} ${pattern?.formula || ""} ${words.map(word => word.english).join(" ")}`,
+      `${lessonType} ${topic} ${level} ${pattern?.title_en || ""} ${pattern?.formula || ""} ${words.map(word => word.english).join(" ")}`,
       { limit: 8, maxChars: 9500 }
     );
-    const prompt = buildLessonPrompt({ topic, level, wordLines, pattern, knowledgeContext: knowledge.context });
+    const prompt = buildLessonPrompt({ topic, level, lessonType, wordLines, pattern, knowledgeContext: knowledge.context });
 
     const ai = await callAi([{ role: "user", content: prompt }], 0.5, 2200, { json: true });
     if (ai.offline) {
       return send(res, 200, {
         offline: true,
-        title_uz: `${titleCase(topic || "Mixed")} uchun mini dars`,
-        goal_uz: "10 ta so'zni formula, gap va speaking/writing orqali mustahkamlash.",
+        lesson_type: lessonType,
+        title_uz: `${titleCase(topic || "Mixed")} bo‘yicha ${lessonType === "writing" ? "Writing" : "Speaking"} darsi`,
+        goal_uz: lessonType === "writing" ? "10 ta so‘zni yozma matnda qo‘llash." : "10 ta so‘zni tabiiy og‘zaki javobda qo‘llash.",
         warmup_question_en: `What do you usually say about ${topic || "this topic"}?`,
         vocab_drills: words.map(word => ({
           word: word.english,
@@ -647,25 +664,34 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
           example_en: "In my opinion, this topic is important because it affects daily life.",
           example_uz: "Menimcha, bu mavzu muhim, chunki u kundalik hayotga ta'sir qiladi."
         },
-        speaking_questions: [
+        speaking_questions: lessonType === "writing" ? [] : [
           `Do you like talking about ${topic || "this topic"}? Why?`,
           `What is one advantage related to ${topic || "this topic"}?`,
           `Can you give a real example from your life?`
         ],
-        writing_task_uz: "Bugungi 10 ta so'zdan kamida 5 tasini ishlatib 6-8 gap yozing.",
+        writing_task_uz: lessonType === "writing" ? "Bugungi 10 ta so‘zdan kamida 5 tasini ishlatib 6–8 gapli paragraph yozing." : "",
+        practice_steps: lessonType === "writing"
+          ? ["3 ta asosiy fikr va outline tuzing.", "Yangi so‘zlar bilan gaplar yarating.", "Paragraph yozing va self-check qiling."]
+          : ["Direct answer ayting.", "Reason va example qo‘shing.", "Vaqt bilan to‘liq javob bering."],
+        model_answer_en: lessonType === "writing"
+          ? "In my opinion, this topic matters because it affects the choices people make in daily life. A clear example is the way it changes how we communicate and solve problems."
+          : "I think this topic matters because it affects our daily choices. For example, I often notice it when I communicate with other people.",
+        model_answer_uz: "Model javob sabab va misolni yangi vocabulary bilan bog‘laydi.",
         mini_quiz: words.slice(0, 5).map(word => ({
           question: `"${word.english}" so'zining ma'nosi nima?`,
           answer: word.uzbek,
           explanation_uz: word.learning?.memory_tip_uz || ""
         })),
-        homework_uz: "Darsni qayta ko'rib chiqing, 3 ta speaking javob yozing va Grammar check orqali tekshiring."
+        homework_uz: lessonType === "writing"
+          ? "Yangi paragraph yozing va Writing tahlilidan o‘tkazing."
+          : "Bitta speaking javobni vaqt bilan ayting va Speaking tahlilidan o‘tkazing."
       });
     }
 
     try {
-      return send(res, 200, normalizeLesson(JSON.parse(cleanAiJson(ai.content)), words, pattern, topic));
+      return send(res, 200, normalizeLesson(JSON.parse(cleanAiJson(ai.content)), words, pattern, topic, lessonType));
     } catch {
-      return send(res, 200, normalizeLesson({ raw_note: "AI JSON javobi tugallanmagani uchun DB asosidagi dars ko'rsatildi." }, words, pattern, topic));
+      return send(res, 200, normalizeLesson({ raw_note: "AI JSON javobi tugallanmagani uchun DB asosidagi dars ko'rsatildi." }, words, pattern, topic, lessonType));
     }
   }
 

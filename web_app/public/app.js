@@ -85,6 +85,13 @@ function setBusy(button, busy, busyText) {
   button.textContent = busy ? busyText : button.dataset.idleText;
 }
 
+function setValidation(targetId, fields, message = "") {
+  const target = $(targetId);
+  target.textContent = message;
+  target.hidden = !message;
+  fields.forEach(field => field?.setAttribute("aria-invalid", message ? "true" : "false"));
+}
+
 function showError(target, error) {
   target.innerHTML = `<div class="feedback-card bad" role="alert"><strong>So'rov bajarilmadi</strong><span>${escapeHtml(error.message)}</span></div>`;
 }
@@ -178,10 +185,12 @@ function renderLesson(data) {
   const drills = Array.isArray(data.vocab_drills) ? data.vocab_drills : [];
   const quiz = Array.isArray(data.mini_quiz) ? data.mini_quiz : [];
   const speaking = Array.isArray(data.speaking_questions) ? data.speaking_questions : [];
+  const steps = Array.isArray(data.practice_steps) ? data.practice_steps : [];
+  const isWriting = data.lesson_type === "writing";
   return `
     <article class="lesson-card">
       <header class="lesson-title">
-        <div><span>Engineered lesson</span><h3>${escapeHtml(data.title_uz || "Mini dars")}</h3></div>
+        <div><span>${isWriting ? "Writing lesson" : "Speaking lesson"}</span><h3>${escapeHtml(data.title_uz || "Mini dars")}</h3></div>
         ${data.offline ? pill("Offline", "amber") : pill("AI + Workbook", "green")}
       </header>
       <p class="lesson-goal">${escapeHtml(data.goal_uz || "")}</p>
@@ -210,37 +219,75 @@ function renderLesson(data) {
         </div>
       </section>
 
+      ${isWriting ? `
+        <section class="lesson-section">
+          <div class="lesson-section-title"><span>03</span><h4>Writing task</h4><small>Purpose · audience · length</small></div>
+          <div class="usage-card"><span>Topshiriq</span><strong>${escapeHtml(data.writing_task_uz || "")}</strong></div>
+        </section>` : `
+        <section class="lesson-section">
+          <div class="lesson-section-title"><span>03</span><h4>Speaking ladder</h4><small>D-R-E-F → S.T.O.R.Y.+C.P.R.</small></div>
+          <ol class="speaking-ladder">${speaking.map(question => `<li>${escapeHtml(question)}</li>`).join("")}</ol>
+        </section>`}
+
       <section class="lesson-section">
-        <div class="lesson-section-title"><span>03</span><h4>Speaking ladder</h4><small>D-R-E-F → S.T.O.R.Y.+C.P.R.</small></div>
-        <ol class="speaking-ladder">${speaking.map(question => `<li>${escapeHtml(question)}</li>`).join("")}</ol>
+        <div class="lesson-section-title"><span>04</span><h4>${isWriting ? "Writing plan" : "Speaking practice"}</h4><small>Controlled → independent</small></div>
+        <ol class="practice-steps">${steps.map(step => `<li>${escapeHtml(step)}</li>`).join("")}</ol>
       </section>
 
       <section class="lesson-section">
-        <div class="lesson-section-title"><span>04</span><h4>Mini quiz</h4><small>Meaning in context</small></div>
+        <div class="lesson-section-title"><span>05</span><h4>Model ${isWriting ? "paragraph" : "answer"}</h4><small>CEFR-safe example</small></div>
+        <div class="model-answer-card"><span>${isWriting ? "Model writing" : "Natural spoken answer"}</span><p>${escapeHtml(data.model_answer_en || "")}</p>${data.model_answer_uz ? `<small>${escapeHtml(data.model_answer_uz)}</small>` : ""}</div>
+      </section>
+
+      <section class="lesson-section">
+        <div class="lesson-section-title"><span>06</span><h4>Mini quiz</h4><small>Meaning in context</small></div>
         <div class="lesson-quiz">${quiz.map((item, index) => `
           <article><span>Q${index + 1}</span><strong>${escapeHtml(item.question)}</strong><p>${escapeHtml(item.answer)}</p>${item.explanation_uz ? `<em>${escapeHtml(item.explanation_uz)}</em>` : ""}</article>`).join("")}</div>
       </section>
 
       <div class="lesson-finish-grid">
-        ${data.writing_task_uz ? `<div class="usage-card"><span>Writing task</span><strong>${escapeHtml(data.writing_task_uz)}</strong></div>` : ""}
         ${data.homework_uz ? `<div class="homework-card"><span>Homework</span><strong>${escapeHtml(data.homework_uz)}</strong></div>` : ""}
       </div>
     </article>`;
+}
+
+function setLessonType(type, resetResult = true) {
+  const isWriting = type === "writing";
+  const button = $("generateLesson");
+  button.textContent = isWriting ? "Writing darsini yaratish" : "Speaking darsini yaratish";
+  button.dataset.idleText = button.textContent;
+  if (!resetResult) return;
+  $("lessonResult").innerHTML = `
+    <div class="empty-state">
+      <span>${isWriting ? "Writing" : "Speaking"} lesson canvas</span>
+      <strong>Topic tanlang va ${isWriting ? "Writing" : "Speaking"} darsini yarating.</strong>
+      <p>${isWriting
+        ? "Vocabulary, formula, writing task, outline va model paragraph bitta darsga bog‘lanadi."
+        : "Vocabulary, formula, D-R-E-F savollari, model answer va mashqlar bitta darsga bog‘lanadi."}</p>
+    </div>`;
 }
 
 async function generateLessonPlan() {
   setActiveDock("generate");
   const topic = $("lessonTopic").value;
   const level = $("lessonLevel").value;
+  const lessonType = document.querySelector('input[name="lessonType"]:checked')?.value || "speaking";
   const target = $("lessonResult");
   const button = $("generateLesson");
+  const missingFields = [!topic && $("lessonTopic"), !level && $("lessonLevel")].filter(Boolean);
+  if (missingFields.length) {
+    setValidation("lessonValidation", missingFields, "Dars yaratish uchun topic va CEFR darajani tanlang.");
+    missingFields[0].focus();
+    return;
+  }
+  setValidation("lessonValidation", [$("lessonTopic"), $("lessonLevel")]);
   setBusy(button, true, "Dars qurilmoqda...");
   target.setAttribute("aria-busy", "true");
-  target.innerHTML = `<div class="lesson-loading"><i aria-hidden="true"></i><div><strong>Workbook bilimlari tanlanmoqda</strong><span>Vocabulary, formula va mashqlar bitta darsga bog'lanadi.</span></div></div>`;
+  target.innerHTML = `<div class="lesson-loading"><i aria-hidden="true"></i><div><strong>${lessonType === "writing" ? "Writing" : "Speaking"} darsi qurilmoqda</strong><span>Vocabulary, formula va maqsadli mashqlar bitta darsga bog‘lanadi.</span></div></div>`;
   try {
     const data = await api("/api/ai/lesson", {
       method: "POST",
-      body: JSON.stringify({ topic, level })
+      body: JSON.stringify({ topic, level, lessonType })
     });
     target.innerHTML = renderLesson(data);
   } catch (error) {
@@ -365,9 +412,11 @@ async function checkGrammar() {
   const text = $("grammarText").value.trim();
   const mode = $("analysisMode").value;
   if (!text) {
+    setValidation("grammarValidation", [$("grammarText")], "Tahlil qilish uchun English matn yoki speaking javob yozing.");
     $("grammarText").focus();
     return;
   }
+  setValidation("grammarValidation", [$("grammarText")]);
   const button = $("checkGrammar");
   const target = $("grammarResult");
   setBusy(button, true, "Tahlil qilinmoqda...");
@@ -395,6 +444,17 @@ async function checkGrammar() {
 $("generateLesson").addEventListener("click", generateLessonPlan);
 $("sendChat").addEventListener("click", sendChatMessage);
 $("checkGrammar").addEventListener("click", checkGrammar);
+document.querySelectorAll('input[name="lessonType"]').forEach(input => {
+  input.addEventListener("change", () => setLessonType(input.value));
+});
+[$("lessonTopic"), $("lessonLevel")].forEach(field => field.addEventListener("change", () => {
+  if ($("lessonTopic").value && $("lessonLevel").value) {
+    setValidation("lessonValidation", [$("lessonTopic"), $("lessonLevel")]);
+  }
+}));
+$("grammarText").addEventListener("input", () => {
+  if ($("grammarText").value.trim()) setValidation("grammarValidation", [$("grammarText")]);
+});
 $("clearMistakes").addEventListener("click", () => {
   state.mistakes = [];
   saveProgress();
@@ -451,6 +511,7 @@ if ("IntersectionObserver" in window) {
 }
 
 renderMistakeNotebook();
+setLessonType(document.querySelector('input[name="lessonType"]:checked')?.value || "speaking", false);
 Promise.all([loadTopics(), loadSystemStatus()]).catch(error => {
   console.error(error);
 });

@@ -44,4 +44,16 @@ const lessonPrompt = tutor.buildLessonPrompt({
 assert.match(lessonPrompt, /RETRIEVED WORKBOOK KNOWLEDGE/);
 assert(lessonPrompt.length < 16000);
 
+const writingLessonPrompt = tutor.buildLessonPrompt({
+  topic: "Education",
+  level: "B1",
+  lessonType: "writing",
+  wordLines: "curriculum - o'quv dasturi",
+  pattern: { title_en: "Giving reasons", formula: "idea + because + reason" },
+  knowledgeContext: lessonKnowledge.context
+});
+assert.match(writingLessonPrompt, /Lesson type: WRITING/);
+assert.match(writingLessonPrompt, /model paragraph/i);
+assert.match(writingLessonPrompt, /Keep speaking_questions empty/);
+
 console.log("Tutor knowledge tests passed");

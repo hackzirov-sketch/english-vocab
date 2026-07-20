@@ -3,9 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07111f">
-  <title>Answer Lab — AI Tutor</title>
-  <link rel="stylesheet" href="styles.css?v=20260720-2">
+  <meta name="theme-color" content="#08141c">
+  <meta name="description" content="Workbook asosida vocabulary, grammar va speaking ko‘nikmalarini rivojlantiruvchi shaxsiy AI English coach.">
+  <meta property="og:title" content="Answer Lab — AI English Tutor">
+  <meta property="og:description" content="Aniq formulalar, workbook bilimlari va shaxsiy feedback bilan English mashq qiling.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ffb86b'/%3E%3Cpath d='M17 45 29 16h7l12 29h-8l-2-6H27l-2 6Zm12-12h7l-3.5-10Z' fill='%2308141c'/%3E%3C/svg%3E">
+  <title>Answer Lab — AI English Tutor</title>
+  <link rel="stylesheet" href="styles.css?v=20260720-6">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
@@ -14,11 +19,25 @@
 
   <main id="app" class="shell">
     <div class="workspace">
+      <nav class="topbar" aria-label="Answer Lab bosh navigatsiyasi">
+        <a class="brand" href="#app" aria-label="Answer Lab bosh sahifa">
+          <span aria-hidden="true">A</span>
+          <strong>Answer Lab</strong>
+        </a>
+        <span class="topbar-note">Workbook-powered English tutor</span>
+        <a class="topbar-link" href="#lessonStudio">Darsni boshlash <span aria-hidden="true">↘</span></a>
+      </nav>
+
       <header class="masthead">
         <div class="masthead-copy">
           <span class="eyebrow">Answer Engineering Lab</span>
           <h1>English,<br><em>engineered.</em></h1>
           <p>Workbook bilimlari, aniq formulalar va shaxsiy feedback bilan ishlaydigan AI English coach.</p>
+          <ul class="hero-proof" aria-label="Asosiy imkoniyatlar">
+            <li><span>01</span>Darajaga mos dars</li>
+            <li><span>02</span>Real-time coach</li>
+            <li><span>03</span>Shaxsiy xatolar arxivi</li>
+          </ul>
         </div>
         <aside class="system-card" aria-label="AI tizim holati">
           <div class="system-status">
@@ -83,11 +102,22 @@
           <header class="panel-head">
             <div>
               <span class="section-kicker">01 · Lesson studio</span>
-              <h2 id="lessonTitle">Workbook asosida dars yarating</h2>
-              <p>Topic va darajani tanlang. AI vocabulary, grammar, speaking, quiz va homework'ni bir darsga bog'laydi.</p>
+              <h2 id="lessonTitle">Speaking yoki Writing darsini yarating</h2>
+              <p>Dars yo‘nalishi, topic va darajani tanlang. Har bir dars o‘z maqsadi va mashq tizimi bilan yaratiladi.</p>
             </div>
             <button type="button" id="generateLesson" class="primary-action">Dars yaratish</button>
           </header>
+          <fieldset class="lesson-paths">
+            <legend>Dars yo‘nalishi</legend>
+            <label>
+              <input type="radio" name="lessonType" value="speaking" checked>
+              <span><b aria-hidden="true">S</b><strong>Speaking darsi</strong><small>Fikrni rivojlantirish · D-R-E-F · STORY/CPR</small></span>
+            </label>
+            <label>
+              <input type="radio" name="lessonType" value="writing">
+              <span><b aria-hidden="true">W</b><strong>Writing darsi</strong><small>Reja tuzish · coherence · model paragraph</small></span>
+            </label>
+          </fieldset>
           <div class="lesson-controls">
             <label>
               <span>Topic</span>
@@ -100,11 +130,12 @@
               </select>
             </label>
           </div>
+          <p id="lessonValidation" class="validation-message" role="alert" hidden></p>
           <div id="lessonResult" class="lesson-result" aria-live="polite" aria-busy="false">
             <div class="empty-state">
-              <span>Lesson canvas</span>
-              <strong>Topic tanlang va birinchi darsni yarating.</strong>
-              <p>Natija qisqartirilmaydi: barcha so'zlar, tarjimalar, formula, speaking va mashqlar shu yerda qoladi.</p>
+              <span id="lessonEmptyLabel">Speaking lesson canvas</span>
+              <strong id="lessonEmptyTitle">Topic tanlang va Speaking darsini yarating.</strong>
+              <p id="lessonEmptyText">Vocabulary, formula, D-R-E-F savollari, model answer va mashqlar bitta darsga bog‘lanadi.</p>
             </div>
           </div>
         </article>
@@ -157,6 +188,7 @@
               </label>
             </div>
             <textarea id="grammarText" class="tall" placeholder="I go to school yesterday..."></textarea>
+            <p id="grammarValidation" class="validation-message" role="alert" hidden></p>
             <button type="button" id="checkGrammar" class="wide">To'liq tahlil qilish</button>
             <div id="grammarResult" class="ai-result" aria-live="polite" aria-busy="false">
               <div class="mini-empty">Score, real xatolar, natural upgrade, formula va keyingi mashq shu yerda chiqadi.</div>
@@ -185,6 +217,6 @@
     </div>
   </main>
 
-  <script src="app.js?v=20260720-2"></script>
+  <script src="app.js?v=20260720-6"></script>
 </body>
 </html>

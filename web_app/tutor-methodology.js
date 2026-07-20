@@ -44,10 +44,22 @@ function buildChatMessages(message, history, knowledgeContext = "") {
   ];
 }
 
-function buildLessonPrompt({ topic, level, wordLines, pattern, knowledgeContext = "" }) {
+function buildLessonPrompt({ topic, level, lessonType = "speaking", wordLines, pattern, knowledgeContext = "" }) {
+  const focusRules = lessonType === "writing"
+    ? `- This is a WRITING lesson. Build toward one clear paragraph or short response.
+- writing_task_uz must state the exact task, expected length, and required content.
+- practice_steps must cover: brainstorm/outline, controlled sentence building, then independent writing and self-edit.
+- model_answer_en must be a realistic CEFR-safe model paragraph; model_answer_uz must explain its meaning naturally.
+- Keep speaking_questions empty.`
+    : `- This is a SPEAKING lesson. Build toward one natural spoken answer.
+- Speaking questions must progress through D-R-E-F: direct opinion, reason/detail, then example/reflection. At B2-C2, the final question may invite S.T.O.R.Y. + C.P.R.
+- practice_steps must cover: short direct answer, developed answer, then timed independent speaking and self-check.
+- model_answer_en must sound spoken and natural; model_answer_uz must explain its meaning naturally.
+- Keep writing_task_uz empty.`;
   return `${TUTOR_SYSTEM_PROMPT}
 
 Create one compact, high-value lesson for an Uzbek learner.
+Lesson type: ${lessonType === "writing" ? "WRITING" : "SPEAKING"}
 Topic: ${topic || "mixed"}
 Target CEFR: ${level || "mixed"}
 
@@ -67,7 +79,7 @@ LESSON RULES
 - Adapt every sentence to the target CEFR. If the source grammar is too advanced, teach a level-safe equivalent and name the advanced option only as an upgrade.
 - Use all 10 source words. Give each a distinct, topic-specific sentence, precise Uzbek meaning, and short memory tip based on a natural collocation or chunk.
 - Grammar focus must include one exact reusable formula and a natural example tied to the topic.
-- Speaking questions must progress through D-R-E-F: direct opinion, reason/detail, then example/reflection. At B2-C2, the final question may invite S.T.O.R.Y. + C.P.R.
+${focusRules}
 - Mini quiz must test meaning in context or correct usage, not mere copying.
 - Homework must move through notice -> controlled practice -> personal production -> self-check.
 - Avoid repeated generic examples, unnatural collocations, forced idioms, and robotic template language.
@@ -75,12 +87,16 @@ LESSON RULES
 Return ONLY one valid JSON object. No markdown fences. Required shape:
 {
   "title_uz": "string",
+  "lesson_type": "speaking|writing",
   "goal_uz": "string",
   "warmup_question_en": "string",
   "vocab_drills": [{"word":"string","uzbek":"string","sentence_en":"string","sentence_uz":"string","memory_tip_uz":"string"}],
   "grammar_focus": {"title":"string","formula":"string","explanation_uz":"string","example_en":"string","example_uz":"string"},
   "speaking_questions": ["string", "string", "string"],
   "writing_task_uz": "string",
+  "practice_steps": ["string", "string", "string"],
+  "model_answer_en": "string",
+  "model_answer_uz": "string",
   "mini_quiz": [{"question":"string","answer":"string","explanation_uz":"string"}],
   "homework_uz": "string"
 }`;

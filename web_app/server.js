@@ -349,7 +349,7 @@ function normalizeLesson(parsed, words, pattern, topic) {
   };
 }
 
-async function callProvider(provider, messages, temperature, maxTokens) {
+async function callProvider(provider, messages, temperature, maxTokens, options = {}) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), AI_TIMEOUT_MS);
   try {
@@ -361,7 +361,13 @@ async function callProvider(provider, messages, temperature, maxTokens) {
         ...provider.headers
       },
       signal: controller.signal,
-      body: JSON.stringify({ model: provider.model, messages, temperature, max_tokens: maxTokens })
+      body: JSON.stringify({
+        model: provider.model,
+        messages,
+        temperature,
+        max_tokens: maxTokens,
+        ...(options.json ? { response_format: { type: "json_object" } } : {})
+      })
     });
     if (!response.ok) throw new Error(`${provider.name} returned ${response.status}`);
     const data = await response.json();
@@ -373,7 +379,7 @@ async function callProvider(provider, messages, temperature, maxTokens) {
   }
 }
 
-async function callAi(messages, temperature = 0.45, maxTokens = 900) {
+async function callAi(messages, temperature = 0.45, maxTokens = 900, options = {}) {
   const providers = [];
   if (hasUsableKey(process.env.GROQ_API_KEY)) {
     providers.push({
@@ -401,7 +407,7 @@ async function callAi(messages, temperature = 0.45, maxTokens = 900) {
   const failures = [];
   for (const provider of providers) {
     try {
-      return await callProvider(provider, messages, temperature, maxTokens);
+      return await callProvider(provider, messages, temperature, maxTokens, options);
     } catch (error) {
       failures.push(`${provider.name}: ${error.name === "AbortError" ? "timeout" : error.message}`);
     }
@@ -544,7 +550,7 @@ Existing example: ${word.example_en || ""}
 Return ONLY valid JSON with:
 sentence_en, sentence_uz, explanation_uz, speaking_prompt, writing_prompt, memory_tip_uz, common_mistake_uz.
 Make the sentence natural, useful, and clearly connected to the formula.`;
-    const ai = await callAi([{ role: "user", content: prompt }], 0.5, 700);
+    const ai = await callAi([{ role: "user", content: prompt }], 0.5, 700, { json: true });
     if (ai.offline) {
       return send(res, 200, {
         offline: true,
@@ -620,7 +626,7 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
     );
     const prompt = buildLessonPrompt({ topic, level, wordLines, pattern, knowledgeContext: knowledge.context });
 
-    const ai = await callAi([{ role: "user", content: prompt }], 0.5, 2200);
+    const ai = await callAi([{ role: "user", content: prompt }], 0.5, 2200, { json: true });
     if (ai.offline) {
       return send(res, 200, {
         offline: true,
@@ -673,7 +679,7 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
       limit: 6,
       maxChars: 7500
     });
-    const ai = await callAi([{ role: "user", content: buildGrammarCheckPrompt(text, knowledge.context, mode) }], 0.18, 2600);
+    const ai = await callAi([{ role: "user", content: buildGrammarCheckPrompt(text, knowledge.context, mode) }], 0.18, 2600, { json: true });
     if (ai.offline) return send(res, 200, { offline: true, score: 0, corrected: text, better: text, explanation_uz: "AI kalit sozlanmagan.", issues: [] });
     const cleaned = cleanAiJson(ai.content);
     try {
@@ -713,7 +719,7 @@ Return ONLY valid JSON with:
 score, is_correct, corrected, better, formula_feedback_uz, missing_steps, used_steps, next_task_uz.
 Focus on whether the student applied the formula, not only general grammar.`;
 
-    const ai = await callAi([{ role: "user", content: prompt }], 0.25, 900);
+    const ai = await callAi([{ role: "user", content: prompt }], 0.25, 900, { json: true });
     if (ai.offline) {
       return send(res, 200, {
         offline: true,

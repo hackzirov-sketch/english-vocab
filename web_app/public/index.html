@@ -3,224 +3,172 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>English Vocab Master</title>
-  <link rel="stylesheet" href="styles.css?v=20260624-21">
+  <meta name="theme-color" content="#07111f">
+  <title>Answer Lab — AI Tutor</title>
+  <link rel="stylesheet" href="styles.css?v=20260719-2">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
+  <a class="skip-link" href="#lessonStudio">Asosiy darsga o'tish</a>
+  <div class="ambient-grid" aria-hidden="true"></div>
+
   <main id="app" class="shell">
-    <aside class="sidebar">
-      <div class="side-brand">
-        <div class="brand-mark small">EVM</div>
-        <div>
-          <strong>English Master</strong>
-          <span>Personal web app</span>
+    <div class="workspace">
+      <header class="masthead">
+        <div class="masthead-copy">
+          <span class="eyebrow">Answer Engineering Lab</span>
+          <h1>English,<br><em>engineered.</em></h1>
+          <p>Workbook bilimlari, aniq formulalar va shaxsiy feedback bilan ishlaydigan AI English coach.</p>
         </div>
-      </div>
-      <nav>
-        <button class="nav active" data-view="dashboard">Overview</button>
-        <button class="nav" data-view="vocab">Lug'at</button>
-        <button class="nav" data-view="learn">Yodlash</button>
-        <button class="nav" data-view="quiz">Quiz</button>
-        <button class="nav" data-view="grammar">Grammar</button>
-        <button class="nav" data-view="ai">AI Tutor</button>
-      </nav>
-      <div class="side-stat">
-        <span>Streak</span>
-        <strong id="streak">0 kun</strong>
-      </div>
-    </aside>
-
-    <section class="workspace">
-      <header class="topbar">
-        <div>
-          <h2 id="viewTitle">Overview</h2>
-          <p id="viewSub">Bugungi o'qish holati</p>
-        </div>
-        <div class="top-actions">
-          <select id="topicFilter"><option value="">Barcha mavzular</option></select>
-          <button id="syncBtn" class="ghost">Yangilash</button>
-        </div>
+        <aside class="system-card" aria-label="AI tizim holati">
+          <div class="system-status">
+            <span id="statusDot" class="status-dot" aria-hidden="true"></span>
+            <span id="modelStatusText">AI holati tekshirilmoqda</span>
+          </div>
+          <strong id="knowledgeCount">1,624</strong>
+          <span>workbook element</span>
+          <small>Speaking · Grammar · Vocabulary · Natural chunks</small>
+        </aside>
       </header>
-      <div id="quickActions" class="quick-actions"></div>
 
-      <section id="dashboard" class="view active">
-        <div class="dashboard-overview">
-          <div class="metrics">
-            <article><span>So'zlar</span><strong id="wordCount">0</strong></article>
-            <article><span>Mavzular</span><strong id="topicCount">0</strong></article>
-            <article><span>Testlar</span><strong id="quizCount">0</strong></article>
-            <article><span>Grammar</span><strong id="grammarCount">0</strong></article>
-          </div>
-          <article class="panel daily-plan">
-            <div class="panel-head"><h3>Bugungi plan</h3><button id="startDailyPlan">Boshlash</button></div>
-            <div class="plan-grid">
-              <div><strong>20</strong><span>so'z ko'rish</span></div>
-              <div><strong>10</strong><span>typing check</span></div>
-              <div><strong>1</strong><span>grammar formula</span></div>
-            </div>
-            <p id="planHint">Har kuni kamida 20 ta so'z, 10 ta yozma tekshiruv va 1 ta formula mashqi qiling.</p>
-          </article>
+      <section class="method-board" aria-labelledby="methodTitle">
+        <div class="method-intro">
+          <span class="eyebrow">Core method</span>
+          <h2 id="methodTitle">Javobni taxmin bilan emas, tizim bilan quring.</h2>
         </div>
-        <div class="dashboard-main">
-          <article class="panel today-card">
-            <div class="panel-head"><h3>Bugungi so'z</h3><button id="todayAi" class="ghost">AI card</button></div>
-            <div id="todayWord"></div>
-          </article>
-          <article class="panel">
-            <div class="panel-head"><h3>Kuchli mavzular</h3></div>
-            <div id="topicChips" class="chips"></div>
-          </article>
-          <article class="panel progress-panel">
-            <div class="panel-head"><h3>Learning progress</h3><button id="resetProgress" class="ghost">Reset</button></div>
-            <div class="progress-grid">
-              <div><span>Known words</span><strong id="knownCount">0</strong></div>
-              <div><span>Saved words</span><strong id="savedCount">0</strong></div>
-              <div><span>Coverage</span><strong id="coverageCount">0%</strong></div>
-            </div>
-            <div class="progress-bar"><span id="coverageBar"></span></div>
-          </article>
+        <div class="method-track" aria-label="Part 1 D-R-E-F formulasi">
+          <span class="method-name">Part 1 · 30 sec</span>
+          <ol>
+            <li><b>D</b><span>Direct</span></li>
+            <li><b>R</b><span>Reason</span></li>
+            <li><b>E</b><span>Example</span></li>
+            <li><b>F</b><span>Finish</span></li>
+          </ol>
+        </div>
+        <div class="method-track extended" aria-label="Part 2 STORY plus CPR formulasi">
+          <span class="method-name">Part 2 · 2 min</span>
+          <ol>
+            <li><b>S</b><span>Situation</span></li>
+            <li><b>T</b><span>Time</span></li>
+            <li><b>O</b><span>Object</span></li>
+            <li><b>R</b><span>Reason</span></li>
+            <li><b>Y</b><span>Feeling</span></li>
+            <li class="accent"><b>C</b><span>Compare</span></li>
+            <li class="accent"><b>P</b><span>Purpose</span></li>
+            <li class="accent"><b>R</b><span>Reflect</span></li>
+          </ol>
         </div>
       </section>
 
-      <section id="vocab" class="view">
-        <div class="toolbar">
-          <input id="searchInput" type="search" placeholder="So'z, tarjima yoki example qidirish">
-          <select id="levelFilter">
-            <option value="">Level</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option>
-          </select>
-          <button id="searchBtn">Qidirish</button>
-        </div>
-        <div id="vocabList" class="word-grid"></div>
-        <button id="loadMore" class="wide">Yana ko'rsatish</button>
-      </section>
+      <nav class="action-dock" aria-label="AI Tutor bo'limlari">
+        <button type="button" data-action="generate">
+          <span>01</span><strong>Dars yaratish</strong><small>Workbook lesson</small>
+        </button>
+        <button type="button" data-action="chat">
+          <span>02</span><strong>AI Coach</strong><small>Savol va speaking</small>
+        </button>
+        <button type="button" data-action="grammar">
+          <span>03</span><strong>Grammar Lab</strong><small>Check va upgrade</small>
+        </button>
+      </nav>
 
-      <section id="learn" class="view">
-        <div class="study-layout">
-          <div class="study-main">
-            <article class="panel study-dashboard">
-              <div>
-                <span>Review queue</span>
-                <strong id="reviewDue">0</strong>
-              </div>
-              <div>
-                <span>Mastery</span>
-                <strong id="masteryScore">0%</strong>
-              </div>
-              <div>
-                <span>Typing streak</span>
-                <strong id="typingStreak">0</strong>
-              </div>
-            </article>
-            <article class="flashcard" id="flashcard">
-              <span id="flashTopic">Topic</span>
-              <h3 id="flashWord">Word</h3>
-              <p id="flashUz">Tarjima</p>
-              <blockquote id="flashExample"></blockquote>
-            </article>
-            <div class="study-actions">
-              <button id="prevCard" class="ghost">Oldingi</button>
-              <button id="hardCard" class="ghost">Qiyin</button>
-              <button id="knowCard">Bildim</button>
-              <button id="easyCard" class="ghost">Oson</button>
-              <button id="nextCard" class="ghost">Keyingi</button>
+      <section id="ai" class="studio">
+        <article id="lessonStudio" class="panel lesson-panel" aria-labelledby="lessonTitle">
+          <header class="panel-head">
+            <div>
+              <span class="section-kicker">01 · Lesson studio</span>
+              <h2 id="lessonTitle">Workbook asosida dars yarating</h2>
+              <p>Topic va darajani tanlang. AI vocabulary, grammar, speaking, quiz va homework'ni bir darsga bog'laydi.</p>
             </div>
-            <div id="savedWords" class="saved-strip"></div>
-          </div>
-          <article class="panel typing-panel">
-            <div class="panel-head"><h3>Typing check</h3><button id="revealAnswer" class="ghost">Javobni ko'rish</button></div>
-            <div class="typing-grid">
-              <input id="typingAnswer" placeholder="Tarjimani yoki inglizcha so'zni yozing">
-              <button id="checkTyping">Tekshirish</button>
-            </div>
-            <div id="typingFeedback" class="typing-feedback"></div>
-          </article>
-        </div>
-      </section>
-
-      <section id="quiz" class="view">
-        <div class="panel quiz-panel">
-          <div class="panel-head"><h3>Quiz</h3><button id="newQuiz">Yangi test</button></div>
-          <div id="quizBox"></div>
-        </div>
-      </section>
-
-      <section id="grammar" class="view">
-        <div class="grammar-command-grid">
-          <article class="panel grammar-roadmap-panel">
-            <div class="panel-head">
-              <h3>Grammar roadmap</h3>
-              <button id="startGrammarDrill" class="ghost">Formula mashq</button>
-            </div>
-            <div id="grammarRoadmap" class="roadmap-grid"></div>
-          </article>
-          <article class="panel grammar-mission-panel">
-            <div class="panel-head">
-              <h3>Grammar mission</h3>
-              <div class="panel-actions">
-                <button id="newGrammarMission" class="ghost">Yangi mission</button>
-                <button id="buildReviewDeck">Final review</button>
-              </div>
-            </div>
-            <div class="mission-stats">
-              <div><span>Started</span><strong id="grammarStartedCount">0</strong></div>
-              <div><span>Mastered</span><strong id="grammarMasteredCount">0</strong></div>
-              <div><span>Need review</span><strong id="grammarReviewCount">0</strong></div>
-            </div>
-            <div id="grammarRecommendations" class="grammar-recommendations"></div>
-            <div id="grammarMission" class="mission-card"></div>
-            <div id="grammarReviewDeck" class="review-deck"></div>
-          </article>
-        </div>
-        <div class="grid grammar-layout">
-          <article class="panel"><h3>Bo'limlar</h3><div id="grammarSections" class="list"></div></article>
-          <article class="panel"><h3>Patternlar</h3><div id="patternSummary" class="pattern-summary"></div><div id="grammarPatterns" class="list"></div></article>
-          <article class="panel detail"><h3>Detail</h3><div id="grammarDetail"></div></article>
-        </div>
-      </section>
-
-      <section id="ai" class="view">
-        <article class="panel lesson-panel">
-          <div class="panel-head"><h3>AI Lesson Generator</h3><button id="generateLesson">Dars yaratish</button></div>
+            <button type="button" id="generateLesson" class="primary-action">Dars yaratish</button>
+          </header>
           <div class="lesson-controls">
-            <select id="lessonTopic"><option value="">Topic tanlang</option></select>
-            <select id="lessonLevel">
-              <option value="">Level</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option>
-            </select>
+            <label>
+              <span>Topic</span>
+              <select id="lessonTopic"><option value="">Topic tanlang</option></select>
+            </label>
+            <label>
+              <span>CEFR daraja</span>
+              <select id="lessonLevel">
+                <option value="">Darajani tanlang</option><option>A1</option><option>A2</option><option>B1</option><option>B2</option><option>C1</option>
+              </select>
+            </label>
           </div>
-          <div id="lessonResult" class="lesson-result"></div>
+          <div id="lessonResult" class="lesson-result" aria-live="polite" aria-busy="false">
+            <div class="empty-state">
+              <span>Lesson canvas</span>
+              <strong>Topic tanlang va birinchi darsni yarating.</strong>
+              <p>Natija qisqartirilmaydi: barcha so'zlar, tarjimalar, formula, speaking va mashqlar shu yerda qoladi.</p>
+            </div>
+          </div>
         </article>
+
         <div class="ai-workspace">
-          <article class="panel chat-panel">
-            <h3>AI bilan suhbat</h3>
-            <div id="chatLog" class="chat-log"></div>
+          <article id="chatCoach" class="panel chat-panel" aria-labelledby="chatTitle">
+            <header class="panel-title-row">
+              <div>
+                <span class="section-kicker">02 · Live coach</span>
+                <h2 id="chatTitle">AI bilan ishlang</h2>
+              </div>
+              <span class="memory-chip">8-message memory</span>
+            </header>
+            <div id="chatLog" class="chat-log" role="log" aria-live="polite" aria-relevant="additions text">
+              <div class="chat-empty">
+                <strong>Biror javobingizni yuboring.</strong>
+                <p>AI xatoni tuzatadi, natural upgrade beradi, formulani tushuntiradi va bitta keyingi mashq beradi.</p>
+                <div class="prompt-chips" aria-label="Namuna savollar">
+                  <button type="button" data-prompt="Give me a Part 1 question about health.">Part 1 savol</button>
+                  <button type="button" data-prompt="Help me build a Part 2 answer about my hometown.">Part 2 javob</button>
+                  <button type="button" data-prompt="Teach me one useful C1 grammar formula with examples.">C1 formula</button>
+                </div>
+              </div>
+            </div>
             <div class="composer">
-              <textarea id="chatInput" placeholder="Inglizcha mashq, savol yoki gap yozing"></textarea>
-              <button id="sendChat">Yuborish</button>
+              <label class="visually-hidden" for="chatInput">AI Coach uchun xabar</label>
+              <textarea id="chatInput" rows="4" placeholder="Javob, savol yoki mashq yozing..."></textarea>
+              <button type="button" id="sendChat" class="send-button">Yuborish</button>
+            </div>
+            <small class="input-hint">Ctrl + Enter orqali yuborish mumkin.</small>
+          </article>
+
+          <article id="grammarLab" class="panel grammar-check-panel" aria-labelledby="grammarTitle">
+            <header class="panel-title-row">
+              <div>
+                <span class="section-kicker">03 · Grammar lab</span>
+                <h2 id="grammarTitle">Tekshiring va kuchaytiring</h2>
+              </div>
+              <span class="formula-chip">100 formula</span>
+            </header>
+            <label class="field-label" for="grammarText">English matn yoki speaking answer</label>
+            <textarea id="grammarText" class="tall" placeholder="I go to school yesterday..."></textarea>
+            <button type="button" id="checkGrammar" class="wide">To'liq tahlil qilish</button>
+            <div id="grammarResult" class="ai-result" aria-live="polite" aria-busy="false">
+              <div class="mini-empty">Score, real xatolar, natural upgrade, formula va keyingi mashq shu yerda chiqadi.</div>
             </div>
           </article>
-          <article class="panel grammar-check-panel">
-            <h3>Grammar check</h3>
-            <textarea id="grammarText" class="tall" placeholder="I go to school yesterday"></textarea>
-            <button id="checkGrammar" class="wide">Tekshirish</button>
-            <div id="grammarResult" class="ai-result"></div>
-          </article>
         </div>
-        <article class="panel mistake-panel">
-          <div class="panel-head"><h3>Mistake notebook</h3><button id="clearMistakes" class="ghost">Tozalash</button></div>
+
+        <article class="panel mistake-panel" aria-labelledby="mistakeTitle">
+          <header class="panel-head compact">
+            <div>
+              <span class="section-kicker">Personal archive</span>
+              <h2 id="mistakeTitle">Mistake notebook</h2>
+              <p>Grammar Check topgan xatolar keyingi takrorlash uchun saqlanadi.</p>
+            </div>
+            <button type="button" id="clearMistakes" class="ghost">Notebookni tozalash</button>
+          </header>
           <div id="mistakeNotebook" class="mistake-list"></div>
         </article>
       </section>
-    </section>
+
+      <footer class="site-footer">
+        <span>Answer Lab</span>
+        <p>Clear thought. Natural English. Deliberate practice.</p>
+        <a href="#app">Yuqoriga</a>
+      </footer>
+    </div>
   </main>
 
-  <dialog id="wordDialog">
-    <article class="modal-card">
-      <button id="closeDialog" class="close">&times;</button>
-      <div id="wordDetail"></div>
-    </article>
-  </dialog>
-
-  <script src="app.js?v=20260624-21"></script>
+  <script src="app.js?v=20260719-2"></script>
 </body>
 </html>

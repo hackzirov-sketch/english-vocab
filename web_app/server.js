@@ -2,10 +2,20 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 const Database = require("better-sqlite3");
+const {
+  buildChatMessages,
+  buildGrammarCheckPrompt,
+  buildLessonPrompt
+} = require("./tutor-methodology");
+const { knowledgeStats, retrieveTutorKnowledge } = require("./tutor-knowledge");
 
 const ROOT = path.resolve(__dirname, "..");
 const PUBLIC = path.join(__dirname, "public");
 const PORT = Number(process.env.PORT || 4173);
+const AI_TIMEOUT_MS = Number(process.env.AI_TIMEOUT_MS || 35_000);
+const AI_RATE_LIMIT_WINDOW_MS = Number(process.env.AI_RATE_LIMIT_WINDOW_MS || 5 * 60_000);
+const AI_RATE_LIMIT_MAX = Number(process.env.AI_RATE_LIMIT_MAX || 30);
+const aiRateLimits = new Map();
 
 loadEnv(path.join(__dirname, ".env"));
 loadEnv(path.join(ROOT, "bot", ".env"));
@@ -56,10 +66,19 @@ function send(res, code, body, type = "application/json; charset=utf-8", extraHe
 }
 
 function healthPayload() {
+  const openRouterConfigured = hasUsableKey(process.env.OPENROUTER_API_KEY);
+  const groqConfigured = hasUsableKey(process.env.GROQ_API_KEY);
   return {
     ok: true,
     service: "english-vocab-master-web",
     database: path.basename(DB_PATH),
+    aiConfigured: groqConfigured || openRouterConfigured,
+    aiProviders: {
+      groq: groqConfigured,
+      openrouter: openRouterConfigured,
+      priority: ["groq", "openrouter"]
+    },
+    tutorKnowledge: knowledgeStats(),
     time: new Date().toISOString()
   };
 }
@@ -259,7 +278,32 @@ function cleanText(text, max = 4000) {
 }
 
 function cleanAiJson(content) {
-  return String(content || "").replace(/^```json|```$/g, "").trim();
+  const cleaned = String(content || "")
+    .trim()
+    .replace(/^```(?:json)?\s*/i, "")
+    .replace(/\s*```$/, "")
+    .trim();
+  const start = cleaned.indexOf("{");
+  const end = cleaned.lastIndexOf("}");
+  return start >= 0 && end > start ? cleaned.slice(start, end + 1) : cleaned;
+}
+
+function hasUsableKey(value) {
+  return Boolean(value && !value.includes("your_") && !value.includes("xxxx"));
+}
+
+function takeAiRateLimit(req) {
+  const forwarded = String(req.headers["x-forwarded-for"] || "").split(",")[0].trim();
+  const client = forwarded || req.socket.remoteAddress || "unknown";
+  const now = Date.now();
+  const current = aiRateLimits.get(client);
+  if (!current || current.resetAt <= now) {
+    aiRateLimits.set(client, { count: 1, resetAt: now + AI_RATE_LIMIT_WINDOW_MS });
+    return { allowed: true, retryAfter: 0 };
+  }
+  current.count += 1;
+  if (current.count <= AI_RATE_LIMIT_MAX) return { allowed: true, retryAfter: 0 };
+  return { allowed: false, retryAfter: Math.max(1, Math.ceil((current.resetAt - now) / 1000)) };
 }
 
 function normalizeLesson(parsed, words, pattern, topic) {
@@ -305,31 +349,81 @@ function normalizeLesson(parsed, words, pattern, topic) {
   };
 }
 
-async function callAi(messages, temperature = 0.45, maxTokens = 900) {
-  const apiKey = process.env.OPENROUTER_API_KEY;
-  if (!apiKey || apiKey.includes("your_") || apiKey.includes("xxxx")) {
-    return { offline: true, content: null };
+async function callProvider(provider, messages, temperature, maxTokens) {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), AI_TIMEOUT_MS);
+  try {
+    const response = await fetch(`${provider.baseUrl}/chat/completions`, {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${provider.apiKey}`,
+        "Content-Type": "application/json",
+        ...provider.headers
+      },
+      signal: controller.signal,
+      body: JSON.stringify({ model: provider.model, messages, temperature, max_tokens: maxTokens })
+    });
+    if (!response.ok) throw new Error(`${provider.name} returned ${response.status}`);
+    const data = await response.json();
+    const content = data.choices?.[0]?.message?.content?.trim() || "";
+    if (!content) throw new Error(`${provider.name} returned an empty response`);
+    return { offline: false, provider: provider.name, content };
+  } finally {
+    clearTimeout(timeout);
   }
-  const baseUrl = process.env.OPENROUTER_BASE_URL || "https://openrouter.ai/api/v1";
-  const model = process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini";
-  const response = await fetch(`${baseUrl}/chat/completions`, {
-    method: "POST",
-    headers: {
-      "Authorization": `Bearer ${apiKey}`,
-      "Content-Type": "application/json",
-      "HTTP-Referer": process.env.OPENROUTER_HTTP_REFERER || "https://english-vocab-master.local",
-      "X-Title": process.env.OPENROUTER_X_TITLE || "English Vocabulary Master Web"
-    },
-    body: JSON.stringify({ model, messages, temperature, max_tokens: maxTokens })
-  });
-  if (!response.ok) throw new Error(`AI service returned ${response.status}`);
-  const data = await response.json();
-  return { offline: false, content: data.choices?.[0]?.message?.content?.trim() || "" };
+}
+
+async function callAi(messages, temperature = 0.45, maxTokens = 900) {
+  const providers = [];
+  if (hasUsableKey(process.env.GROQ_API_KEY)) {
+    providers.push({
+      name: "groq",
+      apiKey: process.env.GROQ_API_KEY,
+      baseUrl: process.env.GROQ_BASE_URL || "https://api.groq.com/openai/v1",
+      model: process.env.GROQ_MODEL || "openai/gpt-oss-120b",
+      headers: {}
+    });
+  }
+  if (hasUsableKey(process.env.OPENROUTER_API_KEY)) {
+    providers.push({
+      name: "openrouter",
+      apiKey: process.env.OPENROUTER_API_KEY,
+      baseUrl: process.env.OPENROUTER_BASE_URL || "https://openrouter.ai/api/v1",
+      model: process.env.OPENROUTER_MODEL || "openai/gpt-4o-mini",
+      headers: {
+        "HTTP-Referer": process.env.OPENROUTER_HTTP_REFERER || "https://english-vocab-master.local",
+        "X-Title": process.env.OPENROUTER_X_TITLE || "English Vocabulary Master Web"
+      }
+    });
+  }
+  if (!providers.length) return { offline: true, provider: null, content: null };
+
+  const failures = [];
+  for (const provider of providers) {
+    try {
+      return await callProvider(provider, messages, temperature, maxTokens);
+    } catch (error) {
+      failures.push(`${provider.name}: ${error.name === "AbortError" ? "timeout" : error.message}`);
+    }
+  }
+  const error = new Error(`All AI providers failed (${failures.join("; ")})`);
+  error.statusCode = 502;
+  error.publicMessage = "AI xizmatlari vaqtincha javob bermadi. Qayta urinib ko'ring.";
+  throw error;
 }
 
 async function handleApi(req, res, url) {
   if (url.pathname === "/api/health") {
     return send(res, 200, healthPayload());
+  }
+
+  if (url.pathname.startsWith("/api/ai/") && req.method === "POST") {
+    const limit = takeAiRateLimit(req);
+    if (!limit.allowed) {
+      return send(res, 429, { error: "Juda ko'p AI so'rovi yuborildi. Biroz kutib qayta urinib ko'ring." }, "application/json; charset=utf-8", {
+        "Retry-After": String(limit.retryAfter)
+      });
+    }
   }
 
   if (url.pathname === "/api/dashboard") {
@@ -490,11 +584,12 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
     const body = await parseBody(req);
     const message = cleanText(body.message, 3000);
     if (!message) return send(res, 400, { error: "Message is required" });
-    const ai = await callAi([
-      { role: "system", content: "You are an English tutor for an Uzbek learner. Teach vocabulary, grammar formulas, IELTS speaking/writing usage, and correct mistakes gently. Keep answers practical. Explain in Uzbek when helpful." },
-      { role: "user", content: message }
-    ], 0.55, 900);
-    if (ai.offline) return send(res, 200, { offline: true, reply: "AI kalit sozlanmagan. Savolingiz saqlandi, lekin javob uchun OpenRouter API key kerak." });
+    const recentContext = Array.isArray(body.history)
+      ? body.history.slice(-4).map(item => cleanText(item?.content, 800)).join(" ")
+      : "";
+    const knowledge = retrieveTutorKnowledge(`${recentContext} ${message}`, { limit: 7, maxChars: 8500 });
+    const ai = await callAi(buildChatMessages(message, body.history, knowledge.context), 0.45, 1400);
+    if (ai.offline) return send(res, 200, { offline: true, reply: "AI kalitlari sozlanmagan. Savolingiz saqlandi, lekin javob uchun Groq yoki OpenRouter API key kerak." });
     return send(res, 200, { reply: ai.content });
   }
 
@@ -519,21 +614,11 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
     if (!words.length) return send(res, 404, { error: "Lesson uchun so'z topilmadi" });
 
     const wordLines = words.map((word, index) => `${index + 1}. ${word.english} - ${word.uzbek}; formula: ${word.learning?.formula || ""}; example: ${word.example_en || ""}`).join("\n");
-    const prompt = `Create a compact but powerful English lesson for an Uzbek learner.
-Topic: ${topic || "mixed"}
-Level: ${level || "mixed"}
-
-Vocabulary:
-${wordLines}
-
-Grammar pattern:
-${pattern?.title_en || ""}
-Formula: ${pattern?.formula || ""}
-Meaning Uzbek: ${pattern?.meaning_uz || ""}
-
-Return ONLY valid JSON with:
-title_uz, goal_uz, warmup_question_en, vocab_drills (array of 10 objects: word, uzbek, sentence_en, sentence_uz, memory_tip_uz), grammar_focus (title, formula, explanation_uz, example_en, example_uz), speaking_questions (array of 3), writing_task_uz, mini_quiz (array of 5 objects: question, answer, explanation_uz), homework_uz.
-Make it practical, IELTS-friendly, and not too long.`;
+    const knowledge = retrieveTutorKnowledge(
+      `${topic} ${level} ${pattern?.title_en || ""} ${pattern?.formula || ""} ${words.map(word => word.english).join(" ")}`,
+      { limit: 8, maxChars: 9500 }
+    );
+    const prompt = buildLessonPrompt({ topic, level, wordLines, pattern, knowledgeContext: knowledge.context });
 
     const ai = await callAi([{ role: "user", content: prompt }], 0.5, 2200);
     if (ai.offline) {
@@ -582,7 +667,12 @@ Make it practical, IELTS-friendly, and not too long.`;
     const body = await parseBody(req);
     const text = cleanText(body.text, 3000);
     if (!text) return send(res, 400, { error: "Text is required" });
-    const ai = await callAi([{ role: "user", content: `Check this English text for an Uzbek learner. Return ONLY valid JSON with score, corrected, better, explanation_uz, issues, grammar_formula, practice_task. Text: "${text}"` }], 0.25, 900);
+    const knowledge = retrieveTutorKnowledge(text, {
+      types: ["grammar_formula", "pro_example", "reference_item"],
+      limit: 6,
+      maxChars: 7500
+    });
+    const ai = await callAi([{ role: "user", content: buildGrammarCheckPrompt(text, knowledge.context) }], 0.2, 1400);
     if (ai.offline) return send(res, 200, { offline: true, score: 0, corrected: text, better: text, explanation_uz: "AI kalit sozlanmagan.", issues: [] });
     const cleaned = cleanAiJson(ai.content);
     try {
@@ -684,7 +774,11 @@ const server = http.createServer(async (req, res) => {
     if (url.pathname.startsWith("/api/")) return await handleApi(req, res, url);
     serveStatic(req, res, url);
   } catch (err) {
-    send(res, 500, { error: "Server error", detail: process.env.NODE_ENV === "development" ? String(err.message || err) : undefined });
+    const statusCode = Number(err.statusCode) || 500;
+    send(res, statusCode, {
+      error: err.publicMessage || "Server error",
+      detail: process.env.NODE_ENV === "development" ? String(err.message || err) : undefined
+    });
   }
 });
 

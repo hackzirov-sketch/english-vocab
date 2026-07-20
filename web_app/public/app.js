@@ -17,6 +17,18 @@ const tg = window.Telegram?.WebApp;
 if (tg) {
   tg.ready();
   tg.expand();
+  document.documentElement.classList.add("telegram-webapp");
+  try {
+    tg.setHeaderColor?.("#07111f");
+    tg.setBackgroundColor?.("#07111f");
+    tg.setBottomBarColor?.("#081321");
+  } catch {
+    // Older Telegram clients do not expose every color method.
+  }
+}
+
+if (window.matchMedia("(max-width: 760px)").matches) {
+  $("methodBoard")?.removeAttribute("open");
 }
 
 async function api(path, options = {}) {
@@ -354,7 +366,11 @@ document.querySelector(".prompt-chips").addEventListener("click", event => {
 
 document.querySelector(".action-dock").addEventListener("click", event => {
   const action = event.target.closest("[data-action]")?.dataset.action;
-  if (action === "generate") generateLessonPlan();
+  tg?.HapticFeedback?.selectionChanged?.();
+  if (action === "generate") {
+    $("lessonStudio").scrollIntoView({ behavior: "smooth", block: "start" });
+    $("lessonTopic").focus({ preventScroll: true });
+  }
   if (action === "chat") {
     $("chatCoach").scrollIntoView({ behavior: "smooth", block: "start" });
     $("chatInput").focus({ preventScroll: true });
@@ -364,6 +380,27 @@ document.querySelector(".action-dock").addEventListener("click", event => {
     $("grammarText").focus({ preventScroll: true });
   }
 });
+
+const dockTargets = [
+  ["generate", $("lessonStudio")],
+  ["chat", $("chatCoach")],
+  ["grammar", $("grammarLab")]
+];
+
+if ("IntersectionObserver" in window) {
+  const dockObserver = new IntersectionObserver(entries => {
+    const visible = entries
+      .filter(entry => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    if (!visible) return;
+    const activeAction = dockTargets.find(([, target]) => target === visible.target)?.[0];
+    document.querySelectorAll(".action-dock [data-action]").forEach(button => {
+      if (button.dataset.action === activeAction) button.setAttribute("aria-current", "page");
+      else button.removeAttribute("aria-current");
+    });
+  }, { rootMargin: "-22% 0px -58%", threshold: [0, .2, .5] });
+  dockTargets.forEach(([, target]) => target && dockObserver.observe(target));
+}
 
 renderMistakeNotebook();
 Promise.all([loadTopics(), loadSystemStatus()]).catch(error => {

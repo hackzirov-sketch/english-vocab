@@ -13,6 +13,13 @@ const state = {
 };
 
 const $ = (id) => document.getElementById(id);
+function setActiveDock(action) {
+  document.querySelectorAll(".action-dock [data-action]").forEach(button => {
+    if (button.dataset.action === action) button.setAttribute("aria-current", "page");
+    else button.removeAttribute("aria-current");
+  });
+}
+
 const tg = window.Telegram?.WebApp;
 if (tg) {
   tg.ready();
@@ -222,6 +229,7 @@ function renderLesson(data) {
 }
 
 async function generateLessonPlan() {
+  setActiveDock("generate");
   const topic = $("lessonTopic").value;
   const level = $("lessonLevel").value;
   const target = $("lessonResult");
@@ -244,6 +252,7 @@ async function generateLessonPlan() {
 }
 
 async function sendChatMessage() {
+  setActiveDock("chat");
   const input = $("chatInput");
   const text = input.value.trim();
   if (!text) {
@@ -291,28 +300,70 @@ function renderIssue(issue, index) {
     </article>`;
 }
 
+function renderCriterion(item) {
+  if (!item || typeof item !== "object") return "";
+  const score = Math.max(0, Math.min(10, Number(item.score) || 0));
+  return `<article><span>${escapeHtml(item.criterion || "Criterion")}</span><strong>${escapeHtml(score)}/10</strong><p>${escapeHtml(item.reason_uz || "")}</p></article>`;
+}
+
+function renderRecommendation(item, index) {
+  if (typeof item === "string") return `<article><span>${index + 1}</span><div><strong>Tavsiya</strong><p>${escapeHtml(item)}</p></div></article>`;
+  const priority = ["Now", "Next", "Stretch"].includes(item?.priority) ? item.priority : "Next";
+  return `<article class="recommendation-card priority-${priority.toLowerCase()}">
+    <span>${escapeHtml(priority)}</span>
+    <div>
+      <strong>${escapeHtml(item?.area || `Tavsiya ${index + 1}`)}</strong>
+      ${item?.evidence ? `<small>Dalil: ${escapeHtml(item.evidence)}</small>` : ""}
+      <p>${escapeHtml(item?.advice_uz || "")}</p>
+      ${item?.example_en ? `<em>${escapeHtml(item.example_en)}</em>` : ""}
+    </div>
+  </article>`;
+}
+
+function renderVocabularyUpgrade(item) {
+  if (typeof item === "string") return `<article><strong>${escapeHtml(item)}</strong></article>`;
+  return `<article><div><del>${escapeHtml(item?.original || "")}</del><span aria-hidden="true">→</span><strong>${escapeHtml(item?.upgrade || "")}</strong></div>${item?.reason_uz ? `<p>${escapeHtml(item.reason_uz)}</p>` : ""}</article>`;
+}
+
 function renderGrammarResult(data) {
   const score = Math.max(0, Math.min(10, Number(data.score) || 0));
   const scoreClass = `score-${Math.round(score)}`;
   const issues = Array.isArray(data.issues) ? data.issues : [];
+  const criteria = Array.isArray(data.criterion_scores) ? data.criterion_scores : [];
+  const strengths = Array.isArray(data.strengths) ? data.strengths : [];
+  const recommendations = Array.isArray(data.recommendations) ? data.recommendations : [];
+  const vocabularyUpgrades = Array.isArray(data.vocabulary_upgrades) ? data.vocabulary_upgrades : [];
+  const cefr = data.estimated_cefr && typeof data.estimated_cefr === "object" ? data.estimated_cefr : null;
+  const plan = data.practice_plan && typeof data.practice_plan === "object" ? data.practice_plan : null;
+  const reportLabel = data.task_type === "speaking" ? "CEFR Speaking report" : data.task_type === "writing" ? "CEFR Writing report" : "Grammar report";
   return `
     <div class="grammar-report">
       <header class="report-head">
         <div class="score-dial ${scoreClass}"><strong>${escapeHtml(score)}</strong><span>/10</span></div>
-        <div><span>Grammar report</span><h3>${score >= 8 ? "Strong answer" : score >= 5 ? "Good base, refine it" : "Build the foundation"}</h3><p>${escapeHtml(data.explanation_uz || data.raw || "")}</p></div>
+        <div><span>${reportLabel}</span><h3>${score >= 8 ? "Strong answer" : score >= 5 ? "Good base, refine it" : "Build the foundation"}</h3><p>${escapeHtml(data.explanation_uz || data.raw || "")}</p></div>
       </header>
+      ${cefr ? `<section class="cefr-estimate"><span>Taxminiy CEFR · ${escapeHtml(cefr.confidence || "low")} confidence</span><strong>${escapeHtml(cefr.level || "—")}</strong><p>${escapeHtml(cefr.evidence_uz || "")}</p></section>` : ""}
+      ${criteria.length ? `<section class="criteria-block"><div class="report-section-head"><span>CEFR mezonlari</span><strong>${escapeHtml(data.task_type || "English")}</strong></div><div class="criteria-grid">${criteria.map(renderCriterion).join("")}</div></section>` : ""}
+      ${strengths.length ? `<section class="strengths-block"><div class="report-section-head"><span>Saqlab qoling</span><strong>Kuchli tomonlar</strong></div><ul>${strengths.map(item => `<li>${escapeHtml(item)}</li>`).join("")}</ul></section>` : ""}
       <div class="comparison-grid">
         <article><span>Corrected · minimum edit</span><p>${escapeHtml(data.corrected || data.corrected_answer || data.raw || "")}</p></article>
         <article class="upgrade"><span>Natural upgrade · optional</span><p>${escapeHtml(data.better || data.better_version || data.corrected || "")}</p></article>
       </div>
       ${issues.length ? `<section class="issues-block"><h4>Real issues</h4><div class="issue-list">${issues.map(renderIssue).join("")}</div></section>` : `<div class="no-issues">Real grammar xatosi topilmadi. Upgrade faqat uslubiy variant.</div>`}
+      ${recommendations.length ? `<section class="recommendations-block"><div class="report-section-head"><span>Shaxsiy yo‘l xaritasi</span><strong>${recommendations.length} ta ustuvor tavsiya</strong></div><div class="recommendation-list">${recommendations.map(renderRecommendation).join("")}</div></section>` : ""}
+      ${vocabularyUpgrades.length ? `<section class="vocab-upgrades"><div class="report-section-head"><span>Lexical resource</span><strong>Vocabulary upgrades</strong></div><div>${vocabularyUpgrades.map(renderVocabularyUpgrade).join("")}</div></section>` : ""}
       ${data.grammar_formula ? `<section class="report-formula"><span>Reusable formula</span><code>${escapeHtml(data.grammar_formula)}</code></section>` : ""}
       ${data.practice_task ? `<section class="report-task"><span>Next micro-task</span><strong>${escapeHtml(data.practice_task)}</strong></section>` : ""}
+      ${plan ? `<section class="practice-plan"><div class="report-section-head"><span>Amaliy reja</span><strong>Now → Next → Stretch</strong></div><div><article><span>Now</span><p>${escapeHtml(plan.now || "")}</p></article><article><span>Next</span><p>${escapeHtml(plan.next || "")}</p></article><article><span>Stretch</span><p>${escapeHtml(plan.stretch || "")}</p></article></div></section>` : ""}
+      ${data.follow_up_prompt ? `<section class="follow-up-task"><span>Keyingi javob</span><strong>${escapeHtml(data.follow_up_prompt)}</strong></section>` : ""}
+      ${data.delivery_note_uz ? `<p class="delivery-note">${escapeHtml(data.delivery_note_uz)}</p>` : ""}
     </div>`;
 }
 
 async function checkGrammar() {
+  setActiveDock("grammar");
   const text = $("grammarText").value.trim();
+  const mode = $("analysisMode").value;
   if (!text) {
     $("grammarText").focus();
     return;
@@ -323,10 +374,10 @@ async function checkGrammar() {
   target.setAttribute("aria-busy", "true");
   target.innerHTML = `<div class="analysis-loading"><i aria-hidden="true"></i><span>Accuracy, naturalness va formula tekshirilmoqda...</span></div>`;
   try {
-    const data = await api("/api/ai/grammar-check", { method: "POST", body: JSON.stringify({ text }) });
+    const data = await api("/api/ai/grammar-check", { method: "POST", body: JSON.stringify({ text, mode }) });
     addMistake({
-      type: "Grammar check",
-      title: `Score ${data.score ?? "-"}/10`,
+      type: mode === "speaking" ? "CEFR Speaking" : mode === "writing" ? "CEFR Writing" : "Grammar check",
+      title: `${data.estimated_cefr?.level ? `${data.estimated_cefr.level} · ` : ""}Score ${data.score ?? "-"}/10`,
       original: text,
       corrected: data.corrected || data.corrected_answer || "",
       note: data.explanation_uz || data.raw || "",
@@ -394,10 +445,7 @@ if ("IntersectionObserver" in window) {
       .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
     if (!visible) return;
     const activeAction = dockTargets.find(([, target]) => target === visible.target)?.[0];
-    document.querySelectorAll(".action-dock [data-action]").forEach(button => {
-      if (button.dataset.action === activeAction) button.setAttribute("aria-current", "page");
-      else button.removeAttribute("aria-current");
-    });
+    setActiveDock(activeAction);
   }, { rootMargin: "-22% 0px -58%", threshold: [0, .2, .5] });
   dockTargets.forEach(([, target]) => target && dockObserver.observe(target));
 }

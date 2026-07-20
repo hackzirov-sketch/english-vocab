@@ -588,7 +588,7 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
       ? body.history.slice(-4).map(item => cleanText(item?.content, 800)).join(" ")
       : "";
     const knowledge = retrieveTutorKnowledge(`${recentContext} ${message}`, { limit: 7, maxChars: 8500 });
-    const ai = await callAi(buildChatMessages(message, body.history, knowledge.context), 0.45, 1400);
+    const ai = await callAi(buildChatMessages(message, body.history, knowledge.context), 0.4, 2200);
     if (ai.offline) return send(res, 200, { offline: true, reply: "AI kalitlari sozlanmagan. Savolingiz saqlandi, lekin javob uchun Groq yoki OpenRouter API key kerak." });
     return send(res, 200, { reply: ai.content, provider: ai.provider });
   }
@@ -666,13 +666,14 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
   if (url.pathname === "/api/ai/grammar-check" && req.method === "POST") {
     const body = await parseBody(req);
     const text = cleanText(body.text, 3000);
+    const mode = ["speaking", "writing"].includes(body.mode) ? body.mode : "auto";
     if (!text) return send(res, 400, { error: "Text is required" });
     const knowledge = retrieveTutorKnowledge(text, {
       types: ["grammar_formula", "pro_example", "reference_item"],
       limit: 6,
       maxChars: 7500
     });
-    const ai = await callAi([{ role: "user", content: buildGrammarCheckPrompt(text, knowledge.context) }], 0.2, 1400);
+    const ai = await callAi([{ role: "user", content: buildGrammarCheckPrompt(text, knowledge.context, mode) }], 0.18, 2600);
     if (ai.offline) return send(res, 200, { offline: true, score: 0, corrected: text, better: text, explanation_uz: "AI kalit sozlanmagan.", issues: [] });
     const cleaned = cleanAiJson(ai.content);
     try {

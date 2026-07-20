@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#07111f">
   <title>Answer Lab — AI Tutor</title>
-  <link rel="stylesheet" href="styles.css?v=20260720-1">
+  <link rel="stylesheet" href="styles.css?v=20260720-2">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
@@ -145,7 +145,17 @@
               </div>
               <span class="formula-chip">100 formula</span>
             </header>
-            <label class="field-label" for="grammarText">English matn yoki speaking answer</label>
+            <div class="analysis-toolbar">
+              <label class="field-label" for="grammarText">English matn yoki speaking answer</label>
+              <label class="analysis-mode" for="analysisMode">
+                <span>Tahlil turi</span>
+                <select id="analysisMode">
+                  <option value="auto">Avtomatik</option>
+                  <option value="speaking">CEFR Speaking</option>
+                  <option value="writing">CEFR Writing</option>
+                </select>
+              </label>
+            </div>
             <textarea id="grammarText" class="tall" placeholder="I go to school yesterday..."></textarea>
             <button type="button" id="checkGrammar" class="wide">To'liq tahlil qilish</button>
             <div id="grammarResult" class="ai-result" aria-live="polite" aria-busy="false">
@@ -175,6 +185,6 @@
     </div>
   </main>
 
-  <script src="app.js?v=20260720-1"></script>
+  <script src="app.js?v=20260720-2"></script>
 </body>
 </html>

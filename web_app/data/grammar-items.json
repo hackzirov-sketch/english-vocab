@@ -1,0 +1,2514 @@
+[
+  {
+    "id": "grammar-001-not-only-auxiliary-subject-verb-but-also",
+    "formula_number": 1,
+    "title": "Not only + auxiliary + subject + verb, but also...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Not only + aux + subject + verb, but + subject + also + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Not only does technology make learning more accessible, but it also allows students to study at their own pace.",
+    "example_uz": "Texnologiya nafaqat o'rganishni yanada qulay qiladi, balki o'quvchilarga o'z tezligida o'qish imkonini ham beradi.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Not only does technology make learning more accessible, but it also allows students to study at their own pace.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "personal_growth",
+      "technology",
+      "work_studies"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-002-never-have-has-subject-past-participle",
+    "formula_number": 2,
+    "title": "Never have/has + subject + past participle...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Never + aux + subject + V3",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Never have young people had access to such a wide range of learning resources.",
+    "example_uz": "Yoshlar hech qachon hozirgidek keng ko'lamli o'quv resurslariga ega bo'lmagan.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Never have young people had access to such a wide range of learning resources.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-003-rarely-do-does-subject-verb",
+    "formula_number": 3,
+    "title": "Rarely do/does + subject + verb...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Rarely + aux + subject + base verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Rarely do schools achieve lasting progress without consistent teacher development.",
+    "example_uz": "Maktablar muntazam ustozlar rivojisiz kamdan-kam hollarda barqaror taraqqiyotga erishadi.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Rarely do schools achieve lasting progress without consistent teacher development.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "personal_growth",
+      "success"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-004-seldom-do-does-subject-verb",
+    "formula_number": 4,
+    "title": "Seldom do/does + subject + verb...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Seldom + aux + subject + base verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Seldom do learners become fluent without regular exposure to real communication.",
+    "example_uz": "O'rganuvchilar haqiqiy muloqotga muntazam duch kelmasdan kamdan-kam hollarda ravon gapira boshlaydi.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Seldom do learners become fluent without regular exposure to real communication.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "communication",
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-005-under-no-circumstances-should-subject-verb",
+    "formula_number": 5,
+    "title": "Under no circumstances should + subject + verb...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Under no circumstances + should + subject + base verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Under no circumstances should students rely only on memorisation when preparing for advanced exams.",
+    "example_uz": "Yuqori darajadagi imtihonlarga tayyorlanishda o'quvchilar hech qanday holatda faqat yodlashga tayanmasligi kerak.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Under no circumstances should students rely only on memorisation when preparing for advanced exams.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-006-on-no-account-should-subject-verb",
+    "formula_number": 6,
+    "title": "On no account should + subject + verb...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "On no account + should + subject + base verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "On no account should academic writing be filled with unsupported claims.",
+    "example_uz": "Akademik yozuv hech qanday holatda dalilsiz fikrlar bilan to'ldirilmasligi kerak.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "On no account should academic writing be filled with unsupported claims.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-007-only-when-clause-auxiliary-subject-verb",
+    "formula_number": 7,
+    "title": "Only when + clause + auxiliary + subject + verb...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Only when + clause + aux + subject + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Only when students understand the purpose of learning do they become truly motivated.",
+    "example_uz": "O'quvchilar ta'limning maqsadini tushungandagina ular haqiqiy motivatsiyaga ega bo'lishadi.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Only when students understand the purpose of learning do they become truly motivated.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-008-only-after-noun-gerund-clause-auxiliary-subject-verb",
+    "formula_number": 8,
+    "title": "Only after + noun/gerund/clause + auxiliary + subject + verb...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Only after + noun/gerund/clause + aux + subject + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Only after analysing their mistakes can learners improve their speaking accuracy.",
+    "example_uz": "O'rganuvchilar xatolarini tahlil qilgandan keyingina speaking aniqligini yaxshilay oladi.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Only after analysing their mistakes can learners improve their speaking accuracy.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-009-only-by-gerund-can-subject-verb",
+    "formula_number": 9,
+    "title": "Only by + gerund + can + subject + verb...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Only by + -ing + can + subject + base verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Only by practising consistently can learners turn grammar rules into natural speech.",
+    "example_uz": "O'rganuvchilar faqat muntazam mashq qilish orqali grammatik qoidalarni tabiiy nutqqa aylantira oladi.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Only by practising consistently can learners turn grammar rules into natural speech.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-010-not-until-time-clause-auxiliary-subject-verb",
+    "formula_number": 10,
+    "title": "Not until + time/clause + auxiliary + subject + verb...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Not until + time/clause + aux + subject + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Not until learners use new structures in real answers do they understand their value.",
+    "example_uz": "O'rganuvchilar yangi strukturalarni haqiqiy javoblarda ishlatmaguncha ularning qiymatini tushunmaydi.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Not until learners use new structures in real answers do they understand their value.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-011-had-subject-v3-subject-would-have-v3",
+    "formula_number": 11,
+    "title": "Had + subject + V3, subject would have V3...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Had + subject + V3, subject + would have + V3",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Had schools invested earlier in digital tools, remote learning would have been more effective.",
+    "example_uz": "Maktablar raqamli vositalarga ertaroq sarmoya qilganida, masofaviy ta'lim samaraliroq bo'lar edi.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Had schools invested earlier in digital tools, remote learning would have been more effective.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "personal_growth",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-012-were-it-not-for-noun-phrase",
+    "formula_number": 12,
+    "title": "Were it not for + noun phrase...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Were it not for + noun phrase, subject + would + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Were it not for supportive teachers, many students would lose confidence in difficult subjects.",
+    "example_uz": "Qo'llab-quvvatlovchi ustozlar bo'lmaganida, ko'plab o'quvchilar qiyin fanlarda o'ziga ishonchini yo'qotar edi.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Were it not for supportive teachers, many students would lose confidence in difficult subjects.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-013-should-subject-verb",
+    "formula_number": 13,
+    "title": "Should + subject + verb...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Should + subject + base verb, subject + will/can/should + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Should students face difficulties, they can ask for feedback before repeating the task.",
+    "example_uz": "O'quvchilar qiyinchilikka duch kelsa, vazifani qayta bajarishdan oldin fikr-mulohaza so'rashi mumkin.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Should students face difficulties, they can ask for feedback before repeating the task.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-014-so-adjective-be-subject-that",
+    "formula_number": 14,
+    "title": "So + adjective + be + subject + that...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "So + adjective + be + subject + that + result",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "So important is feedback that learners often improve faster after one detailed correction.",
+    "example_uz": "Fikr-mulohaza shunchalik muhimki, o'rganuvchilar ko'pincha bitta batafsil tuzatishdan keyin tezroq rivojlanadi.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "So important is feedback that learners often improve faster after one detailed correction.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-015-little-did-subject-know-that",
+    "formula_number": 15,
+    "title": "Little did + subject + know that...",
+    "level": "C1",
+    "category": "Inversion & Emphasis Structures",
+    "rule_uz": "Inversion gap boshida negative/limiting adverb yoki shart struktura kelganda yordamchi fe'lni subjectdan oldinga chiqaradi. Bu formal writing va kuchli speaking uchun juda foydali.",
+    "structure": "Little did + subject + know + that + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Little did the students know that one small habit would change their entire approach to learning.",
+    "example_uz": "O'quvchilar bitta kichik odat ularning o'qishga bo'lgan butun yondashuvini o'zgartirishini bilmagan edi.",
+    "wrong_uz": "triggerdan keyin oddiy word order ishlatiladi yoki auxiliary tushib qoladi.",
+    "correct_en": "Little did the students know that one small habit would change their entire approach to learning.",
+    "upgrade": {
+      "source": "Simple: Students can improve with practice. → Pro: Only by practising consistently can students achieve lasting improvement.",
+      "simple": "Students can improve with practice.",
+      "advanced": "Only by practising consistently can students achieve lasting improvement."
+    },
+    "topics": [
+      "education",
+      "daily_routine",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-016-what-matters-most-is",
+    "formula_number": 16,
+    "title": "What matters most is...",
+    "level": "B2-C1",
+    "category": "Cleft Sentences & Focus Formulas",
+    "rule_uz": "Cleft formulalar fikrning muhim qismini ajratadi va javobni aniqroq, kuchliroq va academic qiladi.",
+    "structure": "What matters most is + noun phrase / that-clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "What matters most is not how much students memorise, but how effectively they apply what they learn.",
+    "example_uz": "Eng muhimi o'quvchilarning qancha yodlashi emas, balki o'rgangan narsasini qanchalik samarali qo'llay olishidir.",
+    "wrong_uz": "cleft formula ichida 'is/that' noto'g'ri qo'yiladi yoki gap ikki marta takrorlanadi.",
+    "correct_en": "What matters most is not how much students memorise, but how effectively they apply what they learn.",
+    "upgrade": {
+      "source": "Simple: Practice is important. → Pro: What matters most is how effectively learners apply what they practise.",
+      "simple": "Practice is important.",
+      "advanced": "What matters most is how effectively learners apply what they practise."
+    },
+    "topics": [
+      "education",
+      "learning_style"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-017-what-makes-x-adjective-is",
+    "formula_number": 17,
+    "title": "What makes X adjective is...",
+    "level": "B2-C1",
+    "category": "Cleft Sentences & Focus Formulas",
+    "rule_uz": "Cleft formulalar fikrning muhim qismini ajratadi va javobni aniqroq, kuchliroq va academic qiladi.",
+    "structure": "What makes + noun + adjective + is + noun/that-clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "What makes feedback effective is that it shows learners exactly where improvement is needed.",
+    "example_uz": "Fikr-mulohazani samarali qiladigan jihat shuki, u o'rganuvchilarga aynan qayerda yaxshilanish kerakligini ko'rsatadi.",
+    "wrong_uz": "cleft formula ichida 'is/that' noto'g'ri qo'yiladi yoki gap ikki marta takrorlanadi.",
+    "correct_en": "What makes feedback effective is that it shows learners exactly where improvement is needed.",
+    "upgrade": {
+      "source": "Simple: Practice is important. → Pro: What matters most is how effectively learners apply what they practise.",
+      "simple": "Practice is important.",
+      "advanced": "What matters most is how effectively learners apply what they practise."
+    },
+    "topics": [
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-018-it-is-was-x-that",
+    "formula_number": 18,
+    "title": "It is/was X that...",
+    "level": "B2-C1",
+    "category": "Cleft Sentences & Focus Formulas",
+    "rule_uz": "Cleft formulalar fikrning muhim qismini ajratadi va javobni aniqroq, kuchliroq va academic qiladi.",
+    "structure": "It is/was + focus element + that + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "It is consistency that allows learners to make visible progress over time.",
+    "example_uz": "Vaqt o'tishi bilan o'rganuvchilarga sezilarli rivojlanish imkonini beradigan narsa izchillikdir.",
+    "wrong_uz": "cleft formula ichida 'is/that' noto'g'ri qo'yiladi yoki gap ikki marta takrorlanadi.",
+    "correct_en": "It is consistency that allows learners to make visible progress over time.",
+    "upgrade": {
+      "source": "Simple: Practice is important. → Pro: What matters most is how effectively learners apply what they practise.",
+      "simple": "Practice is important.",
+      "advanced": "What matters most is how effectively learners apply what they practise."
+    },
+    "topics": [
+      "success"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-019-all-subject-need-want-is",
+    "formula_number": 19,
+    "title": "All + subject + need/want + is...",
+    "level": "B2-C1",
+    "category": "Cleft Sentences & Focus Formulas",
+    "rule_uz": "Cleft formulalar fikrning muhim qismini ajratadi va javobni aniqroq, kuchliroq va academic qiladi.",
+    "structure": "All + subject + need/want + is + noun/to-verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "All many learners need is a clear system that helps them practise regularly.",
+    "example_uz": "Ko'plab o'rganuvchilarga kerak bo'lgan narsa muntazam mashq qilishga yordam beradigan aniq tizimdir.",
+    "wrong_uz": "cleft formula ichida 'is/that' noto'g'ri qo'yiladi yoki gap ikki marta takrorlanadi.",
+    "correct_en": "All many learners need is a clear system that helps them practise regularly.",
+    "upgrade": {
+      "source": "Simple: Practice is important. → Pro: What matters most is how effectively learners apply what they practise.",
+      "simple": "Practice is important.",
+      "advanced": "What matters most is how effectively learners apply what they practise."
+    },
+    "topics": [],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-020-the-reason-why-is-that",
+    "formula_number": 20,
+    "title": "The reason why... is that...",
+    "level": "B2-C1",
+    "category": "Cleft Sentences & Focus Formulas",
+    "rule_uz": "Cleft formulalar fikrning muhim qismini ajratadi va javobni aniqroq, kuchliroq va academic qiladi.",
+    "structure": "The reason why + clause + is that + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The reason why many students struggle with speaking is that they know grammar but rarely use it actively.",
+    "example_uz": "Ko'plab o'quvchilar speakingda qiynalishining sababi shundaki, ular grammatikani biladi, lekin uni kamdan-kam faol ishlatadi.",
+    "wrong_uz": "cleft formula ichida 'is/that' noto'g'ri qo'yiladi yoki gap ikki marta takrorlanadi.",
+    "correct_en": "The reason why many students struggle with speaking is that they know grammar but rarely use it actively.",
+    "upgrade": {
+      "source": "Simple: Practice is important. → Pro: What matters most is how effectively learners apply what they practise.",
+      "simple": "Practice is important.",
+      "advanced": "What matters most is how effectively learners apply what they practise."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-021-the-problem-with-is-that",
+    "formula_number": 21,
+    "title": "The problem with... is that...",
+    "level": "B2-C1",
+    "category": "Cleft Sentences & Focus Formulas",
+    "rule_uz": "Cleft formulalar fikrning muhim qismini ajratadi va javobni aniqroq, kuchliroq va academic qiladi.",
+    "structure": "The problem with + noun/gerund + is that + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The problem with passive learning is that students may understand rules but fail to use them naturally.",
+    "example_uz": "Passiv o'rganishning muammosi shundaki, o'quvchilar qoidalarni tushunishi mumkin, lekin ularni tabiiy ishlata olmaydi.",
+    "wrong_uz": "cleft formula ichida 'is/that' noto'g'ri qo'yiladi yoki gap ikki marta takrorlanadi.",
+    "correct_en": "The problem with passive learning is that students may understand rules but fail to use them naturally.",
+    "upgrade": {
+      "source": "Simple: Practice is important. → Pro: What matters most is how effectively learners apply what they practise.",
+      "simple": "Practice is important.",
+      "advanced": "What matters most is how effectively learners apply what they practise."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-022-the-point-i-am-trying-to-make-is-that",
+    "formula_number": 22,
+    "title": "The point I am trying to make is that...",
+    "level": "B2-C1",
+    "category": "Cleft Sentences & Focus Formulas",
+    "rule_uz": "Cleft formulalar fikrning muhim qismini ajratadi va javobni aniqroq, kuchliroq va academic qiladi.",
+    "structure": "The point I am trying to make is that + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The point I am trying to make is that advanced grammar becomes useful only when learners use it in context.",
+    "example_uz": "Aytmoqchi bo'lgan asosiy fikrim shuki, kuchli grammatika faqat kontekstda ishlatilganda foydali bo'ladi.",
+    "wrong_uz": "cleft formula ichida 'is/that' noto'g'ri qo'yiladi yoki gap ikki marta takrorlanadi.",
+    "correct_en": "The point I am trying to make is that advanced grammar becomes useful only when learners use it in context.",
+    "upgrade": {
+      "source": "Simple: Practice is important. → Pro: What matters most is how effectively learners apply what they practise.",
+      "simple": "Practice is important.",
+      "advanced": "What matters most is how effectively learners apply what they practise."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-023-what-should-be-emphasized-is",
+    "formula_number": 23,
+    "title": "What should be emphasized is...",
+    "level": "B2-C1",
+    "category": "Cleft Sentences & Focus Formulas",
+    "rule_uz": "Cleft formulalar fikrning muhim qismini ajratadi va javobni aniqroq, kuchliroq va academic qiladi.",
+    "structure": "What should be emphasized is + noun/that-clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "What should be emphasized is that fluency and accuracy should develop together.",
+    "example_uz": "Ta'kidlanishi kerak bo'lgan jihat shuki, ravonlik va aniqlik birga rivojlanishi kerak.",
+    "wrong_uz": "cleft formula ichida 'is/that' noto'g'ri qo'yiladi yoki gap ikki marta takrorlanadi.",
+    "correct_en": "What should be emphasized is that fluency and accuracy should develop together.",
+    "upgrade": {
+      "source": "Simple: Practice is important. → Pro: What matters most is how effectively learners apply what they practise.",
+      "simple": "Practice is important.",
+      "advanced": "What matters most is how effectively learners apply what they practise."
+    },
+    "topics": [],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-024-it-is-not-x-but-y-that",
+    "formula_number": 24,
+    "title": "It is not X but Y that...",
+    "level": "B2-C1",
+    "category": "Cleft Sentences & Focus Formulas",
+    "rule_uz": "Cleft formulalar fikrning muhim qismini ajratadi va javobni aniqroq, kuchliroq va academic qiladi.",
+    "structure": "It is not + X + but + Y + that + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "It is not the number of words but the way they are used that makes speech sound advanced.",
+    "example_uz": "Nutqni kuchli ko'rsatadigan narsa so'zlar soni emas, balki ularning qanday ishlatilishidir.",
+    "wrong_uz": "cleft formula ichida 'is/that' noto'g'ri qo'yiladi yoki gap ikki marta takrorlanadi.",
+    "correct_en": "It is not the number of words but the way they are used that makes speech sound advanced.",
+    "upgrade": {
+      "source": "Simple: Practice is important. → Pro: What matters most is how effectively learners apply what they practise.",
+      "simple": "Practice is important.",
+      "advanced": "What matters most is how effectively learners apply what they practise."
+    },
+    "topics": [],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-025-where-x-becomes-important-is",
+    "formula_number": 25,
+    "title": "Where X becomes important is...",
+    "level": "B2-C1",
+    "category": "Cleft Sentences & Focus Formulas",
+    "rule_uz": "Cleft formulalar fikrning muhim qismini ajratadi va javobni aniqroq, kuchliroq va academic qiladi.",
+    "structure": "Where + noun + becomes important + is + in/when/that-clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Where grammar becomes important is in helping learners express complex ideas clearly.",
+    "example_uz": "Grammatika muhim bo'ladigan joy o'rganuvchilarga murakkab fikrlarni aniq ifodalashda yordam berishidir.",
+    "wrong_uz": "cleft formula ichida 'is/that' noto'g'ri qo'yiladi yoki gap ikki marta takrorlanadi.",
+    "correct_en": "Where grammar becomes important is in helping learners express complex ideas clearly.",
+    "upgrade": {
+      "source": "Simple: Practice is important. → Pro: What matters most is how effectively learners apply what they practise.",
+      "simple": "Practice is important.",
+      "advanced": "What matters most is how effectively learners apply what they practise."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-026-having-past-participle",
+    "formula_number": 26,
+    "title": "Having + past participle,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Having + V3, subject + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Having analysed the feedback, the students revised their essays more effectively.",
+    "example_uz": "Fikr-mulohazani tahlil qilgach, o'quvchilar insholarini ancha samarali qayta ishladi.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Having analysed the feedback, the students revised their essays more effectively.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-027-having-been-past-participle",
+    "formula_number": 27,
+    "title": "Having been + past participle,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Having been + V3, subject + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Having been exposed to authentic materials, learners became more confident in real conversations.",
+    "example_uz": "Asl materiallar bilan ishlagach, o'rganuvchilar haqiqiy suhbatlarda o'ziga ishonchliroq bo'ldi.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Having been exposed to authentic materials, learners became more confident in real conversations.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "communication",
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-028-given-noun-phrase",
+    "formula_number": 28,
+    "title": "Given + noun phrase,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Given + noun phrase, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Given the importance of communication, speaking practice should be part of every lesson.",
+    "example_uz": "Muloqotning muhimligini hisobga olsak, speaking mashqi har bir darsning bir qismi bo'lishi kerak.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Given the importance of communication, speaking practice should be part of every lesson.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "communication",
+      "education",
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-029-considering-noun-phrase",
+    "formula_number": 29,
+    "title": "Considering + noun phrase,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Considering + noun phrase, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Considering the pressure students face, schools should teach practical learning strategies.",
+    "example_uz": "O'quvchilar duch keladigan bosimni hisobga olsak, maktablar amaliy o'rganish strategiyalarini o'rgatishi kerak.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Considering the pressure students face, schools should teach practical learning strategies.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "education",
+      "personal_growth",
+      "stress_management"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-030-faced-with-noun-phrase",
+    "formula_number": 30,
+    "title": "Faced with + noun phrase,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Faced with + noun phrase, subject + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Faced with limited time, learners need a system that prioritises the most useful structures.",
+    "example_uz": "Vaqt cheklanganida, o'rganuvchilarga eng foydali strukturalarni ustuvor qo'yadigan tizim kerak.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Faced with limited time, learners need a system that prioritises the most useful structures.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-031-driven-by-noun-phrase",
+    "formula_number": 31,
+    "title": "Driven by + noun phrase,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Driven by + noun phrase, subject + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Driven by the demand for flexible learning, many schools have adopted online platforms.",
+    "example_uz": "Moslashuvchan ta'limga talab ortgani sababli, ko'plab maktablar onlayn platformalarni joriy qildi.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Driven by the demand for flexible learning, many schools have adopted online platforms.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "education",
+      "personal_growth",
+      "social_media",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-032-based-on-noun-phrase",
+    "formula_number": 32,
+    "title": "Based on + noun phrase,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Based on + noun phrase, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Based on the results, the teacher adjusted the lesson plan for the next group.",
+    "example_uz": "Natijalarga asoslanib, o'qituvchi keyingi guruh uchun dars rejasini moslashtirdi.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Based on the results, the teacher adjusted the lesson plan for the next group.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "education",
+      "future_plans",
+      "personal_growth",
+      "success"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-033-compared-with-to-noun-phrase",
+    "formula_number": 33,
+    "title": "Compared with/to + noun phrase,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Compared with/to + noun phrase, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Compared with memorisation, active practice produces more lasting improvement.",
+    "example_uz": "Yodlash bilan solishtirganda, faol mashq ancha barqaror rivojlanish beradi.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Compared with memorisation, active practice produces more lasting improvement.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "learning_style",
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-034-when-exposed-to-noun-phrase",
+    "formula_number": 34,
+    "title": "When exposed to + noun phrase,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "When exposed to + noun phrase, subject + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "When exposed to advanced sentence patterns, learners begin to recognise how formal English works.",
+    "example_uz": "Kuchli gap strukturalari bilan tanishganda, o'rganuvchilar formal ingliz tili qanday ishlashini anglay boshlaydi.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "When exposed to advanced sentence patterns, learners begin to recognise how formal English works.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "education",
+      "personal_growth",
+      "work_studies"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-035-if-managed-properly",
+    "formula_number": 35,
+    "title": "If managed properly,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "If + V3/adjective, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "If managed properly, group work can improve both confidence and communication skills.",
+    "example_uz": "To'g'ri boshqarilsa, guruh ishlari ham ishonchni, ham muloqot ko'nikmalarini yaxshilashi mumkin.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "If managed properly, group work can improve both confidence and communication skills.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "communication",
+      "education",
+      "personal_growth",
+      "work_studies"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-036-left-unchecked",
+    "formula_number": 36,
+    "title": "Left unchecked,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Left unchecked, subject + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Left unchecked, small pronunciation mistakes can become long-term speaking habits.",
+    "example_uz": "Nazorat qilinmasa, kichik talaffuz xatolari uzoq muddatli speaking odatlariga aylanib qolishi mumkin.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Left unchecked, small pronunciation mistakes can become long-term speaking habits.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "daily_routine",
+      "education",
+      "future_plans",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-037-seen-from-this-perspective",
+    "formula_number": 37,
+    "title": "Seen from this perspective,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Seen from this perspective, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Seen from this perspective, grammar is not a set of rules but a tool for clearer thinking.",
+    "example_uz": "Shu nuqtayi nazardan qaraganda, grammatika qoidalar to'plami emas, balki aniqroq fikrlash vositasidir.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Seen from this perspective, grammar is not a set of rules but a tool for clearer thinking.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-038-not-knowing-noun-clause",
+    "formula_number": 38,
+    "title": "Not knowing + noun/clause,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Not knowing + noun/clause, subject + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Not knowing how to organise ideas, many students give short and unclear answers.",
+    "example_uz": "Fikrlarni qanday tartiblashni bilmagani uchun ko'plab o'quvchilar qisqa va noaniq javob beradi.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Not knowing how to organise ideas, many students give short and unclear answers.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-039-being-aware-of-noun-phrase",
+    "formula_number": 39,
+    "title": "Being aware of + noun phrase,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Being aware of + noun phrase, subject + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Being aware of common mistakes, learners can avoid repeating them in formal writing.",
+    "example_uz": "Ko'p uchraydigan xatolardan xabardor bo'lgan o'rganuvchilar ularni formal writingda takrorlashdan qochishi mumkin.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Being aware of common mistakes, learners can avoid repeating them in formal writing.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-040-designed-to-verb",
+    "formula_number": 40,
+    "title": "Designed to + verb,...",
+    "level": "C1",
+    "category": "Participle Clauses & Reduced Structures",
+    "rule_uz": "Participle clauses gaplarni qisqartiradi, ma'noni ixcham qiladi va professional flow beradi. Subject mosligi juda muhim.",
+    "structure": "Designed to + base verb, noun + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Designed to build fluency, the activity encourages students to speak without overthinking every word.",
+    "example_uz": "Ravonlikni rivojlantirish uchun tuzilgan mashq o'quvchilarni har bir so'zni haddan tashqari o'ylamasdan gapirishga undaydi.",
+    "wrong_uz": "reduced clause subjecti asosiy gap subjectiga mos kelmaydi yoki kerakli preposition tushib qoladi.",
+    "correct_en": "Designed to build fluency, the activity encourages students to speak without overthinking every word.",
+    "upgrade": {
+      "source": "Simple: Students used feedback and improved. → Pro: Having used the feedback carefully, students improved their performance.",
+      "simple": "Students used feedback and improved.",
+      "advanced": "Having used the feedback carefully, students improved their performance."
+    },
+    "topics": [
+      "education",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-041-the-use-of",
+    "formula_number": 41,
+    "title": "The use of...",
+    "level": "B2-C1",
+    "category": "Nominalisation & Academic Noun Phrases",
+    "rule_uz": "Nominalisation fe'l gaplarini otli akademik konstruktsiyaga aylantiradi. Bu writingni formal va compact qiladi.",
+    "structure": "The use of + noun + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The use of digital tools has changed the way students access information.",
+    "example_uz": "Raqamli vositalardan foydalanish o'quvchilarning ma'lumot olish usulini o'zgartirdi.",
+    "wrong_uz": "nominal phrase ichida 'of/to/in' kabi bog'lovchi preposition tushib qoladi.",
+    "correct_en": "The use of digital tools has changed the way students access information.",
+    "upgrade": {
+      "source": "Simple: Students use digital tools. → Pro: The use of digital tools has transformed the learning process.",
+      "simple": "Students use digital tools.",
+      "advanced": "The use of digital tools has transformed the learning process."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-042-the-rise-of",
+    "formula_number": 42,
+    "title": "The rise of...",
+    "level": "B2-C1",
+    "category": "Nominalisation & Academic Noun Phrases",
+    "rule_uz": "Nominalisation fe'l gaplarini otli akademik konstruktsiyaga aylantiradi. Bu writingni formal va compact qiladi.",
+    "structure": "The rise of + noun phrase + has led to...",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The rise of online education has created new opportunities for independent learners.",
+    "example_uz": "Onlayn ta'limning rivojlanishi mustaqil o'rganuvchilar uchun yangi imkoniyatlar yaratdi.",
+    "wrong_uz": "nominal phrase ichida 'of/to/in' kabi bog'lovchi preposition tushib qoladi.",
+    "correct_en": "The rise of online education has created new opportunities for independent learners.",
+    "upgrade": {
+      "source": "Simple: Students use digital tools. → Pro: The use of digital tools has transformed the learning process.",
+      "simple": "Students use digital tools.",
+      "advanced": "The use of digital tools has transformed the learning process."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-043-the-implementation-of",
+    "formula_number": 43,
+    "title": "The implementation of...",
+    "level": "B2-C1",
+    "category": "Nominalisation & Academic Noun Phrases",
+    "rule_uz": "Nominalisation fe'l gaplarini otli akademik konstruktsiyaga aylantiradi. Bu writingni formal va compact qiladi.",
+    "structure": "The implementation of + noun phrase + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The implementation of a clear feedback system can improve students' writing accuracy.",
+    "example_uz": "Aniq feedback tizimini joriy qilish o'quvchilarning yozuvdagi aniqligini yaxshilashi mumkin.",
+    "wrong_uz": "nominal phrase ichida 'of/to/in' kabi bog'lovchi preposition tushib qoladi.",
+    "correct_en": "The implementation of a clear feedback system can improve students' writing accuracy.",
+    "upgrade": {
+      "source": "Simple: Students use digital tools. → Pro: The use of digital tools has transformed the learning process.",
+      "simple": "Students use digital tools.",
+      "advanced": "The use of digital tools has transformed the learning process."
+    },
+    "topics": [
+      "education",
+      "personal_growth",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-044-the-lack-of",
+    "formula_number": 44,
+    "title": "The lack of...",
+    "level": "B2-C1",
+    "category": "Nominalisation & Academic Noun Phrases",
+    "rule_uz": "Nominalisation fe'l gaplarini otli akademik konstruktsiyaga aylantiradi. Bu writingni formal va compact qiladi.",
+    "structure": "The lack of + noun phrase + leads to...",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The lack of regular practice often leads to weak speaking confidence.",
+    "example_uz": "Muntazam mashq yetishmasligi ko'pincha speakingdagi ishonchning past bo'lishiga olib keladi.",
+    "wrong_uz": "nominal phrase ichida 'of/to/in' kabi bog'lovchi preposition tushib qoladi.",
+    "correct_en": "The lack of regular practice often leads to weak speaking confidence.",
+    "upgrade": {
+      "source": "Simple: Students use digital tools. → Pro: The use of digital tools has transformed the learning process.",
+      "simple": "Students use digital tools.",
+      "advanced": "The use of digital tools has transformed the learning process."
+    },
+    "topics": [
+      "education",
+      "learning_style",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-045-an-increase-in",
+    "formula_number": 45,
+    "title": "An increase in...",
+    "level": "B2-C1",
+    "category": "Nominalisation & Academic Noun Phrases",
+    "rule_uz": "Nominalisation fe'l gaplarini otli akademik konstruktsiyaga aylantiradi. Bu writingni formal va compact qiladi.",
+    "structure": "An increase in + noun + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "An increase in reading practice can improve both vocabulary range and sentence control.",
+    "example_uz": "O'qish mashqlarining ko'payishi ham so'z boyligini, ham gap tuzish nazoratini yaxshilashi mumkin.",
+    "wrong_uz": "nominal phrase ichida 'of/to/in' kabi bog'lovchi preposition tushib qoladi.",
+    "correct_en": "An increase in reading practice can improve both vocabulary range and sentence control.",
+    "upgrade": {
+      "source": "Simple: Students use digital tools. → Pro: The use of digital tools has transformed the learning process.",
+      "simple": "Students use digital tools.",
+      "advanced": "The use of digital tools has transformed the learning process."
+    },
+    "topics": [
+      "books_films",
+      "education",
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-046-the-development-of",
+    "formula_number": 46,
+    "title": "The development of...",
+    "level": "B2-C1",
+    "category": "Nominalisation & Academic Noun Phrases",
+    "rule_uz": "Nominalisation fe'l gaplarini otli akademik konstruktsiyaga aylantiradi. Bu writingni formal va compact qiladi.",
+    "structure": "The development of + noun phrase + requires...",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The development of critical thinking requires regular exposure to challenging questions.",
+    "example_uz": "Tanqidiy fikrlashning rivojlanishi murakkab savollarga muntazam duch kelishni talab qiladi.",
+    "wrong_uz": "nominal phrase ichida 'of/to/in' kabi bog'lovchi preposition tushib qoladi.",
+    "correct_en": "The development of critical thinking requires regular exposure to challenging questions.",
+    "upgrade": {
+      "source": "Simple: Students use digital tools. → Pro: The use of digital tools has transformed the learning process.",
+      "simple": "Students use digital tools.",
+      "advanced": "The use of digital tools has transformed the learning process."
+    },
+    "topics": [
+      "education",
+      "personal_growth",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-047-the-failure-to",
+    "formula_number": 47,
+    "title": "The failure to...",
+    "level": "B2-C1",
+    "category": "Nominalisation & Academic Noun Phrases",
+    "rule_uz": "Nominalisation fe'l gaplarini otli akademik konstruktsiyaga aylantiradi. Bu writingni formal va compact qiladi.",
+    "structure": "The failure to + verb + can lead to...",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The failure to review mistakes can prevent learners from making consistent progress.",
+    "example_uz": "Xatolarni qayta ko'rib chiqmaslik o'rganuvchilarning barqaror rivojlanishiga to'sqinlik qilishi mumkin.",
+    "wrong_uz": "nominal phrase ichida 'of/to/in' kabi bog'lovchi preposition tushib qoladi.",
+    "correct_en": "The failure to review mistakes can prevent learners from making consistent progress.",
+    "upgrade": {
+      "source": "Simple: Students use digital tools. → Pro: The use of digital tools has transformed the learning process.",
+      "simple": "Students use digital tools.",
+      "advanced": "The use of digital tools has transformed the learning process."
+    },
+    "topics": [
+      "education",
+      "success",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-048-the-ability-to",
+    "formula_number": 48,
+    "title": "The ability to...",
+    "level": "B2-C1",
+    "category": "Nominalisation & Academic Noun Phrases",
+    "rule_uz": "Nominalisation fe'l gaplarini otli akademik konstruktsiyaga aylantiradi. Bu writingni formal va compact qiladi.",
+    "structure": "The ability to + verb + is essential for...",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The ability to organise ideas clearly is essential for high-level speaking.",
+    "example_uz": "Fikrlarni aniq tartiblash qobiliyati yuqori darajadagi speaking uchun juda muhim.",
+    "wrong_uz": "nominal phrase ichida 'of/to/in' kabi bog'lovchi preposition tushib qoladi.",
+    "correct_en": "The ability to organise ideas clearly is essential for high-level speaking.",
+    "upgrade": {
+      "source": "Simple: Students use digital tools. → Pro: The use of digital tools has transformed the learning process.",
+      "simple": "Students use digital tools.",
+      "advanced": "The use of digital tools has transformed the learning process."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-049-the-need-for",
+    "formula_number": 49,
+    "title": "The need for...",
+    "level": "B2-C1",
+    "category": "Nominalisation & Academic Noun Phrases",
+    "rule_uz": "Nominalisation fe'l gaplarini otli akademik konstruktsiyaga aylantiradi. Bu writingni formal va compact qiladi.",
+    "structure": "The need for + noun phrase + is clear",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The need for practical grammar training is clear among students who struggle to speak naturally.",
+    "example_uz": "Tabiiy gapirishda qiynalayotgan o'quvchilar orasida amaliy grammatika mashg'ulotlariga ehtiyoj aniq ko'rinadi.",
+    "wrong_uz": "nominal phrase ichida 'of/to/in' kabi bog'lovchi preposition tushib qoladi.",
+    "correct_en": "The need for practical grammar training is clear among students who struggle to speak naturally.",
+    "upgrade": {
+      "source": "Simple: Students use digital tools. → Pro: The use of digital tools has transformed the learning process.",
+      "simple": "Students use digital tools.",
+      "advanced": "The use of digital tools has transformed the learning process."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-050-the-importance-of",
+    "formula_number": 50,
+    "title": "The importance of...",
+    "level": "B2-C1",
+    "category": "Nominalisation & Academic Noun Phrases",
+    "rule_uz": "Nominalisation fe'l gaplarini otli akademik konstruktsiyaga aylantiradi. Bu writingni formal va compact qiladi.",
+    "structure": "The importance of + noun/gerund + cannot be ignored",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The importance of consistent revision cannot be ignored in long-term language learning.",
+    "example_uz": "Uzoq muddatli til o'rganishda muntazam takrorlashning ahamiyatini e'tibordan chetda qoldirib bo'lmaydi.",
+    "wrong_uz": "nominal phrase ichida 'of/to/in' kabi bog'lovchi preposition tushib qoladi.",
+    "correct_en": "The importance of consistent revision cannot be ignored in long-term language learning.",
+    "upgrade": {
+      "source": "Simple: Students use digital tools. → Pro: The use of digital tools has transformed the learning process.",
+      "simple": "Students use digital tools.",
+      "advanced": "The use of digital tools has transformed the learning process."
+    },
+    "topics": [
+      "education",
+      "future_plans",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-051-the-tendency-to",
+    "formula_number": 51,
+    "title": "The tendency to...",
+    "level": "B2-C1",
+    "category": "Nominalisation & Academic Noun Phrases",
+    "rule_uz": "Nominalisation fe'l gaplarini otli akademik konstruktsiyaga aylantiradi. Bu writingni formal va compact qiladi.",
+    "structure": "The tendency to + verb + can be seen in...",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The tendency to translate directly can make learners' English sound unnatural.",
+    "example_uz": "So'zma-so'z tarjima qilishga moyillik o'rganuvchilarning inglizchasini notabiiy eshittirishi mumkin.",
+    "wrong_uz": "nominal phrase ichida 'of/to/in' kabi bog'lovchi preposition tushib qoladi.",
+    "correct_en": "The tendency to translate directly can make learners' English sound unnatural.",
+    "upgrade": {
+      "source": "Simple: Students use digital tools. → Pro: The use of digital tools has transformed the learning process.",
+      "simple": "Students use digital tools.",
+      "advanced": "The use of digital tools has transformed the learning process."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-052-the-possibility-of",
+    "formula_number": 52,
+    "title": "The possibility of...",
+    "level": "B2-C1",
+    "category": "Nominalisation & Academic Noun Phrases",
+    "rule_uz": "Nominalisation fe'l gaplarini otli akademik konstruktsiyaga aylantiradi. Bu writingni formal va compact qiladi.",
+    "structure": "The possibility of + noun/gerund + should be considered",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The possibility of misunderstanding the question should be considered before giving a final answer.",
+    "example_uz": "Yakuniy javob berishdan oldin savolni noto'g'ri tushunish ehtimoli hisobga olinishi kerak.",
+    "wrong_uz": "nominal phrase ichida 'of/to/in' kabi bog'lovchi preposition tushib qoladi.",
+    "correct_en": "The possibility of misunderstanding the question should be considered before giving a final answer.",
+    "upgrade": {
+      "source": "Simple: Students use digital tools. → Pro: The use of digital tools has transformed the learning process.",
+      "simple": "Students use digital tools.",
+      "advanced": "The use of digital tools has transformed the learning process."
+    },
+    "topics": [
+      "communication",
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-053-if-it-were-not-for",
+    "formula_number": 53,
+    "title": "If it were not for...",
+    "level": "C1",
+    "category": "Advanced Conditionals & Hypotheticals",
+    "rule_uz": "Bu formulalar taxmin, ehtimoliy vaziyat va alternativ natijalarni rasmiy va kuchli ifodalashga yordam beradi.",
+    "structure": "If it were not for + noun phrase, subject + would + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "If it were not for regular feedback, many learners would keep repeating the same mistakes.",
+    "example_uz": "Muntazam fikr-mulohaza bo'lmaganida, ko'plab o'rganuvchilar bir xil xatolarni takrorlayvergan bo'lardi.",
+    "wrong_uz": "conditional patternlar aralashtiriladi yoki would/should noto'g'ri joylashadi.",
+    "correct_en": "If it were not for regular feedback, many learners would keep repeating the same mistakes.",
+    "upgrade": {
+      "source": "Simple: Feedback helps learners improve. → Pro: Were it not for regular feedback, learners would repeat the same mistakes.",
+      "simple": "Feedback helps learners improve.",
+      "advanced": "Were it not for regular feedback, learners would repeat the same mistakes."
+    },
+    "topics": [],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-054-had-it-not-been-for",
+    "formula_number": 54,
+    "title": "Had it not been for...",
+    "level": "C1",
+    "category": "Advanced Conditionals & Hypotheticals",
+    "rule_uz": "Bu formulalar taxmin, ehtimoliy vaziyat va alternativ natijalarni rasmiy va kuchli ifodalashga yordam beradi.",
+    "structure": "Had it not been for + noun phrase, subject + would have + V3",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Had it not been for the teacher's guidance, the students would have misunderstood the task.",
+    "example_uz": "O'qituvchining yo'l-yo'rig'i bo'lmaganida, o'quvchilar vazifani noto'g'ri tushungan bo'lardi.",
+    "wrong_uz": "conditional patternlar aralashtiriladi yoki would/should noto'g'ri joylashadi.",
+    "correct_en": "Had it not been for the teacher's guidance, the students would have misunderstood the task.",
+    "upgrade": {
+      "source": "Simple: Feedback helps learners improve. → Pro: Were it not for regular feedback, learners would repeat the same mistakes.",
+      "simple": "Feedback helps learners improve.",
+      "advanced": "Were it not for regular feedback, learners would repeat the same mistakes."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-055-were-it-not-for",
+    "formula_number": 55,
+    "title": "Were it not for...",
+    "level": "C1",
+    "category": "Advanced Conditionals & Hypotheticals",
+    "rule_uz": "Bu formulalar taxmin, ehtimoliy vaziyat va alternativ natijalarni rasmiy va kuchli ifodalashga yordam beradi.",
+    "structure": "Were it not for + noun phrase, subject + would + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Were it not for clear goals, learners would quickly lose direction.",
+    "example_uz": "Aniq maqsadlar bo'lmaganida, o'rganuvchilar tezda yo'nalishni yo'qotgan bo'lardi.",
+    "wrong_uz": "conditional patternlar aralashtiriladi yoki would/should noto'g'ri joylashadi.",
+    "correct_en": "Were it not for clear goals, learners would quickly lose direction.",
+    "upgrade": {
+      "source": "Simple: Feedback helps learners improve. → Pro: Were it not for regular feedback, learners would repeat the same mistakes.",
+      "simple": "Feedback helps learners improve.",
+      "advanced": "Were it not for regular feedback, learners would repeat the same mistakes."
+    },
+    "topics": [
+      "career_goals"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-056-but-for",
+    "formula_number": 56,
+    "title": "But for...",
+    "level": "C1",
+    "category": "Advanced Conditionals & Hypotheticals",
+    "rule_uz": "Bu formulalar taxmin, ehtimoliy vaziyat va alternativ natijalarni rasmiy va kuchli ifodalashga yordam beradi.",
+    "structure": "But for + noun phrase, subject + would/would have + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "But for consistent practice, most learners would not reach advanced fluency.",
+    "example_uz": "Muntazam mashq bo'lmaganida, ko'pchilik o'rganuvchilar yuqori darajadagi ravonlikka erisha olmas edi.",
+    "wrong_uz": "conditional patternlar aralashtiriladi yoki would/should noto'g'ri joylashadi.",
+    "correct_en": "But for consistent practice, most learners would not reach advanced fluency.",
+    "upgrade": {
+      "source": "Simple: Feedback helps learners improve. → Pro: Were it not for regular feedback, learners would repeat the same mistakes.",
+      "simple": "Feedback helps learners improve.",
+      "advanced": "Were it not for regular feedback, learners would repeat the same mistakes."
+    },
+    "topics": [
+      "learning_style"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-057-if-subject-were-to-verb",
+    "formula_number": 57,
+    "title": "If + subject + were to + verb...",
+    "level": "C1",
+    "category": "Advanced Conditionals & Hypotheticals",
+    "rule_uz": "Bu formulalar taxmin, ehtimoliy vaziyat va alternativ natijalarni rasmiy va kuchli ifodalashga yordam beradi.",
+    "structure": "If + subject + were to + base verb, subject + would/could + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "If schools were to prioritise speaking practice, students would become more confident communicators.",
+    "example_uz": "Maktablar speaking mashqlariga ustuvorlik bersa, o'quvchilar ancha ishonchli muloqotchilarga aylangan bo'lardi.",
+    "wrong_uz": "conditional patternlar aralashtiriladi yoki would/should noto'g'ri joylashadi.",
+    "correct_en": "If schools were to prioritise speaking practice, students would become more confident communicators.",
+    "upgrade": {
+      "source": "Simple: Feedback helps learners improve. → Pro: Were it not for regular feedback, learners would repeat the same mistakes.",
+      "simple": "Feedback helps learners improve.",
+      "advanced": "Were it not for regular feedback, learners would repeat the same mistakes."
+    },
+    "topics": [
+      "education",
+      "learning_style"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-058-should-subject-verb",
+    "formula_number": 58,
+    "title": "Should + subject + verb...",
+    "level": "C1",
+    "category": "Advanced Conditionals & Hypotheticals",
+    "rule_uz": "Bu formulalar taxmin, ehtimoliy vaziyat va alternativ natijalarni rasmiy va kuchli ifodalashga yordam beradi.",
+    "structure": "Should + subject + base verb, subject + will/can/would + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Should learners need clarification, they should ask before completing the task.",
+    "example_uz": "O'rganuvchilarga tushuntirish kerak bo'lsa, vazifani tugatishdan oldin so'rashi kerak.",
+    "wrong_uz": "conditional patternlar aralashtiriladi yoki would/should noto'g'ri joylashadi.",
+    "correct_en": "Should learners need clarification, they should ask before completing the task.",
+    "upgrade": {
+      "source": "Simple: Feedback helps learners improve. → Pro: Were it not for regular feedback, learners would repeat the same mistakes.",
+      "simple": "Feedback helps learners improve.",
+      "advanced": "Were it not for regular feedback, learners would repeat the same mistakes."
+    },
+    "topics": [],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-059-in-the-event-that",
+    "formula_number": 59,
+    "title": "In the event that...",
+    "level": "C1",
+    "category": "Advanced Conditionals & Hypotheticals",
+    "rule_uz": "Bu formulalar taxmin, ehtimoliy vaziyat va alternativ natijalarni rasmiy va kuchli ifodalashga yordam beradi.",
+    "structure": "In the event that + clause, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "In the event that students miss a lesson, they should review the recorded materials.",
+    "example_uz": "O'quvchilar darsni o'tkazib yuborgan taqdirda, yozib olingan materiallarni ko'rib chiqishi kerak.",
+    "wrong_uz": "conditional patternlar aralashtiriladi yoki would/should noto'g'ri joylashadi.",
+    "correct_en": "In the event that students miss a lesson, they should review the recorded materials.",
+    "upgrade": {
+      "source": "Simple: Feedback helps learners improve. → Pro: Were it not for regular feedback, learners would repeat the same mistakes.",
+      "simple": "Feedback helps learners improve.",
+      "advanced": "Were it not for regular feedback, learners would repeat the same mistakes."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-060-unless-clause",
+    "formula_number": 60,
+    "title": "Unless + clause...",
+    "level": "C1",
+    "category": "Advanced Conditionals & Hypotheticals",
+    "rule_uz": "Bu formulalar taxmin, ehtimoliy vaziyat va alternativ natijalarni rasmiy va kuchli ifodalashga yordam beradi.",
+    "structure": "Unless + subject + verb, subject + will/can + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Unless learners use new structures actively, they will not become part of natural speech.",
+    "example_uz": "O'rganuvchilar yangi strukturalarni faol ishlatmasa, ular tabiiy nutqning bir qismiga aylanmaydi.",
+    "wrong_uz": "conditional patternlar aralashtiriladi yoki would/should noto'g'ri joylashadi.",
+    "correct_en": "Unless learners use new structures actively, they will not become part of natural speech.",
+    "upgrade": {
+      "source": "Simple: Feedback helps learners improve. → Pro: Were it not for regular feedback, learners would repeat the same mistakes.",
+      "simple": "Feedback helps learners improve.",
+      "advanced": "Were it not for regular feedback, learners would repeat the same mistakes."
+    },
+    "topics": [],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-061-provided-that",
+    "formula_number": 61,
+    "title": "Provided that...",
+    "level": "C1",
+    "category": "Advanced Conditionals & Hypotheticals",
+    "rule_uz": "Bu formulalar taxmin, ehtimoliy vaziyat va alternativ natijalarni rasmiy va kuchli ifodalashga yordam beradi.",
+    "structure": "Provided that + clause, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Provided that feedback is specific, it can help students correct their weaknesses quickly.",
+    "example_uz": "Fikr-mulohaza aniq bo'lsa, u o'quvchilarga kamchiliklarini tez tuzatishga yordam beradi.",
+    "wrong_uz": "conditional patternlar aralashtiriladi yoki would/should noto'g'ri joylashadi.",
+    "correct_en": "Provided that feedback is specific, it can help students correct their weaknesses quickly.",
+    "upgrade": {
+      "source": "Simple: Feedback helps learners improve. → Pro: Were it not for regular feedback, learners would repeat the same mistakes.",
+      "simple": "Feedback helps learners improve.",
+      "advanced": "Were it not for regular feedback, learners would repeat the same mistakes."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-062-assuming-that",
+    "formula_number": 62,
+    "title": "Assuming that...",
+    "level": "C1",
+    "category": "Advanced Conditionals & Hypotheticals",
+    "rule_uz": "Bu formulalar taxmin, ehtimoliy vaziyat va alternativ natijalarni rasmiy va kuchli ifodalashga yordam beradi.",
+    "structure": "Assuming that + clause, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Assuming that students practise daily, noticeable progress can be expected within a few months.",
+    "example_uz": "O'quvchilar har kuni mashq qiladi deb olsak, bir necha oy ichida sezilarli rivojlanishni kutish mumkin.",
+    "wrong_uz": "conditional patternlar aralashtiriladi yoki would/should noto'g'ri joylashadi.",
+    "correct_en": "Assuming that students practise daily, noticeable progress can be expected within a few months.",
+    "upgrade": {
+      "source": "Simple: Feedback helps learners improve. → Pro: Were it not for regular feedback, learners would repeat the same mistakes.",
+      "simple": "Feedback helps learners improve.",
+      "advanced": "Were it not for regular feedback, learners would repeat the same mistakes."
+    },
+    "topics": [
+      "daily_routine",
+      "education",
+      "success"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-063-even-if",
+    "formula_number": 63,
+    "title": "Even if...",
+    "level": "C1",
+    "category": "Advanced Conditionals & Hypotheticals",
+    "rule_uz": "Bu formulalar taxmin, ehtimoliy vaziyat va alternativ natijalarni rasmiy va kuchli ifodalashga yordam beradi.",
+    "structure": "Even if + clause, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Even if students know many words, they may struggle to speak clearly without sentence control.",
+    "example_uz": "O'quvchilar ko'p so'z bilsa ham, gap tuzishni nazorat qila olmasa, aniq gapirishda qiynalishi mumkin.",
+    "wrong_uz": "conditional patternlar aralashtiriladi yoki would/should noto'g'ri joylashadi.",
+    "correct_en": "Even if students know many words, they may struggle to speak clearly without sentence control.",
+    "upgrade": {
+      "source": "Simple: Feedback helps learners improve. → Pro: Were it not for regular feedback, learners would repeat the same mistakes.",
+      "simple": "Feedback helps learners improve.",
+      "advanced": "Were it not for regular feedback, learners would repeat the same mistakes."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-064-whether-or-not",
+    "formula_number": 64,
+    "title": "Whether or not...",
+    "level": "C1",
+    "category": "Advanced Conditionals & Hypotheticals",
+    "rule_uz": "Bu formulalar taxmin, ehtimoliy vaziyat va alternativ natijalarni rasmiy va kuchli ifodalashga yordam beradi.",
+    "structure": "Whether or not + clause, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Whether or not learners enjoy grammar, they still need it to express complex ideas accurately.",
+    "example_uz": "O'rganuvchilar grammatikani yoqtiradimi-yo'qmi, murakkab fikrlarni aniq ifodalash uchun baribir unga muhtoj.",
+    "wrong_uz": "conditional patternlar aralashtiriladi yoki would/should noto'g'ri joylashadi.",
+    "correct_en": "Whether or not learners enjoy grammar, they still need it to express complex ideas accurately.",
+    "upgrade": {
+      "source": "Simple: Feedback helps learners improve. → Pro: Were it not for regular feedback, learners would repeat the same mistakes.",
+      "simple": "Feedback helps learners improve.",
+      "advanced": "Were it not for regular feedback, learners would repeat the same mistakes."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-065-while-it-may-be-true-that",
+    "formula_number": 65,
+    "title": "While it may be true that...",
+    "level": "C1",
+    "category": "Concession, Contrast & Balanced Argument",
+    "rule_uz": "Balanced argument uchun qarama-qarshi fikrni tan olish, cheklash va o'z fikriga o'tish formulalari.",
+    "structure": "While it may be true that + clause, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "While it may be true that online learning is convenient, it cannot fully replace face-to-face interaction.",
+    "example_uz": "Onlayn ta'lim qulay ekani rost bo'lishi mumkin, ammo u yuzma-yuz muloqotni to'liq almashtira olmaydi.",
+    "wrong_uz": "bitta clause ichida ikki xil contrast marker ishlatiladi yoki vergul noto'g'ri qo'yiladi.",
+    "correct_en": "While it may be true that online learning is convenient, it cannot fully replace face-to-face interaction.",
+    "upgrade": {
+      "source": "Simple: Online learning is useful, but teachers are important. → Pro: While online learning is useful, it cannot fully replace teacher guidance.",
+      "simple": "Online learning is useful, but teachers are important.",
+      "advanced": "While online learning is useful, it cannot fully replace teacher guidance."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-066-although-there-is-some-truth-in",
+    "formula_number": 66,
+    "title": "Although there is some truth in...",
+    "level": "C1",
+    "category": "Concession, Contrast & Balanced Argument",
+    "rule_uz": "Balanced argument uchun qarama-qarshi fikrni tan olish, cheklash va o'z fikriga o'tish formulalari.",
+    "structure": "Although there is some truth in + noun/gerund, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Although there is some truth in the idea that exams motivate students, they can also create unnecessary pressure.",
+    "example_uz": "Imtihonlar o'quvchilarni motivatsiya qiladi degan fikrda ma'lum haqiqat bor, ammo ular keraksiz bosim ham yaratishi mumkin.",
+    "wrong_uz": "bitta clause ichida ikki xil contrast marker ishlatiladi yoki vergul noto'g'ri qo'yiladi.",
+    "correct_en": "Although there is some truth in the idea that exams motivate students, they can also create unnecessary pressure.",
+    "upgrade": {
+      "source": "Simple: Online learning is useful, but teachers are important. → Pro: While online learning is useful, it cannot fully replace teacher guidance.",
+      "simple": "Online learning is useful, but teachers are important.",
+      "advanced": "While online learning is useful, it cannot fully replace teacher guidance."
+    },
+    "topics": [
+      "education",
+      "stress_management",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-067-despite-the-fact-that",
+    "formula_number": 67,
+    "title": "Despite the fact that...",
+    "level": "C1",
+    "category": "Concession, Contrast & Balanced Argument",
+    "rule_uz": "Balanced argument uchun qarama-qarshi fikrni tan olish, cheklash va o'z fikriga o'tish formulalari.",
+    "structure": "Despite the fact that + clause, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Despite the fact that grammar is challenging, it is essential for clear academic expression.",
+    "example_uz": "Grammatika qiyin bo'lishiga qaramay, u aniq akademik ifoda uchun zarur.",
+    "wrong_uz": "bitta clause ichida ikki xil contrast marker ishlatiladi yoki vergul noto'g'ri qo'yiladi.",
+    "correct_en": "Despite the fact that grammar is challenging, it is essential for clear academic expression.",
+    "upgrade": {
+      "source": "Simple: Online learning is useful, but teachers are important. → Pro: While online learning is useful, it cannot fully replace teacher guidance.",
+      "simple": "Online learning is useful, but teachers are important.",
+      "advanced": "While online learning is useful, it cannot fully replace teacher guidance."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-068-regardless-of-whether",
+    "formula_number": 68,
+    "title": "Regardless of whether...",
+    "level": "C1",
+    "category": "Concession, Contrast & Balanced Argument",
+    "rule_uz": "Balanced argument uchun qarama-qarshi fikrni tan olish, cheklash va o'z fikriga o'tish formulalari.",
+    "structure": "Regardless of whether + clause, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Regardless of whether students prefer speaking or writing, sentence control remains essential.",
+    "example_uz": "O'quvchilar speakingni yoki writingni afzal ko'rishidan qat'i nazar, gap tuzishni nazorat qilish muhim bo'lib qoladi.",
+    "wrong_uz": "bitta clause ichida ikki xil contrast marker ishlatiladi yoki vergul noto'g'ri qo'yiladi.",
+    "correct_en": "Regardless of whether students prefer speaking or writing, sentence control remains essential.",
+    "upgrade": {
+      "source": "Simple: Online learning is useful, but teachers are important. → Pro: While online learning is useful, it cannot fully replace teacher guidance.",
+      "simple": "Online learning is useful, but teachers are important.",
+      "advanced": "While online learning is useful, it cannot fully replace teacher guidance."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-069-no-matter-how-adjective",
+    "formula_number": 69,
+    "title": "No matter how + adjective...",
+    "level": "C1",
+    "category": "Concession, Contrast & Balanced Argument",
+    "rule_uz": "Balanced argument uchun qarama-qarshi fikrni tan olish, cheklash va o'z fikriga o'tish formulalari.",
+    "structure": "No matter how + adjective + clause, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "No matter how advanced a word is, it becomes useless if learners cannot use it naturally.",
+    "example_uz": "So'z qanchalik kuchli bo'lmasin, o'rganuvchi uni tabiiy ishlata olmasa, u foydasiz bo'lib qoladi.",
+    "wrong_uz": "bitta clause ichida ikki xil contrast marker ishlatiladi yoki vergul noto'g'ri qo'yiladi.",
+    "correct_en": "No matter how advanced a word is, it becomes useless if learners cannot use it naturally.",
+    "upgrade": {
+      "source": "Simple: Online learning is useful, but teachers are important. → Pro: While online learning is useful, it cannot fully replace teacher guidance.",
+      "simple": "Online learning is useful, but teachers are important.",
+      "advanced": "While online learning is useful, it cannot fully replace teacher guidance."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-070-admittedly-however",
+    "formula_number": 70,
+    "title": "Admittedly,... However,...",
+    "level": "C1",
+    "category": "Concession, Contrast & Balanced Argument",
+    "rule_uz": "Balanced argument uchun qarama-qarshi fikrni tan olish, cheklash va o'z fikriga o'tish formulalari.",
+    "structure": "Admittedly, + clause. However, + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Admittedly, memorisation can help beginners. However, advanced learners need deeper sentence control.",
+    "example_uz": "Tan olish kerak, yodlash boshlang'ichlar uchun foydali bo'lishi mumkin. Biroq yuqori darajadagi o'rganuvchilar chuqurroq gap tuzish nazoratiga muhtoj.",
+    "wrong_uz": "bitta clause ichida ikki xil contrast marker ishlatiladi yoki vergul noto'g'ri qo'yiladi.",
+    "correct_en": "Admittedly, memorisation can help beginners. However, advanced learners need deeper sentence control.",
+    "upgrade": {
+      "source": "Simple: Online learning is useful, but teachers are important. → Pro: While online learning is useful, it cannot fully replace teacher guidance.",
+      "simple": "Online learning is useful, but teachers are important.",
+      "advanced": "While online learning is useful, it cannot fully replace teacher guidance."
+    },
+    "topics": [
+      "education",
+      "learning_style",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-071-much-as-clause",
+    "formula_number": 71,
+    "title": "Much as + clause...",
+    "level": "C1",
+    "category": "Concession, Contrast & Balanced Argument",
+    "rule_uz": "Balanced argument uchun qarama-qarshi fikrni tan olish, cheklash va o'z fikriga o'tish formulalari.",
+    "structure": "Much as + subject + verb, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Much as technology supports learning, it cannot replace a skilled teacher's guidance.",
+    "example_uz": "Texnologiya ta'limni qanchalik qo'llab-quvvatlamasin, u malakali o'qituvchining yo'l- yo'rig'ini almashtira olmaydi.",
+    "wrong_uz": "bitta clause ichida ikki xil contrast marker ishlatiladi yoki vergul noto'g'ri qo'yiladi.",
+    "correct_en": "Much as technology supports learning, it cannot replace a skilled teacher's guidance.",
+    "upgrade": {
+      "source": "Simple: Online learning is useful, but teachers are important. → Pro: While online learning is useful, it cannot fully replace teacher guidance.",
+      "simple": "Online learning is useful, but teachers are important.",
+      "advanced": "While online learning is useful, it cannot fully replace teacher guidance."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-072-even-though",
+    "formula_number": 72,
+    "title": "Even though...",
+    "level": "C1",
+    "category": "Concession, Contrast & Balanced Argument",
+    "rule_uz": "Balanced argument uchun qarama-qarshi fikrni tan olish, cheklash va o'z fikriga o'tish formulalari.",
+    "structure": "Even though + clause, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Even though advanced grammar seems difficult at first, it becomes easier with repeated use.",
+    "example_uz": "Kuchli grammatika boshida qiyin ko'rinsa ham, takroriy ishlatish bilan osonlashadi.",
+    "wrong_uz": "bitta clause ichida ikki xil contrast marker ishlatiladi yoki vergul noto'g'ri qo'yiladi.",
+    "correct_en": "Even though advanced grammar seems difficult at first, it becomes easier with repeated use.",
+    "upgrade": {
+      "source": "Simple: Online learning is useful, but teachers are important. → Pro: While online learning is useful, it cannot fully replace teacher guidance.",
+      "simple": "Online learning is useful, but teachers are important.",
+      "advanced": "While online learning is useful, it cannot fully replace teacher guidance."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-073-that-said",
+    "formula_number": 73,
+    "title": "That said,...",
+    "level": "C1",
+    "category": "Concession, Contrast & Balanced Argument",
+    "rule_uz": "Balanced argument uchun qarama-qarshi fikrni tan olish, cheklash va o'z fikriga o'tish formulalari.",
+    "structure": "That said, + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Digital tools are useful. That said, students still need guidance to use them effectively.",
+    "example_uz": "Raqamli vositalar foydali. Shunga qaramay, o'quvchilar ulardan samarali foydalanish uchun yo'l-yo'riqqa muhtoj.",
+    "wrong_uz": "bitta clause ichida ikki xil contrast marker ishlatiladi yoki vergul noto'g'ri qo'yiladi.",
+    "correct_en": "Digital tools are useful. That said, students still need guidance to use them effectively.",
+    "upgrade": {
+      "source": "Simple: Online learning is useful, but teachers are important. → Pro: While online learning is useful, it cannot fully replace teacher guidance.",
+      "simple": "Online learning is useful, but teachers are important.",
+      "advanced": "While online learning is useful, it cannot fully replace teacher guidance."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-074-notwithstanding-noun-phrase",
+    "formula_number": 74,
+    "title": "Notwithstanding + noun phrase...",
+    "level": "C1",
+    "category": "Concession, Contrast & Balanced Argument",
+    "rule_uz": "Balanced argument uchun qarama-qarshi fikrni tan olish, cheklash va o'z fikriga o'tish formulalari.",
+    "structure": "Notwithstanding + noun phrase, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Notwithstanding its benefits, online learning may reduce spontaneous classroom interaction.",
+    "example_uz": "Afzalliklariga qaramay, onlayn ta'lim sinfdagi tabiiy muloqotni kamaytirishi mumkin.",
+    "wrong_uz": "bitta clause ichida ikki xil contrast marker ishlatiladi yoki vergul noto'g'ri qo'yiladi.",
+    "correct_en": "Notwithstanding its benefits, online learning may reduce spontaneous classroom interaction.",
+    "upgrade": {
+      "source": "Simple: Online learning is useful, but teachers are important. → Pro: While online learning is useful, it cannot fully replace teacher guidance.",
+      "simple": "Online learning is useful, but teachers are important.",
+      "advanced": "While online learning is useful, it cannot fully replace teacher guidance."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-075-for-all-its-benefits",
+    "formula_number": 75,
+    "title": "For all its benefits,...",
+    "level": "C1",
+    "category": "Concession, Contrast & Balanced Argument",
+    "rule_uz": "Balanced argument uchun qarama-qarshi fikrni tan olish, cheklash va o'z fikriga o'tish formulalari.",
+    "structure": "For all its benefits, + noun + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "For all its benefits, artificial intelligence cannot replace human judgement in education.",
+    "example_uz": "Ko'p foydalariga qaramay, sun'iy intellekt ta'limda insoniy mulohazani almashtira olmaydi.",
+    "wrong_uz": "bitta clause ichida ikki xil contrast marker ishlatiladi yoki vergul noto'g'ri qo'yiladi.",
+    "correct_en": "For all its benefits, artificial intelligence cannot replace human judgement in education.",
+    "upgrade": {
+      "source": "Simple: Online learning is useful, but teachers are important. → Pro: While online learning is useful, it cannot fully replace teacher guidance.",
+      "simple": "Online learning is useful, but teachers are important.",
+      "advanced": "While online learning is useful, it cannot fully replace teacher guidance."
+    },
+    "topics": [
+      "education",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-076-whereas",
+    "formula_number": 76,
+    "title": "Whereas...",
+    "level": "C1",
+    "category": "Concession, Contrast & Balanced Argument",
+    "rule_uz": "Balanced argument uchun qarama-qarshi fikrni tan olish, cheklash va o'z fikriga o'tish formulalari.",
+    "structure": "Whereas + clause, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Whereas memorisation helps with recognition, active practice helps with real communication.",
+    "example_uz": "Yodlash tanib olishga yordam bersa, faol mashq haqiqiy muloqotga yordam beradi.",
+    "wrong_uz": "bitta clause ichida ikki xil contrast marker ishlatiladi yoki vergul noto'g'ri qo'yiladi.",
+    "correct_en": "Whereas memorisation helps with recognition, active practice helps with real communication.",
+    "upgrade": {
+      "source": "Simple: Online learning is useful, but teachers are important. → Pro: While online learning is useful, it cannot fully replace teacher guidance.",
+      "simple": "Online learning is useful, but teachers are important.",
+      "advanced": "While online learning is useful, it cannot fully replace teacher guidance."
+    },
+    "topics": [
+      "education",
+      "learning_style",
+      "communication",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-077-this-can-be-attributed-to",
+    "formula_number": 77,
+    "title": "This can be attributed to...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "This can be attributed to + noun/gerund",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The improvement in fluency can be attributed to regular speaking practice and detailed feedback.",
+    "example_uz": "Ravonlikdagi yaxshilanishni muntazam speaking mashqi va batafsil feedback bilan izohlash mumkin.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "The improvement in fluency can be attributed to regular speaking practice and detailed feedback.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-078-this-stems-from",
+    "formula_number": 78,
+    "title": "This stems from...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "This stems from + noun/gerund",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Many speaking problems stem from a lack of sentence-building practice.",
+    "example_uz": "Ko'plab speaking muammolari gap tuzish mashqi yetishmasligidan kelib chiqadi.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "Many speaking problems stem from a lack of sentence-building practice.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-079-this-gives-rise-to",
+    "formula_number": 79,
+    "title": "This gives rise to...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "This gives rise to + noun phrase",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Poor feedback can give rise to repeated mistakes and low confidence.",
+    "example_uz": "Sifatsiz feedback takroriy xatolar va past ishonchni keltirib chiqarishi mumkin.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "Poor feedback can give rise to repeated mistakes and low confidence.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-080-this-leads-to",
+    "formula_number": 80,
+    "title": "This leads to...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "This leads to + noun/gerund",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "A lack of practice leads to hesitation in real conversations.",
+    "example_uz": "Mashq yetishmasligi haqiqiy suhbatlarda ikkilanishga olib keladi.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "A lack of practice leads to hesitation in real conversations.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "communication",
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-081-this-results-in",
+    "formula_number": 81,
+    "title": "This results in...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "This results in + noun/gerund",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Weak sentence control results in unclear answers, even when students know many words.",
+    "example_uz": "Gap tuzish nazoratining zaifligi, o'quvchilar ko'p so'z bilsa ham, noaniq javoblarga olib keladi.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "Weak sentence control results in unclear answers, even when students know many words.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "education",
+      "learning_style",
+      "personal_growth",
+      "success"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-082-as-a-result-of",
+    "formula_number": 82,
+    "title": "As a result of...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "As a result of + noun/gerund, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "As a result of consistent revision, students became more confident using complex structures.",
+    "example_uz": "Muntazam takrorlash natijasida o'quvchilar murakkab strukturalardan foydalanishda ishonchliroq bo'ldi.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "As a result of consistent revision, students became more confident using complex structures.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "education",
+      "learning_style",
+      "personal_growth",
+      "success"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-083-the-extent-to-which",
+    "formula_number": 83,
+    "title": "The extent to which...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "The extent to which + clause + depends on...",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The extent to which grammar improves speaking depends on how actively it is practised.",
+    "example_uz": "Grammatikaning speakingni qanchalik yaxshilashi uning qanchalik faol mashq qilinishiga bog'liq.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "The extent to which grammar improves speaking depends on how actively it is practised.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "education",
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-084-there-is-a-tendency-for",
+    "formula_number": 84,
+    "title": "There is a tendency for...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "There is a tendency for + noun + to + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "There is a tendency for learners to avoid difficult structures instead of practising them.",
+    "example_uz": "O'rganuvchilarda qiyin strukturalarni mashq qilish o'rniga ulardan qochish moyilligi bor.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "There is a tendency for learners to avoid difficult structures instead of practising them.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-085-it-is-increasingly-common-for",
+    "formula_number": 85,
+    "title": "It is increasingly common for...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "It is increasingly common for + noun + to + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "It is increasingly common for students to use AI tools when preparing for language exams.",
+    "example_uz": "Til imtihonlariga tayyorlanishda o'quvchilarning AI vositalaridan foydalanishi tobora keng tarqalmoqda.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "It is increasingly common for students to use AI tools when preparing for language exams.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "education",
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-086-it-remains-unclear-whether",
+    "formula_number": 86,
+    "title": "It remains unclear whether...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "It remains unclear whether + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "It remains unclear whether fully online learning can produce the same speaking confidence as face-to-face practice.",
+    "example_uz": "To'liq onlayn ta'lim yuzma-yuz mashqdek speaking ishonchini bera oladimi, bu hali aniq emas.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "It remains unclear whether fully online learning can produce the same speaking confidence as face-to-face practice.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "education",
+      "learning_style",
+      "personal_growth",
+      "technology"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-087-it-is-worth-considering-whether",
+    "formula_number": 87,
+    "title": "It is worth considering whether...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "It is worth considering whether + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "It is worth considering whether students need fewer rules and more guided practice.",
+    "example_uz": "O'quvchilarga kamroq qoida va ko'proq yo'naltirilgan mashq kerakmi, buni o'ylab ko'rishga arziydi.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "It is worth considering whether students need fewer rules and more guided practice.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "education",
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-088-one-possible-explanation-is-that",
+    "formula_number": 88,
+    "title": "One possible explanation is that...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "One possible explanation is that + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "One possible explanation is that learners focus too much on rules and not enough on real usage.",
+    "example_uz": "Ehtimoliy izohlardan biri shuki, o'rganuvchilar qoidalarga haddan tashqari ko'p, real ishlatishga esa yetarlicha e'tibor bermaydi.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "One possible explanation is that learners focus too much on rules and not enough on real usage.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "future_plans",
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-089-this-raises-the-question-of",
+    "formula_number": 89,
+    "title": "This raises the question of...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "This raises the question of + noun/gerund",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "This raises the question of how grammar should be taught to make it useful in communication.",
+    "example_uz": "Bu grammatikani muloqotda foydali bo'lishi uchun qanday o'rgatish kerak degan savolni tug'diradi.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "This raises the question of how grammar should be taught to make it useful in communication.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "communication",
+      "education",
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-090-it-would-be-misleading-to-claim-that",
+    "formula_number": 90,
+    "title": "It would be misleading to claim that...",
+    "level": "C1",
+    "category": "Academic Argument & Cause–Effect Formulas",
+    "rule_uz": "Sabab, oqibat, trend, ehtiyotkor xulosa va akademik transitionlarni kuchliroq ifodalash formulalari.",
+    "structure": "It would be misleading to claim that + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "It would be misleading to claim that advanced grammar is only useful for writing.",
+    "example_uz": "Kuchli grammatika faqat writing uchun foydali deyish noto'g'ri tasavvur berishi mumkin.",
+    "wrong_uz": "academic phrase noto'g'ri preposition bilan ishlatiladi yoki noun phrase to'liq emas.",
+    "correct_en": "It would be misleading to claim that advanced grammar is only useful for writing.",
+    "upgrade": {
+      "source": "Simple: Practice improves fluency. → Pro: The improvement in fluency can be attributed to regular practice.",
+      "simple": "Practice improves fluency.",
+      "advanced": "The improvement in fluency can be attributed to regular practice."
+    },
+    "topics": [
+      "education",
+      "learning_style",
+      "personal_growth"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-091-far-more-likely-to",
+    "formula_number": 91,
+    "title": "far more likely to...",
+    "level": "B2-C1",
+    "category": "Comparison, Qualification & Hedging Structures",
+    "rule_uz": "Taqqoslash, ehtimollik, nozik farq va ehtiyotkor akademik fikr bildirish formulalari.",
+    "structure": "subject + be + far more likely to + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Students who receive specific feedback are far more likely to correct their mistakes permanently.",
+    "example_uz": "Aniq feedback olgan o'quvchilar xatolarini doimiy tuzatish ehtimoli ancha yuqori.",
+    "wrong_uz": "comparison structureda 'to', 'than', 'as' yoki word order noto'g'ri ishlatiladi.",
+    "correct_en": "Students who receive specific feedback are far more likely to correct their mistakes permanently.",
+    "upgrade": {
+      "source": "Simple: Advanced grammar helps speaking. → Pro: Advanced grammar is not so much about rules as about controlling meaning precisely.",
+      "simple": "Advanced grammar helps speaking.",
+      "advanced": "Advanced grammar is not so much about rules as about controlling meaning precisely."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-092-considerably-less-likely-to",
+    "formula_number": 92,
+    "title": "considerably less likely to...",
+    "level": "B2-C1",
+    "category": "Comparison, Qualification & Hedging Structures",
+    "rule_uz": "Taqqoslash, ehtimollik, nozik farq va ehtiyotkor akademik fikr bildirish formulalari.",
+    "structure": "subject + be + considerably less likely to + verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Learners without regular speaking practice are considerably less likely to develop natural fluency.",
+    "example_uz": "Muntazam speaking mashqi bo'lmagan o'rganuvchilarning tabiiy ravonlikni rivojlantirish ehtimoli ancha past.",
+    "wrong_uz": "comparison structureda 'to', 'than', 'as' yoki word order noto'g'ri ishlatiladi.",
+    "correct_en": "Learners without regular speaking practice are considerably less likely to develop natural fluency.",
+    "upgrade": {
+      "source": "Simple: Advanced grammar helps speaking. → Pro: Advanced grammar is not so much about rules as about controlling meaning precisely.",
+      "simple": "Advanced grammar helps speaking.",
+      "advanced": "Advanced grammar is not so much about rules as about controlling meaning precisely."
+    },
+    "topics": [
+      "education",
+      "learning_style"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-093-not-so-much-a-as-b",
+    "formula_number": 93,
+    "title": "not so much A as B",
+    "level": "B2-C1",
+    "category": "Comparison, Qualification & Hedging Structures",
+    "rule_uz": "Taqqoslash, ehtimollik, nozik farq va ehtiyotkor akademik fikr bildirish formulalari.",
+    "structure": "not so much + A + as + B",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Advanced grammar is not so much about memorising rules as about controlling meaning precisely.",
+    "example_uz": "Kuchli grammatika qoidalarni yodlashdan ko'ra, ma'noni aniq boshqarish haqida.",
+    "wrong_uz": "comparison structureda 'to', 'than', 'as' yoki word order noto'g'ri ishlatiladi.",
+    "correct_en": "Advanced grammar is not so much about memorising rules as about controlling meaning precisely.",
+    "upgrade": {
+      "source": "Simple: Advanced grammar helps speaking. → Pro: Advanced grammar is not so much about rules as about controlling meaning precisely.",
+      "simple": "Advanced grammar helps speaking.",
+      "advanced": "Advanced grammar is not so much about rules as about controlling meaning precisely."
+    },
+    "topics": [
+      "education",
+      "learning_style"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-094-as-much-about-a-as-it-is-about-b",
+    "formula_number": 94,
+    "title": "as much about A as it is about B",
+    "level": "B2-C1",
+    "category": "Comparison, Qualification & Hedging Structures",
+    "rule_uz": "Taqqoslash, ehtimollik, nozik farq va ehtiyotkor akademik fikr bildirish formulalari.",
+    "structure": "subject + be + as much about + A + as it is about + B",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Good speaking is as much about organising ideas as it is about using accurate grammar.",
+    "example_uz": "Yaxshi speaking aniq grammatikadan foydalanish qanchalik muhim bo'lsa, fikrlarni tartiblash ham shunchalik muhimdir.",
+    "wrong_uz": "comparison structureda 'to', 'than', 'as' yoki word order noto'g'ri ishlatiladi.",
+    "correct_en": "Good speaking is as much about organising ideas as it is about using accurate grammar.",
+    "upgrade": {
+      "source": "Simple: Advanced grammar helps speaking. → Pro: Advanced grammar is not so much about rules as about controlling meaning precisely.",
+      "simple": "Advanced grammar helps speaking.",
+      "advanced": "Advanced grammar is not so much about rules as about controlling meaning precisely."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-095-the-more-the-more",
+    "formula_number": 95,
+    "title": "The more..., the more...",
+    "level": "B2-C1",
+    "category": "Comparison, Qualification & Hedging Structures",
+    "rule_uz": "Taqqoslash, ehtimollik, nozik farq va ehtiyotkor akademik fikr bildirish formulalari.",
+    "structure": "The more + clause, the more + clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "The more learners practise complex sentences, the more naturally they use them in speaking.",
+    "example_uz": "O'rganuvchilar murakkab gaplarni qancha ko'p mashq qilsa, ularni speakingda shuncha tabiiy ishlatadi.",
+    "wrong_uz": "comparison structureda 'to', 'than', 'as' yoki word order noto'g'ri ishlatiladi.",
+    "correct_en": "The more learners practise complex sentences, the more naturally they use them in speaking.",
+    "upgrade": {
+      "source": "Simple: Advanced grammar helps speaking. → Pro: Advanced grammar is not so much about rules as about controlling meaning precisely.",
+      "simple": "Advanced grammar helps speaking.",
+      "advanced": "Advanced grammar is not so much about rules as about controlling meaning precisely."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-096-rather-than",
+    "formula_number": 96,
+    "title": "rather than...",
+    "level": "B2-C1",
+    "category": "Comparison, Qualification & Hedging Structures",
+    "rule_uz": "Taqqoslash, ehtimollik, nozik farq va ehtiyotkor akademik fikr bildirish formulalari.",
+    "structure": "clause + rather than + noun/gerund/base verb",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Learners should practise using structures in answers rather than memorising them in isolation.",
+    "example_uz": "O'rganuvchilar strukturalarni alohida yodlash o'rniga ularni javoblarda ishlatishni mashq qilishi kerak.",
+    "wrong_uz": "comparison structureda 'to', 'than', 'as' yoki word order noto'g'ri ishlatiladi.",
+    "correct_en": "Learners should practise using structures in answers rather than memorising them in isolation.",
+    "upgrade": {
+      "source": "Simple: Advanced grammar helps speaking. → Pro: Advanced grammar is not so much about rules as about controlling meaning precisely.",
+      "simple": "Advanced grammar helps speaking.",
+      "advanced": "Advanced grammar is not so much about rules as about controlling meaning precisely."
+    },
+    "topics": [
+      "education",
+      "learning_style"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-097-instead-of",
+    "formula_number": 97,
+    "title": "instead of...",
+    "level": "B2-C1",
+    "category": "Comparison, Qualification & Hedging Structures",
+    "rule_uz": "Taqqoslash, ehtimollik, nozik farq va ehtiyotkor akademik fikr bildirish formulalari.",
+    "structure": "Instead of + noun/gerund, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "Instead of learning rules passively, students should build sentences with them.",
+    "example_uz": "Qoidalarni passiv o'rganish o'rniga, o'quvchilar ular bilan gaplar tuzishi kerak.",
+    "wrong_uz": "comparison structureda 'to', 'than', 'as' yoki word order noto'g'ri ishlatiladi.",
+    "correct_en": "Instead of learning rules passively, students should build sentences with them.",
+    "upgrade": {
+      "source": "Simple: Advanced grammar helps speaking. → Pro: Advanced grammar is not so much about rules as about controlling meaning precisely.",
+      "simple": "Advanced grammar helps speaking.",
+      "advanced": "Advanced grammar is not so much about rules as about controlling meaning precisely."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-098-in-comparison-with",
+    "formula_number": 98,
+    "title": "in comparison with...",
+    "level": "B2-C1",
+    "category": "Comparison, Qualification & Hedging Structures",
+    "rule_uz": "Taqqoslash, ehtimollik, nozik farq va ehtiyotkor akademik fikr bildirish formulalari.",
+    "structure": "In comparison with + noun phrase, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "In comparison with basic grammar, advanced structures allow learners to express more nuanced ideas.",
+    "example_uz": "Oddiy grammatika bilan solishtirganda, kuchli strukturalar o'rganuvchilarga nozikroq fikrlarni ifodalash imkonini beradi.",
+    "wrong_uz": "comparison structureda 'to', 'than', 'as' yoki word order noto'g'ri ishlatiladi.",
+    "correct_en": "In comparison with basic grammar, advanced structures allow learners to express more nuanced ideas.",
+    "upgrade": {
+      "source": "Simple: Advanced grammar helps speaking. → Pro: Advanced grammar is not so much about rules as about controlling meaning precisely.",
+      "simple": "Advanced grammar helps speaking.",
+      "advanced": "Advanced grammar is not so much about rules as about controlling meaning precisely."
+    },
+    "topics": [
+      "education"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-099-to-a-greater-lesser-extent",
+    "formula_number": 99,
+    "title": "to a greater/lesser extent...",
+    "level": "B2-C1",
+    "category": "Comparison, Qualification & Hedging Structures",
+    "rule_uz": "Taqqoslash, ehtimollik, nozik farq va ehtiyotkor akademik fikr bildirish formulalari.",
+    "structure": "To a greater/lesser extent, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "To a greater extent, success in speaking depends on confidence and sentence control.",
+    "example_uz": "Kengroq ma'noda, speakingdagi muvaffaqiyat ishonch va gap tuzish nazoratiga bog'liq.",
+    "wrong_uz": "comparison structureda 'to', 'than', 'as' yoki word order noto'g'ri ishlatiladi.",
+    "correct_en": "To a greater extent, success in speaking depends on confidence and sentence control.",
+    "upgrade": {
+      "source": "Simple: Advanced grammar helps speaking. → Pro: Advanced grammar is not so much about rules as about controlling meaning precisely.",
+      "simple": "Advanced grammar helps speaking.",
+      "advanced": "Advanced grammar is not so much about rules as about controlling meaning precisely."
+    },
+    "topics": [
+      "education",
+      "success"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  },
+  {
+    "id": "grammar-100-to-some-extent",
+    "formula_number": 100,
+    "title": "to some extent...",
+    "level": "B2-C1",
+    "category": "Comparison, Qualification & Hedging Structures",
+    "rule_uz": "Taqqoslash, ehtimollik, nozik farq va ehtiyotkor akademik fikr bildirish formulalari.",
+    "structure": "To some extent, clause",
+    "use_uz": "IELTS Speaking/Writing, academic paragraph, discussion va advanced answerlarda fikrni kuchliroq ifodalash uchun ishlatiladi.",
+    "example_en": "To some extent, grammar knowledge helps; however, learners also need repeated real practice.",
+    "example_uz": "Ma'lum darajada grammatika bilimi yordam beradi; biroq o'rganuvchilarga takroriy real mashq ham kerak.",
+    "wrong_uz": "comparison structureda 'to', 'than', 'as' yoki word order noto'g'ri ishlatiladi.",
+    "correct_en": "To some extent, grammar knowledge helps; however, learners also need repeated real practice.",
+    "upgrade": {
+      "source": "Simple: Advanced grammar helps speaking. → Pro: Advanced grammar is not so much about rules as about controlling meaning precisely.",
+      "simple": "Advanced grammar helps speaking.",
+      "advanced": "Advanced grammar is not so much about rules as about controlling meaning precisely."
+    },
+    "topics": [
+      "education",
+      "learning_style"
+    ],
+    "active": true,
+    "review_status": "parsed"
+  }
+]

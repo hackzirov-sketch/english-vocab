@@ -1,0 +1,2072 @@
+[
+  {
+    "id": "speaking-part1-01-self-introduction",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Self-Introduction",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: ism, hozirgi holat, qiziqish va maqsadni 30 soniyada ravon ulash.",
+    "key_vocabulary": [
+      "currently based in",
+      "professional background",
+      "passionate about",
+      "long-term goal",
+      "focused on",
+      "personal growth"
+    ],
+    "model_answer_en": "I’m [Name], and I’m currently based in [City]. At the moment, I’m mainly focused on improving my English and building practical skills that can help me in my studies and future career. I’d describe myself as someone who is curious and fairly disciplined, especially when I have a clear goal. So overall, I’m trying to become more confident, more capable, and better prepared for future opportunities.",
+    "practice_steps": [
+      "What do you usually say when you introduce yourself?",
+      "What personal quality describes you best?",
+      "What is one goal you are working on now?"
+    ],
+    "formula": {
+      "topic_specific": "Name + current situation -> focus area -> personal quality -> future goal -> clean finish.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 1
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-02-personality",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Personality",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: o‘zingizni oddiy sifatlar bilan emas, sabab va real vaziyat bilan tasvirlash.",
+    "key_vocabulary": [
+      "easy-going",
+      "self-disciplined",
+      "open-minded",
+      "reserved",
+      "adaptable",
+      "sense of responsibility"
+    ],
+    "model_answer_en": "I’d say I’m quite open-minded and self-disciplined. I usually try to understand different opinions before making a judgment, and when I set a goal, I do my best to stay consistent. For example, when I’m learning something difficult, I prefer to break it into smaller steps rather than give up quickly. So overall, I’d describe myself as calm, responsible, and willing to improve.",
+    "practice_steps": [
+      "Are you more introverted or extroverted?",
+      "What personality trait helps you most?",
+      "What trait would you like to improve?"
+    ],
+    "formula": {
+      "topic_specific": "Main trait -> explanation -> example situation -> balanced conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 2
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-03-hobbies",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Hobbies",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: hobbi faqat “yoqadi” emas, nega foydali ekanini tushuntirish.",
+    "key_vocabulary": [
+      "wind down",
+      "creative outlet",
+      "spare time",
+      "recharge my batteries",
+      "be keen on",
+      "sense of balance"
+    ],
+    "model_answer_en": "In my free time, I’m really keen on activities that help me both relax and learn something new. More often than not, I watch educational videos or listen to short talks because they allow me to wind down without wasting my time completely. I also feel that hobbies are important because they give people a sense of balance. So overall, my free time is mostly about recharging my batteries and improving myself at the same time.",
+    "practice_steps": [
+      "What hobby helps you relax?",
+      "Do your hobbies teach you anything?",
+      "Would you like to try a new hobby?"
+    ],
+    "formula": {
+      "topic_specific": "Hobby -> reason -> personal benefit -> mini conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 3
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-04-daily-routine",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Daily Routine",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: tartibni vaqt bo‘yicha aytish, lekin mantiq va natija qo‘shish.",
+    "key_vocabulary": [
+      "morning routine",
+      "get a head start",
+      "tackle tasks",
+      "stay organized",
+      "wind down",
+      "productive rhythm"
+    ],
+    "model_answer_en": "My daily routine is fairly structured. I usually try to get a head start on the day by planning my main tasks in the morning. During the day, I focus on studying, working, or completing the most important things first. In the evening, I prefer to wind down, review what I’ve done, and prepare for the next day. I think this routine helps me stay organized and maintain a productive rhythm.",
+    "practice_steps": [
+      "Do you prefer mornings or evenings?",
+      "What is the most productive part of your day?",
+      "Would you like to change your routine?"
+    ],
+    "formula": {
+      "topic_specific": "Morning -> main tasks -> evening -> result.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 4
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-05-family",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Family",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: oilani hissiyot, qo‘llab-quvvatlash va qadriyat bilan bog‘lash.",
+    "key_vocabulary": [
+      "close-knit family",
+      "support system",
+      "upbringing",
+      "family values",
+      "stand by someone",
+      "sense of belonging"
+    ],
+    "model_answer_en": "Family plays an essential role in my life because it gives me emotional support and a strong sense of belonging. Even when I face pressure or uncertainty, my family usually stands by me and reminds me of what really matters. For example, their advice often helps me make better decisions. So overall, I see family not just as people I live with, but as a support system that shapes my values and character.",
+    "practice_steps": [
+      "Do you have a close-knit family?",
+      "Who do you usually ask for advice?",
+      "What family value is important to you?"
+    ],
+    "formula": {
+      "topic_specific": "Importance -> emotional reason -> example -> final value.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 5
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-06-friends",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Friends",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: do‘stlikni faqat “kind” bilan emas, ishonch va izchillik bilan tushuntirish.",
+    "key_vocabulary": [
+      "trustworthy",
+      "supportive",
+      "rely on",
+      "keep in touch",
+      "have a lot in common",
+      "through thick and thin"
+    ],
+    "model_answer_en": "The quality I value most in a friend is trustworthiness. In my view, friendship is not only about having fun together; it is also about being able to rely on someone when things become difficult. For instance, a supportive friend listens carefully, gives honest advice, and stays with you through thick and thin. So overall, I think a real friend should make you feel understood, respected, and emotionally supported.",
+    "practice_steps": [
+      "Is it easy to make new friends?",
+      "How do you keep in touch with friends?",
+      "What makes a friendship strong?"
+    ],
+    "formula": {
+      "topic_specific": "Quality -> reason -> real-life example -> conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 6
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-07-education",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Education",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: educationni bilimdan tashqari fikrlash, imkoniyat va xarakter bilan bog‘lash.",
+    "key_vocabulary": [
+      "compulsory education",
+      "critical thinking",
+      "broaden knowledge",
+      "qualification",
+      "lifelong learning",
+      "future opportunities"
+    ],
+    "model_answer_en": "Education is essential because it does much more than provide information. It helps people develop critical thinking, communicate better, and prepare for future opportunities. For example, a well-educated person is usually better at solving problems and making informed decisions. I also believe education builds confidence, because it gives people the ability to understand the world more clearly. So overall, education is one of the strongest foundations for personal and professional growth.",
+    "practice_steps": [
+      "What subject is most useful for life?",
+      "Do you prefer online or traditional learning?",
+      "What makes a good teacher?"
+    ],
+    "formula": {
+      "topic_specific": "Big idea -> explanation -> example -> wider impact.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 7
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-08-learning-style",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Learning Style",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: o‘rganish usulingizni aniq aytish va nega ishlashini tushuntirish.",
+    "key_vocabulary": [
+      "hands-on learning",
+      "visual learner",
+      "take notes",
+      "break into steps",
+      "retain information",
+      "learning process"
+    ],
+    "model_answer_en": "I learn best through a mix of visual explanation and practical practice. If I only read theory, I may understand it for a short time, but I retain information better when I see examples and use the idea myself. For instance, when I learn English, I prefer to look at a structure, listen to a natural example, and then create my own sentence. This makes the learning process more active and memorable.",
+    "practice_steps": [
+      "Do you learn better alone or with others?",
+      "Do examples help you learn faster?",
+      "What learning habit works best for you?"
+    ],
+    "formula": {
+      "topic_specific": "Learning style -> method -> reason -> result.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 8
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-09-work-studies",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Work / Studies",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: tanlovni mutlaq qilmasdan, vaziyatga qarab balans bilan javob berish.",
+    "key_vocabulary": [
+      "teamwork",
+      "independent work",
+      "collaborate",
+      "core responsibilities",
+      "meet a deadline",
+      "productive environment"
+    ],
+    "model_answer_en": "I’d say it depends on the task, but I generally prefer a balance between teamwork and independent work. When a project requires creativity or problem-solving, working with others can be very helpful because different people bring different perspectives. However, when I need deep focus, I work better alone. So overall, I think the most productive approach is to collaborate when ideas are needed and work independently when concentration is essential.",
+    "practice_steps": [
+      "What makes teamwork difficult?",
+      "Do deadlines motivate you?",
+      "What kind of work environment helps you most?"
+    ],
+    "formula": {
+      "topic_specific": "Balanced preference -> reason -> example -> conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 9
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-10-career-goals",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Career Goals",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: orzu emas, aniq yo‘nalish + sabab + reja ko‘rsatish.",
+    "key_vocabulary": [
+      "career path",
+      "long-term aspiration",
+      "professional development",
+      "skill set",
+      "set my sights on",
+      "make progress"
+    ],
+    "model_answer_en": "My long-term career goal is to build a path where I can use my skills in a meaningful and practical way. I haven’t fixed every detail yet, but I’ve set my sights on developing strong communication, problem-solving, and technical skills. At the moment, I’m trying to improve step by step rather than rush the process. In the long run, I want a career that gives me both professional growth and a sense of purpose.",
+    "practice_steps": [
+      "What skill will help your career most?",
+      "Do you prefer a stable job or a creative job?",
+      "How do you prepare for your future?"
+    ],
+    "formula": {
+      "topic_specific": "Goal -> reason -> current action -> final vision.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 10
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-11-technology",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Technology",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: technologydan foydalanishni vaqt, aloqa, o‘qish va foyda bilan bog‘lash.",
+    "key_vocabulary": [
+      "play a pivotal role",
+      "rely on",
+      "user-friendly",
+      "access information",
+      "manage tasks efficiently",
+      "digital tools"
+    ],
+    "model_answer_en": "I use technology on a daily basis, and I’d say it plays a pivotal role in my routine. I rely on my phone and computer for studying, communication, planning, and accessing information quickly. For instance, digital tools help me take notes, watch lessons, and stay connected with people. At the same time, I think technology should be used wisely, because it can easily become a distraction if there is no balance.",
+    "practice_steps": [
+      "What technology do you use most?",
+      "Can technology be distracting?",
+      "How has technology changed learning?"
+    ],
+    "formula": {
+      "topic_specific": "Frequency -> uses -> benefit -> responsible conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 11
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-12-social-media",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Social Media",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: foyda va xavfni balansli, mavzudan chiqmasdan tushuntirish.",
+    "key_vocabulary": [
+      "stay connected",
+      "go viral",
+      "online content",
+      "raise awareness",
+      "screen time",
+      "digital balance"
+    ],
+    "model_answer_en": "I’d say social media is useful when it is used with purpose. It allows people to stay connected, discover useful content, and even raise awareness about important issues. For example, many students use short videos or posts to learn new skills. However, it can also waste time if people scroll without thinking. So overall, social media is not automatically good or bad; its value depends on how responsibly people use it.",
+    "practice_steps": [
+      "How much time do you spend on social media?",
+      "What kind of content is useful online?",
+      "Should students limit screen time?"
+    ],
+    "formula": {
+      "topic_specific": "Balanced answer -> benefit -> risk -> conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 12
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-13-books-films",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Books & Films",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: tanlovni sabab, hissiyot va foyda bilan izohlash.",
+    "key_vocabulary": [
+      "avid reader",
+      "thought-provoking",
+      "gripping",
+      "broaden knowledge",
+      "escape into another world",
+      "not my cup of tea"
+    ],
+    "model_answer_en": "I enjoy both, but I usually prefer films because they can tell a story in a very visual and emotionally engaging way. A gripping film can capture atmosphere, facial expressions, and music all at once, which makes the experience powerful. That said, I also respect books because they help people broaden their knowledge and think more deeply. So overall, films are my go-to choice for relaxation, while books are better for reflection and learning.",
+    "practice_steps": [
+      "What kind of films do you like?",
+      "Do books help people think deeply?",
+      "What story has influenced you?"
+    ],
+    "formula": {
+      "topic_specific": "Preference -> reason -> example -> conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 13
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-14-music",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Music",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: musiqa turini kayfiyat, energiya va vaziyat bilan bog‘lash.",
+    "key_vocabulary": [
+      "music genre",
+      "catchy tune",
+      "upbeat",
+      "cheer up",
+      "background music",
+      "personal taste"
+    ],
+    "model_answer_en": "My music taste depends heavily on my mood, but I’m usually drawn to songs that are either relaxing or upbeat. When I need to focus, I prefer calm background music because it helps me concentrate without distracting me. But when I feel tired, a catchy and energetic song can really cheer me up. So overall, music is not just entertainment for me; it is a simple way to manage my mood and energy.",
+    "practice_steps": [
+      "Do you listen to music while studying?",
+      "Can music change your mood?",
+      "Do you prefer local or international music?"
+    ],
+    "formula": {
+      "topic_specific": "Type -> reason -> situation -> emotional result.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 14
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-15-food",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Food",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: ovqat haqida sog‘lom, tabiiy va shaxsiy javob berish.",
+    "key_vocabulary": [
+      "home-cooked food",
+      "nutritious",
+      "comfort food",
+      "cuisine",
+      "balanced diet",
+      "mouth-watering"
+    ],
+    "model_answer_en": "I’m quite fond of home-cooked food, mainly because it feels healthier, fresher, and more personal. For example, a simple meal prepared at home can be both nutritious and comforting, especially after a long day. Every now and then, I also enjoy trying different cuisines because it gives me a chance to experience new flavours. So overall, I prefer food that is tasty, balanced, and connected to a sense of comfort.",
+    "practice_steps": [
+      "Do you prefer eating at home or outside?",
+      "What food is popular in your country?",
+      "Is a balanced diet important to you?"
+    ],
+    "formula": {
+      "topic_specific": "Preference -> reason -> example -> balanced finish.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 15
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-16-shopping",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Shopping",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: shoppingni ehtiyoj, sifat va vaqt bilan mantiqli bog‘lash.",
+    "key_vocabulary": [
+      "shop around",
+      "value for money",
+      "price tag",
+      "genuine product",
+      "over-priced",
+      "make a practical choice"
+    ],
+    "model_answer_en": "I wouldn’t say I’m a shopaholic, but I do enjoy shopping when I have a clear purpose. I usually prefer to shop around before buying something because I want to make sure it is good value for money. For example, if I need clothes or a device, I compare quality, price, and usefulness rather than buying the first thing I see. So overall, I see shopping as a practical activity more than just entertainment.",
+    "practice_steps": [
+      "Do you compare prices before buying?",
+      "Do you prefer online or offline shopping?",
+      "What makes a product worth buying?"
+    ],
+    "formula": {
+      "topic_specific": "Preference -> shopping habit -> reason -> conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 16
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-17-health",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Health",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: sog‘liqni tashqi ko‘rinish emas, energiya, odat va farovonlik bilan bog‘lash.",
+    "key_vocabulary": [
+      "healthy lifestyle",
+      "look after my health",
+      "stay active",
+      "balanced diet",
+      "mental well-being",
+      "make a speedy recovery"
+    ],
+    "model_answer_en": "I try to look after my health through simple but consistent habits. I don’t follow anything extreme; I just try to stay active, eat balanced meals, drink enough water, and get proper rest. I also think mental well-being matters because stress can affect energy and focus. So overall, for me, a healthy lifestyle is not about being perfect, but about making small choices that help me feel stable and energetic.",
+    "practice_steps": [
+      "What daily habit helps your health?",
+      "Is sleep important for students?",
+      "How can people reduce stress in a healthy way?"
+    ],
+    "formula": {
+      "topic_specific": "Habits -> reason -> example -> meaningful conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 17
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-18-stress-management",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Stress Management",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: stressni real tan olish, keyin amaliy va xavfsiz yechim berish.",
+    "key_vocabulary": [
+      "feel overwhelmed",
+      "take a breather",
+      "manage pressure",
+      "clear my mind",
+      "stay calm",
+      "emotional balance"
+    ],
+    "model_answer_en": "When I feel overwhelmed, I usually try to slow down rather than react immediately. One thing that helps me is taking a short breather, organizing my tasks, and focusing on one thing at a time. Sometimes I also talk to someone I trust because it helps me clear my mind. So overall, I deal with stress best when I stay calm, break the problem into smaller parts, and avoid overthinking everything at once.",
+    "practice_steps": [
+      "What usually makes students stressed?",
+      "Do breaks help you focus?",
+      "Who do you talk to when you need advice?"
+    ],
+    "formula": {
+      "topic_specific": "Acknowledge stress -> strategy -> example -> result.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 18
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-19-sports-fitness",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Sports & Fitness",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: sportni sog‘liq, intizom va energiya bilan bog‘lash, ideal tanaga urg‘u bermaslik.",
+    "key_vocabulary": [
+      "keep fit",
+      "stay active",
+      "strenuous exercise",
+      "build discipline",
+      "team spirit",
+      "physical energy"
+    ],
+    "model_answer_en": "Yes, I think sport is important because it supports both physical energy and personal discipline. Even simple activities like walking, running, or playing a team sport can help people stay active and feel more focused. I also believe sport teaches useful life skills, such as patience, teamwork, and consistency. So overall, sport is not only about physical fitness; it can also shape a person’s mindset and daily habits in a positive way.",
+    "practice_steps": [
+      "What sport do you enjoy?",
+      "Is teamwork important in sport?",
+      "Can sport improve discipline?"
+    ],
+    "formula": {
+      "topic_specific": "Importance -> benefits -> example -> final meaning.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 19
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-20-travel",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Travel",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: travelni faqat dam olish emas, dunyoqarash, tajriba va xotira bilan bog‘lash.",
+    "key_vocabulary": [
+      "breathtaking view",
+      "broaden horizons",
+      "holiday destination",
+      "travel light",
+      "local culture",
+      "memorable experience"
+    ],
+    "model_answer_en": "Yes, I really enjoy travelling because it gives me a chance to step out of my normal routine and see life from a different perspective. Visiting a new place, even for a short time, can broaden your horizons and create memorable experiences. For example, I enjoy discovering local food, architecture, and traditions. So overall, travelling is valuable to me because it combines relaxation, learning, and a sense of adventure.",
+    "practice_steps": [
+      "What place would you like to visit?",
+      "Do you prefer travelling alone or with family?",
+      "What can people learn from travel?"
+    ],
+    "formula": {
+      "topic_specific": "Preference -> reason -> example -> emotional conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 20
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-21-hometown",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Hometown",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: joyni tasvirlashda atmosphere, people, facilities va shaxsiy hisni ulash.",
+    "key_vocabulary": [
+      "be located in",
+      "vibrant city",
+      "close-knit community",
+      "good facilities",
+      "traffic congestion",
+      "sense of identity"
+    ],
+    "model_answer_en": "My hometown is a place with a fairly calm atmosphere and a strong sense of community. It may not be the biggest or most modern place, but people are generally friendly, and daily life feels quite familiar. There are also useful facilities, such as schools, markets, and local businesses. Of course, like many towns, it has some challenges, but overall, it gives me a strong sense of identity and belonging.",
+    "practice_steps": [
+      "What is your hometown famous for?",
+      "What would you improve in your hometown?",
+      "Do you want to live there in the future?"
+    ],
+    "formula": {
+      "topic_specific": "Location/description -> positive detail -> challenge -> personal feeling.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 21
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-22-urban-vs-rural-life",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Urban vs Rural Life",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: ikki tomonli solishtirish, keyin aniq tanlov berish.",
+    "key_vocabulary": [
+      "city centre",
+      "rural area",
+      "peaceful environment",
+      "career opportunities",
+      "overcrowded",
+      "quality of life"
+    ],
+    "model_answer_en": "I’d probably prefer living in a city, mainly because it offers better access to education, work, and social opportunities. In a city, it is usually easier to meet people, attend events, and use different services. That said, I understand why some people prefer rural areas, as they are often quieter and less stressful. So overall, for my current lifestyle, city life suits me better, but I still value the peace of the countryside.",
+    "practice_steps": [
+      "What are the advantages of city life?",
+      "Why do some people prefer rural areas?",
+      "Would you move to another city?"
+    ],
+    "formula": {
+      "topic_specific": "Preference -> city advantage -> countryside advantage -> conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 22
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-23-environment",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Environment",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: global gap emas, kundalik kichik harakat + sabab + natija berish.",
+    "key_vocabulary": [
+      "environmentally friendly",
+      "recycle",
+      "combat climate change",
+      "reduce waste",
+      "energy-efficient",
+      "take responsibility"
+    ],
+    "model_answer_en": "People can protect the environment by making small but consistent changes in their daily lives. For example, they can reduce waste, recycle more, save water, and use energy more carefully. These actions may seem simple, but when many people do them, they can create a meaningful impact. I also think environmental protection starts with responsibility, because people are more likely to act when they understand how their choices affect nature.",
+    "practice_steps": [
+      "Do you recycle?",
+      "What environmental problem worries people most?",
+      "Should schools teach environmental responsibility?"
+    ],
+    "formula": {
+      "topic_specific": "Simple actions -> reason -> example -> collective impact.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 23
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-24-time-management",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Time Management",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: idealman demasdan, usul va rivojlanishni ko‘rsatish.",
+    "key_vocabulary": [
+      "prioritize tasks",
+      "meet a deadline",
+      "stay organized",
+      "procrastinate",
+      "productive schedule",
+      "time pressure"
+    ],
+    "model_answer_en": "I’d say I’m getting better at managing my time, although I’m not perfect at it yet. What helps me most is prioritizing tasks and focusing on the most urgent or meaningful ones first. For example, if I have several deadlines, I try to plan them in order instead of leaving everything until the last minute. So overall, good time management, for me, is about staying organized and reducing unnecessary pressure.",
+    "practice_steps": [
+      "Do you use a planner?",
+      "What usually wastes your time?",
+      "How do you handle deadlines?"
+    ],
+    "formula": {
+      "topic_specific": "Honest answer -> method -> challenge -> improvement.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 24
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-25-money-budgeting",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Money & Budgeting",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: pul haqida kattalarga mos, xavfsiz, odat va mas’uliyatga asoslangan javob.",
+    "key_vocabulary": [
+      "budget management",
+      "financial responsibility",
+      "save money",
+      "spending habits",
+      "value for money",
+      "long-term planning"
+    ],
+    "model_answer_en": "Yes, I think managing money well is important because it teaches responsibility and long-term thinking. Even simple habits, like tracking expenses or thinking before buying something, can help people avoid unnecessary spending. For example, if someone compares prices and focuses on value for money, they are more likely to make sensible choices. So overall, budgeting is not only about saving money; it is about building discipline and making smarter decisions.",
+    "practice_steps": [
+      "Do you save money?",
+      "What do people waste money on?",
+      "Should students learn budgeting?"
+    ],
+    "formula": {
+      "topic_specific": "Importance -> habit -> example -> conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 25
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-26-personal-growth",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Personal Growth",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: growthni kichik odatlar, feedback va izchillik orqali tushuntirish.",
+    "key_vocabulary": [
+      "personal development",
+      "self-awareness",
+      "comfort zone",
+      "learn from mistakes",
+      "consistent effort",
+      "growth mindset"
+    ],
+    "model_answer_en": "People improve themselves through self-awareness and consistent effort. In my opinion, real personal growth starts when someone understands their weaknesses and takes small steps to work on them. For instance, learning from mistakes, asking for feedback, and stepping outside the comfort zone can make a big difference over time. So overall, improvement is not usually a sudden change; it is the result of small decisions repeated consistently.",
+    "practice_steps": [
+      "What habit helps personal growth?",
+      "Is feedback important?",
+      "How can mistakes help people improve?"
+    ],
+    "formula": {
+      "topic_specific": "Big idea -> methods -> example -> final takeaway.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 26
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-27-success",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Success",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: successni faqat pul/mashhurlik emas, progress va ma’no bilan tushuntirish.",
+    "key_vocabulary": [
+      "achievement",
+      "sense of purpose",
+      "personal fulfilment",
+      "make progress",
+      "meaningful goal",
+      "measure success"
+    ],
+    "model_answer_en": "To me, success means making meaningful progress toward goals that actually matter to you. I don’t think success should be measured only by money or popularity, because those things do not always bring personal fulfilment. For example, someone may feel successful when they improve their skills, help their family, or overcome a difficult challenge. So overall, success is about growth, purpose, and feeling proud of the direction your life is taking.",
+    "practice_steps": [
+      "Can success mean different things to different people?",
+      "Is hard work always necessary for success?",
+      "What goal would make you feel successful?"
+    ],
+    "formula": {
+      "topic_specific": "Definition -> contrast -> example -> personal conclusion.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 27
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-28-future-plans",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Future Plans",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: kelajakni aniq, ammo moslashuvchan tarzda aytish.",
+    "key_vocabulary": [
+      "foreseeable future",
+      "long-term aspirations",
+      "set my sights on",
+      "future is up in the air",
+      "develop skills",
+      "stay flexible"
+    ],
+    "model_answer_en": "In the foreseeable future, my main plan is to keep improving my English and develop skills that will be useful for my studies and career. My long-term aspirations are still developing, but I’ve set my sights on becoming more independent and capable. I know the future can be unpredictable, so I’m trying to stay flexible while still working toward clear goals. Overall, I want to build a future that gives me both stability and personal growth.",
+    "practice_steps": [
+      "What skill do you want to improve in the future?",
+      "Do you like planning ahead?",
+      "How do you stay motivated for long-term goals?"
+    ],
+    "formula": {
+      "topic_specific": "Short-term plan -> long-term direction -> uncertainty -> confident finish.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 28
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-29-communication",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Communication",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: communicationni relationships, teamwork va misunderstanding bilan bog‘lash.",
+    "key_vocabulary": [
+      "express ideas clearly",
+      "avoid misunderstanding",
+      "active listening",
+      "interpersonal skills",
+      "mutual respect",
+      "smooth interaction"
+    ],
+    "model_answer_en": "Good communication is important because it helps people express ideas clearly and avoid unnecessary misunderstandings. In many situations, problems happen not because people have bad intentions, but because they fail to explain themselves properly or listen carefully. For example, in teamwork, clear communication saves time and creates mutual respect. So overall, communication is not just about speaking well; it is about understanding others and creating smoother interactions.",
+    "practice_steps": [
+      "Are you a good listener?",
+      "How can people avoid misunderstandings?",
+      "Is communication important in leadership?"
+    ],
+    "formula": {
+      "topic_specific": "Importance -> reason -> example -> wider result.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 29
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part1-30-leadership",
+    "lesson_type": "speaking",
+    "speaking_part": 1,
+    "topic": "Leadership",
+    "level": "C1-C2",
+    "goal_uz": "Maqsad: leaderni buyruq beruvchi emas, mas’uliyat, tinglash va yo‘nalish beruvchi sifatida tushuntirish.",
+    "key_vocabulary": [
+      "leadership qualities",
+      "take responsibility",
+      "make decisions",
+      "support a team",
+      "clear vision",
+      "earn respect"
+    ],
+    "model_answer_en": "A good leader is someone who can take responsibility, make thoughtful decisions, and support the people around them. In my opinion, leadership is not just about giving orders; it is about creating direction and earning respect. For example, a strong leader listens to others, explains goals clearly, and stays calm under pressure. So overall, the best leaders combine confidence with empathy, because people follow them not only out of duty, but also out of trust.",
+    "practice_steps": [
+      "Can anyone become a leader?",
+      "Is listening important for leaders?",
+      "Do leaders need confidence or kindness more?"
+    ],
+    "formula": {
+      "topic_specific": "Definition -> qualities -> example -> final principle.",
+      "master": [
+        "direct_answer",
+        "reason",
+        "example",
+        "finish"
+      ],
+      "source_alias": "D-R-E-C",
+      "app_alias": "D-R-E-F"
+    },
+    "source": {
+      "document_id": "book3_part1_draft",
+      "aligned_final_document_id": "book3_part1_final",
+      "topic_number": 30
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-01-self-introduction",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Self-Introduction",
+    "level": "C1-C2",
+    "goal_uz": "O'quvchi o'zini oddiy tanishtirish emas, balki maqsad, xarakter va kelajak bilan bog'lab tanishtiradi.",
+    "key_vocabulary": [
+      "currently based in",
+      "personal growth",
+      "long-term goal",
+      "sense of direction",
+      "communication skills",
+      "future opportunities"
+    ],
+    "model_answer_en": "I would describe myself as a person who is still learning, still improving, and very much a work in progress. At the moment, I am mainly focused on improving my English, building practical skills, and becoming more confident in the way I communicate. What makes it important is that the purpose is to make the listener understand not only who I am, but also what I am trying to become. Compared with a more basic answer, I think this gives the topic more depth because compared with a casual introduction, a strong self-introduction should show direction, not just basic facts. I would also connect it with the saying, 'A journey of a thousand miles begins with a single step.', because katta o'sish kichik, doimiy qadamlardan boshlanadi. At the same time, there is a bit of truth in this observation: many people want an impressive introduction, but forget that the most impressive thing is often clarity. Overall, for me, self-introduction is not about sounding perfect; it is about showing direction, honesty, and ambition.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 1
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-02-personality",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Personality",
+    "level": "C1-C2",
+    "goal_uz": "Shaxsiyatni bitta sifat bilan emas, real vaziyat, foyda va o'sish bilan tushuntirish.",
+    "key_vocabulary": [
+      "open-minded",
+      "self-disciplined",
+      "adaptable",
+      "sense of responsibility",
+      "calm under pressure",
+      "personal trait"
+    ],
+    "model_answer_en": "One personality trait that has helped me a lot is self-discipline, although I would not say I am perfect at it. For example, when I have a difficult task, I try to break it down, deal with it step by step, and stick to the plan rather than panic. What makes it important is that this trait helps me stay consistent instead of depending only on motivation. Compared with a more basic answer, I think this gives the topic more depth because compared with being naturally talented, being disciplined is more useful because it can be trained every day. I would also connect it with the saying, 'Still waters run deep.', because tinch ko'ringan odam ichida chuqur fikr bo'lishi mumkin. At the same time, there is a bit of truth in this observation: people often confuse being loud with being confident, although calm people can be just as determined. Overall, looking back, I think discipline is not about being strict all the time; it is about choosing progress even when the mood is not ideal.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 2
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-03-hobbies",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Hobbies",
+    "level": "C1-C2",
+    "goal_uz": "Hobbini faqat yoqadigan mashg'ulot emas, stressni kamaytiruvchi va o'sishga yordam beruvchi vosita sifatida ochish.",
+    "key_vocabulary": [
+      "creative outlet",
+      "recharge my batteries",
+      "sense of balance",
+      "pastime",
+      "mentally refreshing",
+      "personal enjoyment"
+    ],
+    "model_answer_en": "A hobby that really helps me is listening to educational content and sometimes taking short notes from it. I usually do it in the evening when I want to wind down but do not want to waste the whole night on random entertainment. What makes it important is that its purpose is to help me recover mentally while still keeping my mind active. Compared with a more basic answer, I think this gives the topic more depth because compared with passive entertainment, a good hobby gives both relaxation and personal value. I would also connect it with the saying, 'All work and no play makes Jack a dull boy.', because faqat ish/o'qish, dam olishsiz hayotni zerikarli va charchatadigan qiladi. At the same time, there is a bit of truth in this observation: some people call hobbies a waste of time, then spend the whole evening scrolling without learning anything. Overall, the best thing about this hobby is that it feels relaxing, but at the same time it leaves me with food for thought.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 3
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-04-daily-routine",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Daily Routine",
+    "level": "C1-C2",
+    "goal_uz": "Kundalik tartibni vaqt, ustuvorlik, energiya va natija bilan bog'lab tushuntirish.",
+    "key_vocabulary": [
+      "get a head start",
+      "productive rhythm",
+      "daily priorities",
+      "time block",
+      "stay organized",
+      "wind down"
+    ],
+    "model_answer_en": "A routine that helps me stay organized is my simple morning planning habit. After I wake up, I usually write down the two or three tasks that matter most, which helps me get a head start instead of reacting to everything randomly. What makes it important is that the purpose of my routine is not to control every minute, but to protect the most important parts of the day. Compared with a more basic answer, I think this gives the topic more depth because compared with an unplanned day, a structured routine reduces confusion and saves mental energy. I would also connect it with the saying, 'The early bird catches the worm.', because erta va tayyor bo'lgan odam ko'proq imkoniyatdan foydalanadi. At the same time, there is a bit of truth in this observation: everyone wants a productive day, but not everyone wants to plan the first ten minutes of it. Overall, in the long run, I think a routine is valuable because it turns discipline into something normal rather than something forced.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 4
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-05-family",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Family",
+    "level": "C1-C2",
+    "goal_uz": "Oilani hissiyot, qadriyat, tarbiya va tayanch tizim sifatida ochish.",
+    "key_vocabulary": [
+      "close-knit family",
+      "support system",
+      "family values",
+      "upbringing",
+      "sense of belonging",
+      "emotional support"
+    ],
+    "model_answer_en": "One family value that matters to me is standing by each other during difficult times. I learned this mostly through small everyday moments, such as when family members look after one another, give advice, or simply listen without judging. What makes it important is that the purpose of this value is to remind me that success should not make a person forget respect and responsibility. Compared with a more basic answer, I think this gives the topic more depth because compared with friendship, family support often feels more permanent because it is rooted in shared history. I would also connect it with the saying, 'Blood is thicker than water.', because oila rishtalari ko'pincha juda kuchli bo'ladi. At the same time, there is a bit of truth in this observation: people sometimes chase support everywhere, while the first support system may already be at home. Overall, for me, family is not only about living together; it is about being shaped by the people who stay with you through thick and thin.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 5
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-06-friends",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Friends",
+    "level": "C1-C2",
+    "goal_uz": "Do'stlikni ishonch, samimiyat, maslahat va uzoq muddatli munosabat bilan izohlash.",
+    "key_vocabulary": [
+      "trustworthy",
+      "supportive",
+      "lifelong friend",
+      "keep in touch",
+      "mutual respect",
+      "emotional honesty"
+    ],
+    "model_answer_en": "The friendship quality I value most is reliability, because it is easy to be friendly when everything is fine. A reliable friend is someone I can rely on when I need advice, and someone who does not disappear the moment life becomes complicated. What makes it important is that the purpose of friendship is not only entertainment; it is also emotional support and honest reflection. Compared with a more basic answer, I think this gives the topic more depth because compared with casual friends, a real friend is valuable because they remain honest even when it is not easy. I would also connect it with the saying, 'A friend in need is a friend indeed.', because haqiqiy do'st qiyin paytda bilinadi. At the same time, there is a bit of truth in this observation: in the age of hundreds of online contacts, having one reliable friend can still feel like a luxury. Overall, that is why I believe a true friend is not just a person to laugh with, but also a shoulder to cry on when things get difficult.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 6
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-07-education",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Education",
+    "level": "C1-C2",
+    "goal_uz": "Ta'limni baho emas, fikrlash, izlanish, odat va kelajak imkoniyatlari bilan bog'lash.",
+    "key_vocabulary": [
+      "critical thinking",
+      "lifelong learning",
+      "academic confidence",
+      "learning process",
+      "broaden knowledge",
+      "future opportunities"
+    ],
+    "model_answer_en": "An educational experience that changed me was realizing that learning is not about studying harder only, but studying smarter. There was a time when I used to fall behind because I tried to memorize too much without understanding the main idea. Later, I started breaking topics into smaller parts, reviewing them regularly, and using examples to figure out the logic. What makes it important is that the purpose of education is to teach people how to think, not just how to repeat information. Compared with a more basic answer, I think this gives the topic more depth because compared with memorizing everything, understanding the logic behind a topic is far more powerful. I would also connect it with the saying, 'Practice makes perfect.', because doimiy mashq natijani yaxshilaydi. At the same time, there is a bit of truth in this observation: some students want excellent results, but somehow expect them to arrive without repeated practice. Overall, this taught me that education becomes meaningful when knowledge turns into skill, confidence, and independent thinking.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 7
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-08-learning-style",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Learning Style",
+    "level": "C1-C2",
+    "goal_uz": "Learning styleni visual/audio/practice bilan emas, natija va shaxsiy mantiq bilan tushuntirish.",
+    "key_vocabulary": [
+      "active recall",
+      "visual explanation",
+      "practical example",
+      "learning pattern",
+      "retain information",
+      "study method"
+    ],
+    "model_answer_en": "The learning style that works best for me is a mix of explanation, practice, and short review. First, I try to understand the concept in simple words, then I write down key points and try out a few examples. After that, I go over the material again to make it stick. What makes it important is that the purpose of my learning style is to turn information into something I can actually use. Compared with a more basic answer, I think this gives the topic more depth because compared with passive reading, active practice helps me remember information more effectively. I would also connect it with the saying, 'Tell me and I forget, teach me and I remember, involve me and I learn.', because faol ishtirok o'rganishni kuchaytiradi. At the same time, there is a bit of truth in this observation: many learners highlight everything on the page and then wonder why nothing is highlighted in their memory. Overall, this approach suits me because it does not let me stay passive; it pushes me to use what I learn, which is where real progress begins.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 8
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-09-work-studies",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Work / Studies",
+    "level": "C1-C2",
+    "goal_uz": "Ish/o'qishda javobgarlik, deadline, teamwork yoki individual yondashuvni ko'rsatish.",
+    "key_vocabulary": [
+      "core responsibility",
+      "meet a deadline",
+      "heavy workload",
+      "productive environment",
+      "professional growth",
+      "task management"
+    ],
+    "model_answer_en": "One task that required responsibility was completing an important assignment within a limited time. I had to take on several steps: understanding the task, planning the work, carrying it out, and making sure I could meet the deadline without losing quality. What makes it important is that the purpose of such tasks is to build discipline and show whether someone can be trusted. Compared with a more basic answer, I think this gives the topic more depth because compared with easy tasks, demanding tasks reveal how organized and reliable a person really is. I would also connect it with the saying, 'Actions speak louder than words.', because so'zdan ko'ra amal ko'proq ahamiyatga ega. At the same time, there is a bit of truth in this observation: everyone likes the title of responsibility, but not everyone enjoys the deadline that comes with it. Overall, the experience taught me that responsibility is not only about accepting a task; it is about pulling your weight until the result is finished properly.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 9
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-10-career-goals",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Career Goals",
+    "level": "C1-C2",
+    "goal_uz": "Career goalni orzu emas, real reja, skillset va uzoq muddatli maqsad sifatida tushuntirish.",
+    "key_vocabulary": [
+      "career path",
+      "long-term aspiration",
+      "professional development",
+      "skill set",
+      "sense of purpose",
+      "future-oriented"
+    ],
+    "model_answer_en": "A career goal I would like to achieve is to build a professional path where I can combine communication, practical skills, and meaningful work. I know that I cannot climb the ladder immediately, so I am trying to build up the right habits first: improving my English, developing problem-solving skills, and learning how to work consistently. What makes it important is that the purpose of this goal is to create a future where my skills can produce real value. Compared with a more basic answer, I think this gives the topic more depth because compared with a vague dream, a clear career goal gives direction and helps people choose better habits. I would also connect it with the saying, 'Rome was not built in a day.', because katta natijalar vaqt va izchillik talab qiladi. At the same time, there is a bit of truth in this observation: some people want a successful career overnight, as if experience had a fast-download button. Overall, for me, a career goal is not just about earning well; it is about moving forward with a sense of purpose.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 10
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-11-technology",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Technology",
+    "level": "C1-C2",
+    "goal_uz": "Texnologiyani qulaylik, o'qish, vaqt va ehtiyotkorlik bilan balansli tushuntirish.",
+    "key_vocabulary": [
+      "digital tool",
+      "access information",
+      "user-friendly",
+      "pivotal role",
+      "digital dependency",
+      "manage tasks efficiently"
+    ],
+    "model_answer_en": "A piece of technology that plays a major role in my daily life is my smartphone. I rely on it for studying, communication, note-taking, reminders, and quick access to information. In many ways, it helps me keep up with lessons and manage tasks more efficiently. What makes it important is that its purpose should be to save time, improve access to knowledge, and support productivity. Compared with a more basic answer, I think this gives the topic more depth because compared with the past, technology has made learning faster, but also made distraction easier. I would also connect it with the saying, 'Technology is a good servant but a bad master.', because texnologiya vosita bo'lsa foydali, xo'jayin bo'lib olsa zararli. At the same time, there is a bit of truth in this observation: people buy smart devices, but sometimes use them in rather unwise ways. Overall, however, technology is a double-edged sword; if I do not cut down on unnecessary screen time, the same device that helps me can easily steal my attention.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 11
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-12-social-media",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Social Media",
+    "level": "C1-C2",
+    "goal_uz": "Social mediani foyda/zarar balansida, mantiq va mas'uliyat bilan ochish.",
+    "key_vocabulary": [
+      "online content",
+      "raise awareness",
+      "screen time",
+      "digital balance",
+      "public opinion",
+      "stay connected"
+    ],
+    "model_answer_en": "Social media affects daily life in a very visible way, especially because people use it for communication, entertainment, and learning. I often come across useful posts, educational videos, and news updates, and these can help me stay connected with people and ideas. But I also think users need to take online content with a grain of salt because not everything that looks convincing is actually reliable. What makes it important is that its purpose should be connection, learning, and awareness, not endless distraction. Compared with a more basic answer, I think this gives the topic more depth because compared with traditional media, social media is faster and more personal, but often less filtered. I would also connect it with the saying, 'Not all that glitters is gold.', because chiroyli ko'ringan hamma narsa ham qimmatli emas. At the same time, there is a bit of truth in this observation: social media connects people across the world, yet sometimes makes people ignore the person sitting next to them. Overall, in my view, social media is useful when it has a purpose, but it becomes harmful when scrolling through it turns into an unconscious habit.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 12
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-13-books-films",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Books & Films",
+    "level": "C1-C2",
+    "goal_uz": "Kitob/filmni syujet emas, ta'sir, tasavvur, saboq va fikr bilan tushuntirish.",
+    "key_vocabulary": [
+      "thought-provoking",
+      "gripping",
+      "main character",
+      "lasting impression",
+      "broaden perspective",
+      "emotional depth"
+    ],
+    "model_answer_en": "A film that left a strong impression on me was one that focused on personal growth and difficult choices. I came across it by chance, and at first I thought it might not be my cup of tea. But as the story developed, I got into it because the main character had to make decisions that felt realistic and emotionally deep. What makes it important is that the purpose of such stories is to make us feel, question, and reflect. Compared with a more basic answer, I think this gives the topic more depth because compared with a simple entertaining story, a meaningful book or film can change the way we think. I would also connect it with the saying, 'A picture is worth a thousand words.', because ba'zan tasvir yoki sahna juda ko'p ma'no yetkazadi. At the same time, there is a bit of truth in this observation: some films have huge budgets, but the small honest ones often stay in your mind longer. Overall, what I still think back on is the idea that people often grow not when life is easy, but when they are forced to understand themselves better.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 13
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-14-music",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Music",
+    "level": "C1-C2",
+    "goal_uz": "Musiqani genre emas, mood, energiya, xotira va hissiy boshqaruv bilan bog'lash.",
+    "key_vocabulary": [
+      "catchy tune",
+      "upbeat",
+      "background music",
+      "emotional connection",
+      "cheer up",
+      "calming effect"
+    ],
+    "model_answer_en": "A type of music that affects my mood is calm but meaningful background music. I usually listen to it when I need to calm down or focus on something. It does not distract me too much, but it creates a peaceful atmosphere and helps me slow down mentally. What makes it important is that the purpose is emotional regulation: to relax, focus, or regain energy. Compared with a more basic answer, I think this gives the topic more depth because compared with silence, the right music can make an ordinary moment feel more alive. I would also connect it with the saying, 'Where words fail, music speaks.', because so'z yetmagan joyda musiqa hisni yetkazadi. At the same time, there is a bit of truth in this observation: a three-minute song can sometimes fix a mood that a whole motivational speech cannot. Overall, for me, music is not just entertainment; it is a simple emotional tool, and sometimes the right melody is genuinely music to my ears.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 14
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-15-food",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Food",
+    "level": "C1-C2",
+    "goal_uz": "Foodni ta'm, sog'lomlik, xotira va qulaylik bilan balansli tasvirlash.",
+    "key_vocabulary": [
+      "home-cooked food",
+      "comfort food",
+      "nutritious",
+      "balanced meal",
+      "local cuisine",
+      "sense of comfort"
+    ],
+    "model_answer_en": "A type of food I truly enjoy is home-cooked food, especially meals that are simple but full of flavour. I do eat out from time to time, but I usually prefer meals prepared at home because they feel fresher, more nutritious, and emotionally more comforting. What makes it important is that the purpose of food is not only to remove hunger, but also to support health and create comfort. Compared with a more basic answer, I think this gives the topic more depth because compared with fast food, home-cooked food usually feels more personal and balanced. I would also connect it with the saying, 'You are what you eat.', because ovqatlanish odati sog'liq va kayfiyatga ta'sir qiladi. At the same time, there is a bit of truth in this observation: people often say they want healthy food, but somehow the fried option keeps looking more persuasive. Overall, in a way, good food is not just about taste; it is about energy, memory, and the small sense of comfort that can make a normal day better.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 15
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-16-shopping",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Shopping",
+    "level": "C1-C2",
+    "goal_uz": "Shoppingni isrof emas, value, ehtiyoj va qaror qabul qilish orqali tushuntirish.",
+    "key_vocabulary": [
+      "value for money",
+      "price tag",
+      "genuine need",
+      "budget-friendly",
+      "quality over quantity",
+      "make a purchase"
+    ],
+    "model_answer_en": "A smart purchase I would make is something useful for learning, such as a reliable device or a good study resource. Before buying it, I would definitely shop around, compare quality, check whether I truly need it, and make sure I can get my money’s worth. What makes it important is that the purpose is to buy something that solves a real problem, not something that only looks attractive for a moment. Compared with a more basic answer, I think this gives the topic more depth because compared with impulsive shopping, smart shopping is based on need, quality, and long-term usefulness. I would also connect it with the saying, 'Buy cheap, buy twice.', because juda arzon va sifatsiz narsa keyin yana xarajat qildirishi mumkin. At the same time, there is a bit of truth in this observation: some discounts are so tempting that people buy things they never needed at a price they never planned. Overall, i think shopping becomes sensible when the question changes from ‘Do I want this?’ to ‘Will this actually improve my life or solve a problem?’",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 16
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-17-health",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Health",
+    "level": "C1-C2",
+    "goal_uz": "Health mavzusini xavfsiz, balansli, odat va energiya bilan tushuntirish; zararli ideal yoki ekstremal tavsiyalarsiz.",
+    "key_vocabulary": [
+      "healthy lifestyle",
+      "mental well-being",
+      "balanced routine",
+      "regular check-up",
+      "energy level",
+      "self-care"
+    ],
+    "model_answer_en": "A healthy habit I consider important is maintaining a balanced daily routine, especially enough sleep and regular movement. I do not think health has to be extreme or complicated. For me, it is more about looking after my energy, cutting down on unhealthy habits when necessary, and giving my body enough time to recover. What makes it important is that the purpose is to protect both physical energy and mental well-being. Compared with a more basic answer, I think this gives the topic more depth because compared with short-term motivation, small daily habits are more sustainable for health. I would also connect it with the saying, 'Health is wealth.', because sog'liq eng katta boyliklardan biri. At the same time, there is a bit of truth in this observation: people sometimes protect their phones with cases and passwords, but forget to look after their own sleep and energy. Overall, as the saying goes, health is wealth, and I think this is true because without basic well-being, even success becomes harder to enjoy.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 17
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-18-stress-management",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Stress Management",
+    "level": "C1-C2",
+    "goal_uz": "Stressni hissiyot, sabab, nazorat va sog'lom yondashuv orqali tushuntirish.",
+    "key_vocabulary": [
+      "pressure",
+      "overwhelmed",
+      "mental clarity",
+      "take a breather",
+      "emotional balance",
+      "stress management"
+    ],
+    "model_answer_en": "A way I manage stress is by stepping back for a short moment and giving myself space to clear my head. When I feel overwhelmed, I usually take a breather, organize the problem into smaller parts, and sort out what needs to be done first. What makes it important is that the purpose is not to remove every problem, but to respond to pressure more wisely. Compared with a more basic answer, I think this gives the topic more depth because compared with ignoring stress, managing it early prevents small pressure from becoming overwhelming. I would also connect it with the saying, 'A calm sea never made a skilled sailor.', because qiyinchilik odamni kuchliroq va tajribaliroq qiladi. At the same time, there is a bit of truth in this observation: everyone wants a stress-free life, but most growth seems to arrive with a deadline attached. Overall, this helps because stress often feels bigger when it is unclear; once I understand the next step, the pressure becomes easier to handle.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 18
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-19-sports-fitness",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Sports & Fitness",
+    "level": "C1-C2",
+    "goal_uz": "Sportsni natija emas, sog'lomlik, energiya, intizom va xavfsiz odat bilan bog'lash.",
+    "key_vocabulary": [
+      "keep fit",
+      "physical activity",
+      "energy level",
+      "balanced lifestyle",
+      "personal best",
+      "regular movement"
+    ],
+    "model_answer_en": "A physical activity that suits my lifestyle is walking or light exercise, because it is simple and sustainable. I do not need a complicated routine to feel the benefit. Even regular movement helps me keep fit, improve my energy level, and clear my mind after studying or working. What makes it important is that the purpose is to support health, energy, and discipline, not to chase unrealistic body ideals. Compared with a more basic answer, I think this gives the topic more depth because compared with intense exercise done rarely, regular moderate activity is easier to maintain. I would also connect it with the saying, 'Use it or lose it.', because qobiliyat yoki tana faol ishlatilmasa sustlashadi. At the same time, there is a bit of truth in this observation: many people want fitness results, but hope the elevator counts as leg day. Overall, for me, fitness is not about proving something to others; it is about feeling capable, healthy, and consistent in daily life.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 19
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-20-travel",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Travel",
+    "level": "C1-C2",
+    "goal_uz": "Travelni manzara, tajriba, madaniyat va dunyoqarash kengayishi bilan tasvirlash.",
+    "key_vocabulary": [
+      "breathtaking view",
+      "broaden horizons",
+      "local culture",
+      "travel light",
+      "holiday destination",
+      "memorable experience"
+    ],
+    "model_answer_en": "A place I would like to visit is a city or region with rich history, beautiful architecture, and a strong local culture. I would prefer not only to visit famous landmarks, but also to look around quieter streets and perhaps explore places slightly off the beaten track. What makes it important is that the purpose is to relax, learn, and experience life from a different perspective. Compared with a more basic answer, I think this gives the topic more depth because compared with only reading about a place, visiting it can make culture feel real and personal. I would also connect it with the saying, 'Travel broadens the mind.', because sayohat dunyoqarashni kengaytiradi. At the same time, there is a bit of truth in this observation: some people travel far away just to take the same selfie they could have taken at home. Overall, i believe travel is valuable because it gives you memories, teaches patience, and helps you understand that the world is much bigger than your usual routine.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 20
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-21-hometown",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Hometown",
+    "level": "C1-C2",
+    "goal_uz": "Hometownni shunchaki joy emas, xotira, atmosfera, imkoniyat va muammo bilan balansli tasvirlash.",
+    "key_vocabulary": [
+      "born and raised",
+      "local atmosphere",
+      "well-developed",
+      "close-knit community",
+      "traffic congestion",
+      "sense of identity"
+    ],
+    "model_answer_en": "My hometown is a place that I associate with familiarity, memories, and a strong sense of identity. It may not be perfect, and like many places it may have issues such as limited facilities or traffic at certain times, but it still has an atmosphere that feels personal to me. What makes it important is that the purpose of talking about hometown is to show how place shapes personality and memories. Compared with a more basic answer, I think this gives the topic more depth because compared with big cities, a smaller hometown may offer less entertainment but stronger familiarity. I would also connect it with the saying, 'There is no place like home.', because o'z uying/o'z joyingning o'rni boshqacha. At the same time, there is a bit of truth in this observation: people often complain about their hometown, but defend it immediately when someone else criticizes it. Overall, in the end, there is no place like home, not because it is flawless, but because it carries the people, habits, and memories that shaped you.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 21
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-22-urban-vs-rural-life",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Urban vs Rural Life",
+    "level": "C1-C2",
+    "goal_uz": "Urban/ruralni tarafkash emas, imkoniyat, tinchlik, infratuzilma va hayot tarzi bilan solishtirish.",
+    "key_vocabulary": [
+      "urban lifestyle",
+      "rural area",
+      "infrastructure",
+      "fast-paced life",
+      "peaceful environment",
+      "quality of life"
+    ],
+    "model_answer_en": "I would say I prefer city life at this stage of my life, mainly because it offers more educational and career opportunities. A city usually has better infrastructure, more learning centers, and easier access to services. However, rural life has a peaceful environment that can help people slow down and feel closer to nature. What makes it important is that the purpose is to choose a lifestyle that matches one’s goals, energy, and personal needs. Compared with a more basic answer, I think this gives the topic more depth because compared with rural life, city life offers more opportunities but also more pressure. I would also connect it with the saying, 'The grass is always greener on the other side.', because boshqa joy har doim yaxshiroq ko'rinishi mumkin, lekin bu doim ham haqiqat emas. At the same time, there is a bit of truth in this observation: city people dream of silence, while countryside people may dream of delivery apps and faster internet. Overall, ideally, I would like the best of both worlds: the opportunities of a city and the calmness of the countryside.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 22
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-23-environment",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Environment",
+    "level": "C1-C2",
+    "goal_uz": "Environmentni muammo, sabab, oqibat va oddiy yechimlar bilan chuqur, lekin mavzudan chiqmasdan ochish.",
+    "key_vocabulary": [
+      "environmental issue",
+      "climate change",
+      "pollution",
+      "sustainable habit",
+      "protect nature",
+      "long-term impact"
+    ],
+    "model_answer_en": "An environmental problem that deserves more attention is everyday pollution, especially plastic waste and careless consumption. What we see on the streets is often just the tip of the iceberg, because pollution affects water, soil, animals, and even human health in the long run. What makes it important is that the purpose is to reduce harm and make daily life more sustainable. Compared with a more basic answer, I think this gives the topic more depth because compared with individual habits, government action is larger, but personal responsibility still matters. I would also connect it with the saying, 'We do not inherit the Earth from our ancestors; we borrow it from our children.', because tabiatni kelajak avlod uchun asrash kerak. At the same time, there is a bit of truth in this observation: people worry about the planet, but still treat a plastic bottle like it disappears by magic. Overall, i think people should cut down on waste, recycle when possible, and take action not because it looks fashionable, but because future life depends on today’s habits.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 23
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-24-time-management",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Time Management",
+    "level": "C1-C2",
+    "goal_uz": "Time managementni schedule emas, ustuvorlik, fokus va imkoniyat bilan tushuntirish.",
+    "key_vocabulary": [
+      "set priorities",
+      "deadline",
+      "productive routine",
+      "avoid procrastination",
+      "time block",
+      "mental focus"
+    ],
+    "model_answer_en": "A time-management method that helps me is writing down priorities before starting the day. Instead of trying to do everything at once, I choose the most important tasks, set a rough time block, and try not to put them off until the last minute. What makes it important is that the purpose is to protect important tasks from being swallowed by distractions. Compared with a more basic answer, I think this gives the topic more depth because compared with doing everything randomly, setting priorities makes the day more focused. I would also connect it with the saying, 'Time is money.', because vaqtni yo'qotish imkoniyatni yo'qotish bilan teng. At the same time, there is a bit of truth in this observation: people say they have no time, but somehow find a full hour for random scrolling. Overall, time management is not about being busy all the time; it is about using time in a way that matches your real goals.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 24
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-25-money-budgeting",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Money & Budgeting",
+    "level": "C1-C2",
+    "goal_uz": "Money mavzusini moliyaviy ong, reja, ehtiyoj va mas'uliyat bilan tushuntirish.",
+    "key_vocabulary": [
+      "budget management",
+      "financial planning",
+      "spending habit",
+      "save money",
+      "long-term value",
+      "economic independence"
+    ],
+    "model_answer_en": "A money habit young people should learn early is setting aside a small amount of money regularly. Even if the amount is not large, the habit teaches discipline. It also helps people cut back on unnecessary spending and save for a rainy day. What makes it important is that the purpose is to make money serve priorities instead of emotions. Compared with a more basic answer, I think this gives the topic more depth because compared with earning more, spending wisely is often the first skill people need to learn. I would also connect it with the saying, 'Look after the pennies and the pounds will look after themselves.', because kichik xarajatlarni nazorat qilsang, katta mablag' ham tartibga keladi. At the same time, there is a bit of truth in this observation: a small daily purchase can look harmless until it turns into a monthly mystery. Overall, i think budgeting is not about being stingy; it is about understanding the difference between what looks attractive now and what will still matter later.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 25
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-26-personal-growth",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Personal Growth",
+    "level": "C1-C2",
+    "goal_uz": "Personal growthni o'zgarish, qiyinchilik, saboq va ichki rivojlanish bilan ochish.",
+    "key_vocabulary": [
+      "personal development",
+      "self-awareness",
+      "comfort zone",
+      "turning point",
+      "growth mindset",
+      "inner confidence"
+    ],
+    "model_answer_en": "A period when I felt I was growing as a person was when I started taking my goals more seriously. I had to step out of my comfort zone, work through moments of doubt, and accept that improvement would not happen overnight. What makes it important is that the purpose is to become more aware, capable, and emotionally mature. Compared with a more basic answer, I think this gives the topic more depth because compared with staying comfortable, facing small challenges builds stronger confidence. I would also connect it with the saying, 'No pain, no gain.', because o'sish ko'pincha mehnat va noqulaylik talab qiladi. At the same time, there is a bit of truth in this observation: everyone wants personal growth, but very few people enjoy the uncomfortable part where growth actually happens. Overall, looking back, I realized that personal growth is not always dramatic; sometimes it is simply choosing a better habit again and again until it becomes part of who you are.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 26
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-27-success",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Success",
+    "level": "C1-C2",
+    "goal_uz": "Successni faqat pul/status emas, maqsad, barqarorlik, foyda va ichki qoniqish bilan tushuntirish.",
+    "key_vocabulary": [
+      "meaningful achievement",
+      "personal fulfilment",
+      "long-term progress",
+      "discipline",
+      "clear purpose",
+      "measure success"
+    ],
+    "model_answer_en": "To me, success means making steady progress toward a meaningful goal. Of course, money and recognition can be part of success, but I do not think they are the whole picture. I would rather define success as the moment when hard work pays off and you can see the fruits of your labour. What makes it important is that the purpose of success should be to improve life and create value, not just impress others. Compared with a more basic answer, I think this gives the topic more depth because compared with short-term fame, long-term growth feels more stable and meaningful. I would also connect it with the saying, 'Success is a journey, not a destination.', because muvaffaqiyat bir martalik nuqta emas, doimiy jarayon. At the same time, there is a bit of truth in this observation: some people measure success by applause, but applause is not always the same as progress. Overall, in my view, real success should bring both achievement and personal fulfilment; otherwise, it may look impressive from the outside but feel empty inside.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 27
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-28-future-plans",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Future Plans",
+    "level": "C1-C2",
+    "goal_uz": "Future plansni wish emas, aniq yo'nalish, tayyorgarlik, risk va umid bilan tushuntirish.",
+    "key_vocabulary": [
+      "long-term plan",
+      "future-oriented",
+      "set my sights on",
+      "prepare gradually",
+      "uncertain future",
+      "personal ambition"
+    ],
+    "model_answer_en": "One plan I have for the next few years is to develop skills that can give me more opportunities in study and work. I have set my sights on improving my English, communication, and practical abilities. At the same time, I want to keep my options open because the future can change quickly. What makes it important is that the purpose is to move forward with direction while staying flexible. Compared with a more basic answer, I think this gives the topic more depth because compared with waiting for opportunities, preparing gradually makes future opportunities easier to use. I would also connect it with the saying, 'The best way to predict the future is to create it.', because kelajakni kutish emas, harakat bilan qurish kerak. At the same time, there is a bit of truth in this observation: people often want a clear future, but life rarely sends a full instruction manual. Overall, i think future planning is useful not because everything will happen exactly as expected, but because it gives your daily actions a clearer purpose.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 28
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-29-communication",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Communication",
+    "level": "C1-C2",
+    "goal_uz": "Communicationni gapirish emas, tinglash, aniqlik, hurmat va mantiqli yetkazish orqali izohlash.",
+    "key_vocabulary": [
+      "clear communication",
+      "active listening",
+      "mutual understanding",
+      "express ideas",
+      "respectful tone",
+      "avoid misunderstanding"
+    ],
+    "model_answer_en": "A communication skill people should develop is active listening, because communication is not only about speaking well. When people truly listen to each other, they can clear up misunderstandings and get the message across more effectively. This is useful in study, work, friendship, and family life. What makes it important is that the purpose of communication is understanding, not just sound. Compared with a more basic answer, I think this gives the topic more depth because compared with speaking a lot, speaking clearly is much more valuable. I would also connect it with the saying, 'Think before you speak.', because gapirishdan oldin o'ylash kerak. At the same time, there is a bit of truth in this observation: some people listen only to reload their own argument, not to understand the other person. Overall, in my opinion, the strongest communicator is not the loudest person in the room, but the person who can express ideas clearly and make others feel understood.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 29
+    },
+    "active": true
+  },
+  {
+    "id": "speaking-part2-30-leadership",
+    "lesson_type": "speaking",
+    "speaking_part": 2,
+    "topic": "Leadership",
+    "level": "C1-C2",
+    "goal_uz": "Leadershipni buyruq emas, mas'uliyat, namuna, tinglash va jamoa bilan bog'lash.",
+    "key_vocabulary": [
+      "leadership quality",
+      "take responsibility",
+      "team dynamics",
+      "make decisions",
+      "set an example",
+      "earn respect"
+    ],
+    "model_answer_en": "A leadership quality I respect is the ability to lead by example. A good leader does not only tell people what to do; they step up, take responsibility, and show the standard through their own actions. What makes it important is that the purpose of leadership is to help a group move in the right direction, not to show personal power. Compared with a more basic answer, I think this gives the topic more depth because compared with giving orders, setting an example creates more trust. I would also connect it with the saying, 'A leader is one who knows the way, goes the way, and shows the way.', because haqiqiy lider yo'lni biladi, o'zi yuradi va boshqalarga ko'rsatadi. At the same time, there is a bit of truth in this observation: some people confuse leadership with talking the most, although real leadership often starts with listening first. Overall, that is why I believe leadership is less about control and more about responsibility, trust, and bringing out the best in others.",
+    "practice_steps": [
+      "Record a 2-minute version of this answer without reading the full text.",
+      "Replace the given proverb with another wise line that fits the same meaning.",
+      "Use at least one idiom and two phrasal verbs naturally, not mechanically.",
+      "Finish your answer with one clear final takeaway sentence."
+    ],
+    "formula": "S.T.O.R.Y. + C.P.R.",
+    "source": {
+      "document_id": "book3_part2_draft",
+      "aligned_final_document_id": "book3_part2_final",
+      "topic_number": 30
+    },
+    "active": true
+  }
+]

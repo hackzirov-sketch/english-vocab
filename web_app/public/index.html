@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ffb86b'/%3E%3Cpath d='M17 45 29 16h7l12 29h-8l-2-6H27l-2 6Zm12-12h7l-3.5-10Z' fill='%2308141c'/%3E%3C/svg%3E">
   <title>Answer Lab — AI English Tutor</title>
-  <link rel="stylesheet" href="styles.css?v=20260720-6">
+  <link rel="stylesheet" href="styles.css?v=20260720-7">
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
 </head>
 <body>
@@ -177,7 +177,7 @@
               <span class="formula-chip">100 formula</span>
             </header>
             <div class="analysis-toolbar">
-              <label class="field-label" for="grammarText">English matn yoki speaking answer</label>
+              <label class="field-label" for="grammarText">English matn yoki audio transkript</label>
               <label class="analysis-mode" for="analysisMode">
                 <span>Tahlil turi</span>
                 <select id="analysisMode">
@@ -187,6 +187,24 @@
                 </select>
               </label>
             </div>
+            <section id="voiceRecorder" class="voice-recorder" aria-labelledby="voiceRecorderTitle">
+              <div class="voice-copy">
+                <span class="voice-mark" aria-hidden="true">REC</span>
+                <div>
+                  <strong id="voiceRecorderTitle">Speaking javobini ovozda yozing</strong>
+                  <small>60 soniyagacha · serverda saqlanmaydi</small>
+                </div>
+              </div>
+              <div class="voice-visual" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <span id="recordingTimer" class="recording-timer">00:00</span>
+              <div class="voice-actions">
+                <button type="button" id="recordVoice" class="record-button" aria-pressed="false">Ovoz yozish</button>
+                <button type="button" id="transcribeVoice" class="transcribe-button" disabled>Matnga aylantirish</button>
+              </div>
+              <audio id="voicePreview" class="voice-preview" controls hidden></audio>
+              <p id="voiceStatus" class="voice-status" aria-live="polite">Matnga aylantirishda audio Groq xizmatiga yuboriladi; serverda saqlanmaydi.</p>
+              <div id="voiceMetrics" class="voice-metrics" hidden></div>
+            </section>
             <textarea id="grammarText" class="tall" placeholder="I go to school yesterday..."></textarea>
             <p id="grammarValidation" class="validation-message" role="alert" hidden></p>
             <button type="button" id="checkGrammar" class="wide">To'liq tahlil qilish</button>
@@ -217,6 +235,6 @@
     </div>
   </main>
 
-  <script src="app.js?v=20260720-6"></script>
+  <script src="app.js?v=20260720-7"></script>
 </body>
 </html>

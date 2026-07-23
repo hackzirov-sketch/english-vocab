@@ -8,6 +8,11 @@ const {
   buildLessonPrompt
 } = require("./tutor-methodology");
 const { knowledgeStats, retrieveTutorKnowledge } = require("./tutor-knowledge");
+const {
+  buildStructuredLessonContext,
+  buildStructuredLessonSeed,
+  structuredContentStats
+} = require("./structured-content");
 
 const ROOT = path.resolve(__dirname, "..");
 const PUBLIC = path.join(__dirname, "public");
@@ -58,7 +63,7 @@ function send(res, code, body, type = "application/json; charset=utf-8", extraHe
     "Cache-Control": cacheControl,
     "X-Content-Type-Options": "nosniff",
     "Referrer-Policy": "strict-origin-when-cross-origin",
-    "Content-Security-Policy": "default-src 'self'; script-src 'self' https://telegram.org; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self' https://web.telegram.org https://*.telegram.org",
+    "Content-Security-Policy": "default-src 'self'; script-src 'self' https://telegram.org; style-src 'self'; img-src 'self' data:; media-src 'self' blob:; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self' https://web.telegram.org https://*.telegram.org",
     ...extraHeaders
   });
   if (Buffer.isBuffer(body)) return res.end(body);
@@ -79,17 +84,21 @@ function healthPayload() {
       priority: ["groq", "openrouter"]
     },
     tutorKnowledge: knowledgeStats(),
+    structuredContent: structuredContentStats(),
     time: new Date().toISOString()
   };
 }
 
-function parseBody(req) {
+function parseBody(req, maxBytes = 1_000_000) {
   return new Promise((resolve, reject) => {
     let data = "";
     req.on("data", chunk => {
       data += chunk;
-      if (data.length > 1_000_000) {
-        reject(new Error("Body too large"));
+      if (Buffer.byteLength(data) > maxBytes) {
+        const error = new Error("Body too large");
+        error.statusCode = 413;
+        error.publicMessage = "Audio fayl juda katta. 60 soniyadan qisqa yozuv yuboring.";
+        reject(error);
         req.destroy();
       }
     });
@@ -394,6 +403,87 @@ async function callProvider(provider, messages, temperature, maxTokens, options 
   }
 }
 
+async function transcribeAudio(audioBuffer, mimeType, durationMs = 0) {
+  if (!hasUsableKey(process.env.GROQ_API_KEY)) {
+    const error = new Error("GROQ_API_KEY is required for speech transcription");
+    error.statusCode = 503;
+    error.publicMessage = "Ovozdan matnga aylantirish uchun GROQ_API_KEY sozlanmagan.";
+    throw error;
+  }
+
+  const extensionByMime = {
+    "audio/webm": "webm",
+    "audio/webm;codecs=opus": "webm",
+    "audio/ogg": "ogg",
+    "audio/ogg;codecs=opus": "ogg",
+    "audio/mp4": "m4a",
+    "audio/mpeg": "mp3",
+    "audio/wav": "wav"
+  };
+  const extension = extensionByMime[mimeType];
+  if (!extension) {
+    const error = new Error(`Unsupported audio type: ${mimeType}`);
+    error.statusCode = 415;
+    error.publicMessage = "Bu audio format qo‘llab-quvvatlanmaydi.";
+    throw error;
+  }
+
+  const form = new FormData();
+  form.append("file", new Blob([audioBuffer], { type: mimeType }), `speaking.${extension}`);
+  form.append("model", process.env.GROQ_TRANSCRIPTION_MODEL || "whisper-large-v3-turbo");
+  form.append("language", "en");
+  form.append("response_format", "verbose_json");
+  form.append("timestamp_granularities[]", "segment");
+
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), Number(process.env.AUDIO_TIMEOUT_MS || 60_000));
+  try {
+    const baseUrl = process.env.GROQ_BASE_URL || "https://api.groq.com/openai/v1";
+    const response = await fetch(`${baseUrl}/audio/transcriptions`, {
+      method: "POST",
+      headers: { "Authorization": `Bearer ${process.env.GROQ_API_KEY}` },
+      body: form,
+      signal: controller.signal
+    });
+    if (!response.ok) throw new Error(`Groq transcription returned ${response.status}`);
+    const data = await response.json();
+    const text = cleanText(data.text, 6000);
+    if (!text) {
+      const error = new Error("Empty transcription");
+      error.statusCode = 422;
+      error.publicMessage = "Ovoz aniqlanmadi. Tinchroq joyda qayta yozib ko‘ring.";
+      throw error;
+    }
+
+    const durationSeconds = Math.max(.1, Number(data.duration) || Number(durationMs) / 1000 || 0);
+    const segments = Array.isArray(data.segments) ? data.segments : [];
+    let pauseCount = 0;
+    for (let index = 1; index < segments.length; index += 1) {
+      if (Number(segments[index].start) - Number(segments[index - 1].end) >= .75) pauseCount += 1;
+    }
+    const wordCount = text.split(/\s+/).filter(Boolean).length;
+    return {
+      text,
+      metrics: {
+        durationSeconds: Math.round(durationSeconds * 10) / 10,
+        wordCount,
+        wordsPerMinute: Math.round(wordCount / Math.max(durationSeconds / 60, 1 / 60)),
+        pauseCount
+      }
+    };
+  } catch (error) {
+    if (error.statusCode) throw error;
+    const wrapped = new Error(error.name === "AbortError" ? "Audio transcription timeout" : error.message);
+    wrapped.statusCode = 502;
+    wrapped.publicMessage = error.name === "AbortError"
+      ? "Audio tahlili vaqt chegarasidan oshdi. Qisqaroq yozuv bilan qayta urinib ko‘ring."
+      : "Audio xizmatiga ulanib bo‘lmadi. Qayta urinib ko‘ring.";
+    throw wrapped;
+  } finally {
+    clearTimeout(timeout);
+  }
+}
+
 async function callAi(messages, temperature = 0.45, maxTokens = 900, options = {}) {
   const providers = [];
   if (hasUsableKey(process.env.GROQ_API_KEY)) {
@@ -636,20 +726,24 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
     if (!words.length) return send(res, 404, { error: "Lesson uchun so'z topilmadi" });
 
     const wordLines = words.map((word, index) => `${index + 1}. ${word.english} - ${word.uzbek}; formula: ${word.learning?.formula || ""}; example: ${word.example_en || ""}`).join("\n");
+    const structured = buildStructuredLessonContext(topic);
     const knowledge = retrieveTutorKnowledge(
       `${lessonType} ${topic} ${level} ${pattern?.title_en || ""} ${pattern?.formula || ""} ${words.map(word => word.english).join(" ")}`,
       { limit: 8, maxChars: 9500 }
     );
-    const prompt = buildLessonPrompt({ topic, level, lessonType, wordLines, pattern, knowledgeContext: knowledge.context });
+    const knowledgeContext = [structured.context, knowledge.context].filter(Boolean).join("\n\n");
+    const prompt = buildLessonPrompt({ topic, level, lessonType, wordLines, pattern, knowledgeContext });
 
     const ai = await callAi([{ role: "user", content: prompt }], 0.5, 2200, { json: true });
     if (ai.offline) {
+      const structuredSeed = buildStructuredLessonSeed(topic, lessonType, level);
       return send(res, 200, {
+        ...structuredSeed,
         offline: true,
         lesson_type: lessonType,
         title_uz: `${titleCase(topic || "Mixed")} bo‘yicha ${lessonType === "writing" ? "Writing" : "Speaking"} darsi`,
-        goal_uz: lessonType === "writing" ? "10 ta so‘zni yozma matnda qo‘llash." : "10 ta so‘zni tabiiy og‘zaki javobda qo‘llash.",
-        warmup_question_en: `What do you usually say about ${topic || "this topic"}?`,
+        goal_uz: structuredSeed.goal_uz || (lessonType === "writing" ? "10 ta so‘zni yozma matnda qo‘llash." : "10 ta so‘zni tabiiy og‘zaki javobda qo‘llash."),
+        warmup_question_en: structuredSeed.warmup_question_en || `What do you usually say about ${topic || "this topic"}?`,
         vocab_drills: words.map(word => ({
           word: word.english,
           uzbek: word.uzbek,
@@ -657,26 +751,26 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
           sentence_uz: word.example_uz || `${word.uzbek || word.english} uchun namuna gap.`,
           memory_tip_uz: word.learning?.memory_tip_uz || ""
         })),
-        grammar_focus: {
+        grammar_focus: structuredSeed.grammar_focus || {
           title: pattern?.title_en || "Useful sentence pattern",
           formula: pattern?.formula || "Idea + reason + example",
           explanation_uz: pattern?.explanation_uz || "Bu formula javobni tartibli qilishga yordam beradi.",
           example_en: "In my opinion, this topic is important because it affects daily life.",
           example_uz: "Menimcha, bu mavzu muhim, chunki u kundalik hayotga ta'sir qiladi."
         },
-        speaking_questions: lessonType === "writing" ? [] : [
+        speaking_questions: lessonType === "writing" ? [] : (structuredSeed.speaking_questions || [
           `Do you like talking about ${topic || "this topic"}? Why?`,
           `What is one advantage related to ${topic || "this topic"}?`,
           `Can you give a real example from your life?`
-        ],
-        writing_task_uz: lessonType === "writing" ? "Bugungi 10 ta so‘zdan kamida 5 tasini ishlatib 6–8 gapli paragraph yozing." : "",
+        ]),
+        writing_task_uz: lessonType === "writing" ? (structuredSeed.writing_task_uz || "Bugungi 10 ta so‘zdan kamida 5 tasini ishlatib 6–8 gapli paragraph yozing.") : "",
         practice_steps: lessonType === "writing"
           ? ["3 ta asosiy fikr va outline tuzing.", "Yangi so‘zlar bilan gaplar yarating.", "Paragraph yozing va self-check qiling."]
           : ["Direct answer ayting.", "Reason va example qo‘shing.", "Vaqt bilan to‘liq javob bering."],
-        model_answer_en: lessonType === "writing"
+        model_answer_en: structuredSeed.model_answer_en || (lessonType === "writing"
           ? "In my opinion, this topic matters because it affects the choices people make in daily life. A clear example is the way it changes how we communicate and solve problems."
-          : "I think this topic matters because it affects our daily choices. For example, I often notice it when I communicate with other people.",
-        model_answer_uz: "Model javob sabab va misolni yangi vocabulary bilan bog‘laydi.",
+          : "I think this topic matters because it affects our daily choices. For example, I often notice it when I communicate with other people."),
+        model_answer_uz: structuredSeed.model_answer_uz || "Model javob sabab va misolni yangi vocabulary bilan bog‘laydi.",
         mini_quiz: words.slice(0, 5).map(word => ({
           question: `"${word.english}" so'zining ma'nosi nima?`,
           answer: word.uzbek,
@@ -693,6 +787,18 @@ Make the sentence natural, useful, and clearly connected to the formula.`;
     } catch {
       return send(res, 200, normalizeLesson({ raw_note: "AI JSON javobi tugallanmagani uchun DB asosidagi dars ko'rsatildi." }, words, pattern, topic, lessonType));
     }
+  }
+
+  if (url.pathname === "/api/ai/transcribe" && req.method === "POST") {
+    const body = await parseBody(req, 12_000_000);
+    const mimeType = cleanText(body.mimeType, 80).toLowerCase();
+    const encoded = typeof body.audio === "string" ? body.audio : "";
+    if (!encoded || !mimeType) return send(res, 400, { error: "Audio is required" });
+    if (!/^[a-z0-9+/]+={0,2}$/i.test(encoded)) return send(res, 400, { error: "Invalid audio data" });
+    const audioBuffer = Buffer.from(encoded, "base64");
+    if (!audioBuffer.length) return send(res, 400, { error: "Audio is empty" });
+    if (audioBuffer.length > 8_000_000) return send(res, 413, { error: "Audio fayl juda katta. 60 soniyadan qisqa yozuv yuboring." });
+    return send(res, 200, await transcribeAudio(audioBuffer, mimeType, Number(body.durationMs) || 0));
   }
 
   if (url.pathname === "/api/ai/grammar-check" && req.method === "POST") {

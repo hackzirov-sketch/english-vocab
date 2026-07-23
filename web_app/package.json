@@ -5,8 +5,9 @@
   "type": "commonjs",
   "scripts": {
     "start": "node server.js",
-    "build": "node --check server.js && node --check tutor-methodology.js && node --check tutor-knowledge.js && node --check public/app.js && node tests/tutor-knowledge.test.js",
+    "build": "node --check server.js && node --check tutor-methodology.js && node --check tutor-knowledge.js && node --check structured-content.js && node --check public/app.js && node tests/tutor-knowledge.test.js && node tests/structured-content.test.js",
     "test:tutor": "node tests/tutor-knowledge.test.js",
+    "test:content": "node tests/structured-content.test.js",
     "deploy:check": "npm run build"
   },
   "engines": {

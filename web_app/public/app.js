@@ -12,6 +12,17 @@ const state = {
   chatHistory: []
 };
 
+const voiceState = {
+  recorder: null,
+  stream: null,
+  chunks: [],
+  blob: null,
+  previewUrl: "",
+  startedAt: 0,
+  durationMs: 0,
+  timerId: null
+};
+
 const $ = (id) => document.getElementById(id);
 function setActiveDock(action) {
   document.querySelectorAll(".action-dock [data-action]").forEach(button => {
@@ -90,6 +101,151 @@ function setValidation(targetId, fields, message = "") {
   target.textContent = message;
   target.hidden = !message;
   fields.forEach(field => field?.setAttribute("aria-invalid", message ? "true" : "false"));
+}
+
+function setVoiceStatus(message, isError = false) {
+  const target = $("voiceStatus");
+  target.textContent = message;
+  target.classList.toggle("error", isError);
+}
+
+function formatRecordingTime(milliseconds) {
+  const totalSeconds = Math.max(0, Math.floor(milliseconds / 1000));
+  return `${String(Math.floor(totalSeconds / 60)).padStart(2, "0")}:${String(totalSeconds % 60).padStart(2, "0")}`;
+}
+
+function stopVoiceTracks() {
+  voiceState.stream?.getTracks().forEach(track => track.stop());
+  voiceState.stream = null;
+}
+
+function finishVoiceRecording() {
+  window.clearInterval(voiceState.timerId);
+  voiceState.timerId = null;
+  voiceState.durationMs = Math.min(60_000, Date.now() - voiceState.startedAt);
+  const mimeType = voiceState.recorder?.mimeType || voiceState.chunks[0]?.type || "audio/webm";
+  voiceState.blob = new Blob(voiceState.chunks, { type: mimeType });
+  stopVoiceTracks();
+
+  const recorder = $("voiceRecorder");
+  const button = $("recordVoice");
+  recorder.classList.remove("is-recording");
+  button.classList.remove("is-recording");
+  button.setAttribute("aria-pressed", "false");
+  button.textContent = "Qayta yozish";
+  $("recordingTimer").textContent = formatRecordingTime(voiceState.durationMs);
+
+  if (voiceState.previewUrl) URL.revokeObjectURL(voiceState.previewUrl);
+  voiceState.previewUrl = URL.createObjectURL(voiceState.blob);
+  const preview = $("voicePreview");
+  preview.src = voiceState.previewUrl;
+  preview.hidden = false;
+  $("transcribeVoice").disabled = voiceState.blob.size < 800;
+  setVoiceStatus(voiceState.blob.size < 800
+    ? "Audio juda qisqa. Qayta yozib ko‘ring."
+    : "Yozuv tayyor. Matnga aylantirishda audio Groq xizmatiga yuboriladi; serverda saqlanmaydi.", voiceState.blob.size < 800);
+}
+
+async function startVoiceRecording() {
+  if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === "undefined") {
+    setVoiceStatus("Bu brauzer ovoz yozishni qo‘llab-quvvatlamaydi. Chrome, Edge yoki Telegram’ning yangi versiyasidan foydalaning.", true);
+    return;
+  }
+
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({
+      audio: { echoCancellation: true, noiseSuppression: true, autoGainControl: true }
+    });
+    const candidates = ["audio/webm;codecs=opus", "audio/ogg;codecs=opus", "audio/mp4"];
+    const mimeType = candidates.find(type => MediaRecorder.isTypeSupported?.(type)) || "";
+    const recorder = mimeType ? new MediaRecorder(stream, { mimeType }) : new MediaRecorder(stream);
+
+    if (voiceState.previewUrl) {
+      URL.revokeObjectURL(voiceState.previewUrl);
+      voiceState.previewUrl = "";
+    }
+    voiceState.stream = stream;
+    voiceState.recorder = recorder;
+    voiceState.chunks = [];
+    voiceState.blob = null;
+    voiceState.startedAt = Date.now();
+    $("voicePreview").hidden = true;
+    $("transcribeVoice").disabled = true;
+    $("voiceMetrics").hidden = true;
+    $("analysisMode").value = "speaking";
+
+    recorder.addEventListener("dataavailable", event => {
+      if (event.data.size) voiceState.chunks.push(event.data);
+    });
+    recorder.addEventListener("stop", finishVoiceRecording, { once: true });
+    recorder.addEventListener("error", () => {
+      stopVoiceTracks();
+      setVoiceStatus("Ovoz yozishda xato yuz berdi. Qayta urinib ko‘ring.", true);
+    }, { once: true });
+    recorder.start(250);
+
+    $("voiceRecorder").classList.add("is-recording");
+    const button = $("recordVoice");
+    button.classList.add("is-recording");
+    button.setAttribute("aria-pressed", "true");
+    button.textContent = "Yozishni to‘xtatish";
+    setVoiceStatus("Yozilmoqda. Javobingizni tabiiy tempda ayting.");
+    voiceState.timerId = window.setInterval(() => {
+      const elapsed = Date.now() - voiceState.startedAt;
+      $("recordingTimer").textContent = formatRecordingTime(elapsed);
+      if (elapsed >= 60_000 && recorder.state === "recording") recorder.stop();
+    }, 250);
+    tg?.HapticFeedback?.impactOccurred?.("light");
+  } catch (error) {
+    stopVoiceTracks();
+    const denied = error?.name === "NotAllowedError" || error?.name === "PermissionDeniedError";
+    setVoiceStatus(denied
+      ? "Mikrofon ruxsati berilmadi. Brauzer sozlamalaridan mikrofonni yoqing."
+      : "Mikrofonni ishga tushirib bo‘lmadi. Boshqa ilovada band emasligini tekshiring.", true);
+  }
+}
+
+function stopVoiceRecording() {
+  if (voiceState.recorder?.state === "recording") voiceState.recorder.stop();
+}
+
+function blobToBase64(blob) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.addEventListener("load", () => resolve(String(reader.result).split(",")[1] || ""), { once: true });
+    reader.addEventListener("error", () => reject(new Error("Audio faylni o‘qib bo‘lmadi.")), { once: true });
+    reader.readAsDataURL(blob);
+  });
+}
+
+async function transcribeVoiceRecording() {
+  if (!voiceState.blob) return;
+  const button = $("transcribeVoice");
+  setBusy(button, true, "Matnga aylantirilmoqda...");
+  setVoiceStatus("Audio English matnga aylantirilmoqda...");
+  try {
+    const audio = await blobToBase64(voiceState.blob);
+    const data = await api("/api/ai/transcribe", {
+      method: "POST",
+      body: JSON.stringify({ audio, mimeType: voiceState.blob.type, durationMs: voiceState.durationMs })
+    });
+    $("grammarText").value = data.text;
+    $("analysisMode").value = "speaking";
+    $("grammarText").dispatchEvent(new Event("input", { bubbles: true }));
+    const metrics = data.metrics || {};
+    $("voiceMetrics").innerHTML = `
+      <span><strong>${escapeHtml(metrics.durationSeconds ?? "—")}s</strong>davomiylik</span>
+      <span><strong>${escapeHtml(metrics.wordCount ?? "—")}</strong>so‘z</span>
+      <span><strong>${escapeHtml(metrics.wordsPerMinute ?? "—")}</strong>so‘z/min</span>
+      <span><strong>${escapeHtml(metrics.pauseCount ?? "—")}</strong>uzoq pauza</span>`;
+    $("voiceMetrics").hidden = false;
+    setVoiceStatus("Transkript tayyor. Matnni tekshirib, to‘liq Speaking tahlilini boshlang.");
+    $("grammarText").focus();
+  } catch (error) {
+    setVoiceStatus(error.message, true);
+  } finally {
+    setBusy(button, false);
+  }
 }
 
 function showError(target, error) {
@@ -444,6 +600,11 @@ async function checkGrammar() {
 $("generateLesson").addEventListener("click", generateLessonPlan);
 $("sendChat").addEventListener("click", sendChatMessage);
 $("checkGrammar").addEventListener("click", checkGrammar);
+$("recordVoice").addEventListener("click", () => {
+  if (voiceState.recorder?.state === "recording") stopVoiceRecording();
+  else startVoiceRecording();
+});
+$("transcribeVoice").addEventListener("click", transcribeVoiceRecording);
 document.querySelectorAll('input[name="lessonType"]').forEach(input => {
   input.addEventListener("change", () => setLessonType(input.value));
 });
@@ -512,6 +673,10 @@ if ("IntersectionObserver" in window) {
 
 renderMistakeNotebook();
 setLessonType(document.querySelector('input[name="lessonType"]:checked')?.value || "speaking", false);
+window.addEventListener("pagehide", () => {
+  stopVoiceTracks();
+  if (voiceState.previewUrl) URL.revokeObjectURL(voiceState.previewUrl);
+});
 Promise.all([loadTopics(), loadSystemStatus()]).catch(error => {
   console.error(error);
 });
